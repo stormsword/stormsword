@@ -16,9 +16,7 @@
 // -----------------------------------------------------------------------
 
 NSString *preview =
-@"Cosos2D Version 3 (preview)\n\n\
-For evaluation only\n\
-Do not use for new development";
+@"Preview Text Line 1\n\n Preview Text Line 2";
 
 // -----------------------------------------------------------------------
 

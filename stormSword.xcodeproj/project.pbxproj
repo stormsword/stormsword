@@ -211,6 +211,11 @@
 		C03BD64B186F608F00DAF617 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C03BD64A186F608F00DAF617 /* AppDelegate.m */; };
 		C03BD64E186F608F00DAF617 /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C03BD64D186F608F00DAF617 /* HelloWorldScene.m */; };
 		C03BD651186F608F00DAF617 /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C03BD650186F608F00DAF617 /* IntroScene.m */; };
+		C03BD660186F688500DAF617 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03BD65F186F688500DAF617 /* XCTest.framework */; };
+		C03BD661186F688500DAF617 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03BD3AE186F608C00DAF617 /* Foundation.framework */; };
+		C03BD662186F688500DAF617 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03BD3AC186F608C00DAF617 /* UIKit.framework */; };
+		C03BD668186F688500DAF617 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C03BD666186F688500DAF617 /* InfoPlist.strings */; };
+		C03BD66A186F688500DAF617 /* stormSword_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C03BD669186F688500DAF617 /* stormSword_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,6 +225,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = C03BD3B5186F608C00DAF617;
 			remoteInfo = ObjectiveChipmunk;
+		};
+		C03BD66C186F688500DAF617 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C03BD397186F608C00DAF617 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C03BD39E186F608C00DAF617;
+			remoteInfo = stormSword;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -652,6 +664,12 @@
 		C03BD64D186F608F00DAF617 /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
 		C03BD64F186F608F00DAF617 /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
 		C03BD650186F608F00DAF617 /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
+		C03BD65E186F688500DAF617 /* stormSword Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stormSword Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C03BD65F186F688500DAF617 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C03BD665186F688500DAF617 /* stormSword Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "stormSword Tests-Info.plist"; sourceTree = "<group>"; };
+		C03BD667186F688500DAF617 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C03BD669186F688500DAF617 /* stormSword_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stormSword_Tests.m; sourceTree = "<group>"; };
+		C03BD66B186F688500DAF617 /* stormSword Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "stormSword Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -671,6 +689,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C03BD65B186F688500DAF617 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03BD660186F688500DAF617 /* XCTest.framework in Frameworks */,
+				C03BD662186F688500DAF617 /* UIKit.framework in Frameworks */,
+				C03BD661186F688500DAF617 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -678,6 +706,7 @@
 			isa = PBXGroup;
 			children = (
 				C03BD3B9186F608C00DAF617 /* stormSword */,
+				C03BD663186F688500DAF617 /* stormSword Tests */,
 				C03BD3A1186F608C00DAF617 /* Frameworks */,
 				C03BD3A0186F608C00DAF617 /* Products */,
 			);
@@ -688,6 +717,7 @@
 			children = (
 				C03BD39F186F608C00DAF617 /* stormSword.app */,
 				C03BD3B6186F608C00DAF617 /* libObjectiveChipmunk.a */,
+				C03BD65E186F688500DAF617 /* stormSword Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -704,6 +734,7 @@
 				C03BD3AE186F608C00DAF617 /* Foundation.framework */,
 				C03BD3B0186F608C00DAF617 /* CoreGraphics.framework */,
 				C03BD3B2186F608C00DAF617 /* CoreText.framework */,
+				C03BD65F186F688500DAF617 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1548,6 +1579,25 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		C03BD663186F688500DAF617 /* stormSword Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C03BD669186F688500DAF617 /* stormSword_Tests.m */,
+				C03BD664186F688500DAF617 /* Supporting Files */,
+			);
+			path = "stormSword Tests";
+			sourceTree = "<group>";
+		};
+		C03BD664186F688500DAF617 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C03BD665186F688500DAF617 /* stormSword Tests-Info.plist */,
+				C03BD666186F688500DAF617 /* InfoPlist.strings */,
+				C03BD66B186F688500DAF617 /* stormSword Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1584,6 +1634,24 @@
 			productReference = C03BD3B6186F608C00DAF617 /* libObjectiveChipmunk.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C03BD65D186F688500DAF617 /* stormSword Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C03BD66E186F688500DAF617 /* Build configuration list for PBXNativeTarget "stormSword Tests" */;
+			buildPhases = (
+				C03BD65A186F688500DAF617 /* Sources */,
+				C03BD65B186F688500DAF617 /* Frameworks */,
+				C03BD65C186F688500DAF617 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C03BD66D186F688500DAF617 /* PBXTargetDependency */,
+			);
+			name = "stormSword Tests";
+			productName = "stormSword Tests";
+			productReference = C03BD65E186F688500DAF617 /* stormSword Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1592,6 +1660,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Bradley Dickason";
+				TargetAttributes = {
+					C03BD65D186F688500DAF617 = {
+						TestTargetID = C03BD39E186F608C00DAF617;
+					};
+				};
 			};
 			buildConfigurationList = C03BD39A186F608C00DAF617 /* Build configuration list for PBXProject "stormSword" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1607,6 +1680,7 @@
 			targets = (
 				C03BD39E186F608C00DAF617 /* stormSword */,
 				C03BD3B5186F608C00DAF617 /* ObjectiveChipmunk */,
+				C03BD65D186F688500DAF617 /* stormSword Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -1640,6 +1714,14 @@
 				C03BD3CD186F608D00DAF617 /* Icon-76.png in Resources */,
 				C03BD5A3186F608E00DAF617 /* ChangeLog in Resources */,
 				C03BD3E2186F608D00DAF617 /* iTunesArtwork@2x in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C03BD65C186F688500DAF617 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03BD668186F688500DAF617 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1831,6 +1913,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C03BD65A186F688500DAF617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03BD66A186F688500DAF617 /* stormSword_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1839,7 +1929,23 @@
 			target = C03BD3B5186F608C00DAF617 /* ObjectiveChipmunk */;
 			targetProxy = C03BD3B7186F608C00DAF617 /* PBXContainerItemProxy */;
 		};
+		C03BD66D186F688500DAF617 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C03BD39E186F608C00DAF617 /* stormSword */;
+			targetProxy = C03BD66C186F688500DAF617 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C03BD666186F688500DAF617 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C03BD667186F688500DAF617 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C03BD652186F608F00DAF617 /* Debug */ = {
@@ -1931,6 +2037,7 @@
 					"\"$PROJECT_NAME/Libraries/Chipmunk/objectivec/include\"",
 				);
 				INFOPLIST_FILE = stormSword/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1957,6 +2064,7 @@
 					"\"$PROJECT_NAME/Libraries/Chipmunk/objectivec/include\"",
 				);
 				INFOPLIST_FILE = stormSword/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1967,6 +2075,90 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C03BD66F186F688500DAF617 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/stormSword.app/stormSword";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "stormSword Tests/stormSword Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "stormSword Tests/stormSword Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C03BD670186F688500DAF617 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/stormSword.app/stormSword";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "stormSword Tests/stormSword Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "stormSword Tests/stormSword Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -1989,6 +2181,7 @@
 				C03BD656186F608F00DAF617 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C03BD657186F608F00DAF617 /* Build configuration list for PBXNativeTarget "stormSword" */ = {
 			isa = XCConfigurationList;
@@ -1997,6 +2190,16 @@
 				C03BD659186F608F00DAF617 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C03BD66E186F688500DAF617 /* Build configuration list for PBXNativeTarget "stormSword Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C03BD66F186F688500DAF617 /* Debug */,
+				C03BD670186F688500DAF617 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
