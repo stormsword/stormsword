@@ -216,6 +216,8 @@
 		C03BD662186F688500DAF617 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03BD3AC186F608C00DAF617 /* UIKit.framework */; };
 		C03BD668186F688500DAF617 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C03BD666186F688500DAF617 /* InfoPlist.strings */; };
 		C03BD66A186F688500DAF617 /* stormSword_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C03BD669186F688500DAF617 /* stormSword_Tests.m */; };
+		C0B5327B187A0D6200F0DA51 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = C0B5327A187A0D6200F0DA51 /* LICENSE.md */; };
+		C0B5327D187A0D6F00F0DA51 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C0B5327C187A0D6F00F0DA51 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -670,6 +672,8 @@
 		C03BD667186F688500DAF617 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C03BD669186F688500DAF617 /* stormSword_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stormSword_Tests.m; sourceTree = "<group>"; };
 		C03BD66B186F688500DAF617 /* stormSword Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "stormSword Tests-Prefix.pch"; sourceTree = "<group>"; };
+		C0B5327A187A0D6200F0DA51 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.md; sourceTree = "<group>"; };
+		C0B5327C187A0D6F00F0DA51 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -705,6 +709,8 @@
 		C03BD396186F608C00DAF617 = {
 			isa = PBXGroup;
 			children = (
+				C0B5327C187A0D6F00F0DA51 /* README.md */,
+				C0B5327A187A0D6200F0DA51 /* LICENSE.md */,
 				C03BD3B9186F608C00DAF617 /* stormSword */,
 				C03BD663186F688500DAF617 /* stormSword Tests */,
 				C03BD3A1186F608C00DAF617 /* Frameworks */,
@@ -1694,6 +1700,7 @@
 				C03BD3D1186F608D00DAF617 /* Icon-120.png in Resources */,
 				C03BD5D5186F608E00DAF617 /* LICENSE_CCBReader.txt in Resources */,
 				C03BD3C7186F608D00DAF617 /* Icon@2x.png in Resources */,
+				C0B5327D187A0D6F00F0DA51 /* README.md in Resources */,
 				C03BD3D9186F608D00DAF617 /* Icon-Small@2x.png in Resources */,
 				C03BD3CB186F608D00DAF617 /* Icon-72@2x.png in Resources */,
 				C03BD3BC186F608C00DAF617 /* Default.png in Resources */,
@@ -1710,6 +1717,7 @@
 				C03BD3DB186F608D00DAF617 /* Icon-Spotlight-iOS7.png in Resources */,
 				C03BD3CF186F608D00DAF617 /* Icon-76@2x.png in Resources */,
 				C03BD643186F608F00DAF617 /* LICENSE_Chipmunk.txt in Resources */,
+				C0B5327B187A0D6200F0DA51 /* LICENSE.md in Resources */,
 				C03BD3DD186F608D00DAF617 /* Icon-Spotlight-iOS7@2x.png in Resources */,
 				C03BD3CD186F608D00DAF617 /* Icon-76.png in Resources */,
 				C03BD5A3186F608E00DAF617 /* ChangeLog in Resources */,
