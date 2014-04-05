@@ -9,7 +9,9 @@ public class TouchButtonLogic : MonoBehaviour {
 
 			for(int i = 0; i < Input.touchCount; i++) {
 				var touch = Input.GetTouch(i);
-				if(this.guiTexture.HitTest(touch.position)) {
+
+				if(this.gameObject.
+//				if(this.guiTexture.HitTest(touch.position)) {
 					// Touch is within our texture
 
 					if(touch.phase == TouchPhase.Began) {

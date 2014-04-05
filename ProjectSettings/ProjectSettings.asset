@@ -107,7 +107,11 @@ PlayerSettings:
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - m_Icon: {fileID: 0}
+      m_Size: 128
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
@@ -146,7 +150,9 @@ PlayerSettings:
   ps3TrialMode: 0
   flashStrippingLevel: 2
   spritePackerPolicy: 
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: LeftButton
+    4: LeftButton
   metroPackageName: stormsword
   metroPackageLogo: 
   metroPackageVersion: 
