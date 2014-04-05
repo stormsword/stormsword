@@ -1,0 +1,6 @@
+# Unity
+Temp/
+Library/
+
+# OSX
+.DS_Store
