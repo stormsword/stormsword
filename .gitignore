@@ -1,3 +1,7 @@
+# Unity
+Temp/
+Library/
+
+# OSX
 .DS_Store
-/Pods
-Podfile.lock
+
