@@ -8,7 +8,7 @@ public class PlayerScript : MonoBehaviour {
 
 	// Store the player's movement
 	private Vector2 movement;
-	
+
 	void Start () {
 	
 	}
