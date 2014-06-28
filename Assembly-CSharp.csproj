@@ -46,8 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\scripts\TouchButtonLogic.cs" />
-     <Compile Include="Assets\scripts\mouseButton.cs" />
+     <Compile Include="Assets\scripts\PlayerScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
