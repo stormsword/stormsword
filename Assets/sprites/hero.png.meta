@@ -52,8 +52,8 @@ TextureImporter:
         y: 432
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_1
       rect:
         serializedVersion: 2
@@ -61,8 +61,8 @@ TextureImporter:
         y: 432
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_2
       rect:
         serializedVersion: 2
@@ -70,8 +70,8 @@ TextureImporter:
         y: 432
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_3
       rect:
         serializedVersion: 2
@@ -79,8 +79,8 @@ TextureImporter:
         y: 432
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_4
       rect:
         serializedVersion: 2
@@ -88,8 +88,8 @@ TextureImporter:
         y: 432
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_5
       rect:
         serializedVersion: 2
@@ -97,8 +97,8 @@ TextureImporter:
         y: 288
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_6
       rect:
         serializedVersion: 2
@@ -106,8 +106,8 @@ TextureImporter:
         y: 288
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_7
       rect:
         serializedVersion: 2
@@ -115,8 +115,8 @@ TextureImporter:
         y: 288
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_8
       rect:
         serializedVersion: 2
@@ -124,8 +124,8 @@ TextureImporter:
         y: 288
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_9
       rect:
         serializedVersion: 2
@@ -133,8 +133,8 @@ TextureImporter:
         y: 288
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_10
       rect:
         serializedVersion: 2
@@ -142,8 +142,8 @@ TextureImporter:
         y: 144
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_11
       rect:
         serializedVersion: 2
@@ -151,8 +151,8 @@ TextureImporter:
         y: 144
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_12
       rect:
         serializedVersion: 2
@@ -160,8 +160,8 @@ TextureImporter:
         y: 144
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_13
       rect:
         serializedVersion: 2
@@ -169,17 +169,17 @@ TextureImporter:
         y: 144
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_14
       rect:
         serializedVersion: 2
-        x: 576
+        x: 575
         y: 144
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_15
       rect:
         serializedVersion: 2
@@ -187,8 +187,8 @@ TextureImporter:
         y: 144
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_16
       rect:
         serializedVersion: 2
@@ -196,8 +196,8 @@ TextureImporter:
         y: 0
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_17
       rect:
         serializedVersion: 2
@@ -205,8 +205,8 @@ TextureImporter:
         y: 0
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_18
       rect:
         serializedVersion: 2
@@ -214,8 +214,8 @@ TextureImporter:
         y: 0
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_19
       rect:
         serializedVersion: 2
@@ -223,8 +223,8 @@ TextureImporter:
         y: 0
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
     - name: hero_20
       rect:
         serializedVersion: 2
@@ -232,7 +232,7 @@ TextureImporter:
         y: 0
         width: 144
         height: 144
-      alignment: 1
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 
