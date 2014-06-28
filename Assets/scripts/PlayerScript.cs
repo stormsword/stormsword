@@ -23,6 +23,20 @@ public class PlayerScript : MonoBehaviour {
 		movement = new Vector2(
 			speed.x * inputX,
 			speed.y * inputY);
+
+		// Shooting!
+		bool shoot = Input.GetButtonDown("Fire1");
+		shoot |= Input.GetButtonDown("Fire2");
+
+		if(shoot) {
+			// User clicked 'fire'
+			WeaponScript weapon = GetComponent<WeaponScript>();
+
+			// If player has weapon equipped
+			if(weapon != null) {
+				weapon.Attack (false);	// False because player is not an enemy
+			}
+		}
 	}
 
 	// Physics calcs

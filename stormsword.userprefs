@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/ShotScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/HealthScript.cs">
     <Files>
       <File FileName="Assets/scripts/PlayerScript.cs" Line="10" Column="27" />
-      <File FileName="Assets/scripts/ShotScript.cs" Line="14" Column="1" />
+      <File FileName="Assets/scripts/HealthScript.cs" Line="30" Column="13" />
+      <File FileName="Assets/scripts/ProjectileScript.cs" Line="4" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

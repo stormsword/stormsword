@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/* ShotScript - Used for shooting projectiles across the screen */
+/* ProjectileScript - Used for shooting projectiles across the screen */
 
-public class ShotScript : MonoBehaviour {
+public class ProjectileScript : MonoBehaviour {
 
 	// Damage the object deals
 	public int damage = 1;
