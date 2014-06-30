@@ -1,12 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/EnemyScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/weapons/WeaponScript.cs">
     <Files>
-      <File FileName="Assets/scripts/PlayerScript.cs" Line="22" Column="38" />
-      <File FileName="Assets/scripts/HealthScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/ProjectileScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/WeaponScript.cs" Line="38" Column="46" />
-      <File FileName="Assets/scripts/EnemyScript.cs" Line="15" Column="17" />
+      <File FileName="Assets/scripts/camera/ScrollingScript.cs" Line="80" Column="60" />
+      <File FileName="Assets/scripts/camera/RendererExtensions.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/weapons/ProjectileScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="37" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

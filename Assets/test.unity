@@ -625,6 +625,7 @@ MonoBehaviour:
   speed: {x: 1, y: 1}
   direction: {x: 1, y: 0}
   isLinkedToCamera: 1
+  isLooping: 0
 --- !u!1001 &625961143
 Prefab:
   m_ObjectHideFlags: 0
@@ -739,6 +740,7 @@ MonoBehaviour:
   speed: {x: 1.5, y: 1.5}
   direction: {x: -1, y: 0}
   isLinkedToCamera: 0
+  isLooping: 0
 --- !u!1 &996133151
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,6 +811,7 @@ MonoBehaviour:
   speed: {x: 2.5, y: 2.5}
   direction: {x: -1, y: 0}
   isLinkedToCamera: 0
+  isLooping: 0
 --- !u!1 &1201440511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,6 +1159,7 @@ MonoBehaviour:
   speed: {x: 1, y: 1}
   direction: {x: -1, y: 0}
   isLinkedToCamera: 0
+  isLooping: 1
 --- !u!1 &1949386337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,7 +1272,7 @@ GameObject:
   - 81: {fileID: 2132643255}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
