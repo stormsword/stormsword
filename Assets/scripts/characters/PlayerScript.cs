@@ -3,11 +3,19 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
+	// Components
+	private Animator animator;
+
 	// Speed of the player
 	public Vector2 speed = new Vector2(50, 50);
 
 	// Store the player's movement
 	private Vector2 movement;
+
+	void Awake() {
+		animator = GetComponent<Animator>();
+
+	}
 
 	void Start () {
 	
@@ -37,6 +45,23 @@ public class PlayerScript : MonoBehaviour {
 				weapon.Attack (false);	// False because player is not an enemy
 			}
 		}
+
+		/* Play movement animation */
+		// 0 - Up, 1 - Right, 2 - Down, 3 - Left
+		// Player moving right
+		if(movement.x > 0) {
+			animator.SetInteger("direction", 1);
+		}
+		else if(movement.x < 0) {
+			animator.SetInteger("direction", 3);
+		}
+		else if(movement.y > 0) {
+			animator.SetInteger("direction", 0);
+		}
+		else if(movement.y < 0) {
+			animator.SetInteger("direction", 2);
+		}
+
 
 		// Make sure player cannot leave the camera view
 		var dist = (transform.position - Camera.main.transform.position).z;
