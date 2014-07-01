@@ -1,16 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/weapons/WeaponScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/weapons/RangedScript.cs">
     <Files>
-      <File FileName="Assets/scripts/camera/ScrollingScript.cs" Line="80" Column="60" />
-      <File FileName="Assets/scripts/camera/RendererExtensions.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/characters/PlayerScript.cs" Line="54" Column="1" />
+      <File FileName="Assets/scripts/weapons/MeleeScript.cs" Line="4" Column="1" />
       <File FileName="Assets/scripts/weapons/ProjectileScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="37" Column="57" />
+      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="15" Column="2" />
+      <File FileName="Assets/scripts/weapons/RangedScript.cs" Line="6" Column="37" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/dickason/code/stormsword/Assets/scripts/WeaponScript.cs" line="29" />
+      <Breakpoint file="/Users/dickason/code/stormsword/Assets/scripts/camera/ScrollingScript.cs" line="87" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

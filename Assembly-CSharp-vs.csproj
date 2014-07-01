@@ -52,7 +52,9 @@
      <Compile Include="Assets\scripts\characters\HealthScript.cs" />
      <Compile Include="Assets\scripts\characters\MoveScript.cs" />
      <Compile Include="Assets\scripts\characters\PlayerScript.cs" />
+     <Compile Include="Assets\scripts\weapons\MeleeScript.cs" />
      <Compile Include="Assets\scripts\weapons\ProjectileScript.cs" />
+     <Compile Include="Assets\scripts\weapons\RangedScript.cs" />
      <Compile Include="Assets\scripts\weapons\WeaponScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

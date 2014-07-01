@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/* WeaponScript - Attack with an existing weapon (Ranged or Melee) */
+/* WeaponScript - Basic weapon class (Ranged or Melee) */
 
 public class WeaponScript : MonoBehaviour {
 
 	// Projectile prefab for shooting
 	public Transform shotPrefab;
 
-	// Cooldown between shots
-	public float shootingRate = 0.25f;
+	// Weapon stats
+	public float shootingRate = 0.25f; // Cooldown between attacks
+	public float damage = 1;	// Damage a weapon does per attack
+	public float radius = 5; 	// Radius the weapon affects upon impact
 
 	// Remaining cooldown for shot
 	private float shotCooldown;
