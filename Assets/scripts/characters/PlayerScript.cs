@@ -10,9 +10,6 @@ public class PlayerScript : MonoBehaviour {
 	// Speed of the player
 	public Vector2 speed = new Vector2(50, 50);
 
-	// Store the player's movement
-	private Vector2 movement;
-
 	void Awake() {
 
 		moveScript = GetComponent<MoveScript>();

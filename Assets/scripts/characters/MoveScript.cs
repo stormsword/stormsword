@@ -28,7 +28,6 @@ public class MoveScript : MonoBehaviour {
 			speed.x * direction.x,
 			speed.y * direction.y);
 
-		
 		/* Play movement animation */
 		// 0 - Up, 1 - Right, 2 - Down, 3 - Left
 		// Player moving right
