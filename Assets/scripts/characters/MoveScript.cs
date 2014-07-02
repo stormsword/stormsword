@@ -16,6 +16,7 @@ public class MoveScript : MonoBehaviour {
 
 	// Actual movement
 	private Vector2 movement;
+	private bool isMoving = false;
 	
 	void Start () {
 		animator = GetComponent<Animator>();
@@ -28,7 +29,16 @@ public class MoveScript : MonoBehaviour {
 			speed.x * direction.x,
 			speed.y * direction.y);
 
+		/* Check if character is moving */
+		if(movement.x != 0 || movement.y != 0) {
+			isMoving = true;
+		}
+		else {
+			isMoving = false;
+		}
+
 		/* Play movement animation */
+		animator.SetBool ("isMoving", isMoving);
 		animator.SetFloat("movement_x", movement.x);
 		animator.SetFloat("movement_y", movement.y);
 	}
