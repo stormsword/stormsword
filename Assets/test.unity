@@ -109,6 +109,11 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300108, guid: 2416c6d69d1524dc7b9adae7053b880d,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
   m_RootGameObject: {fileID: 217833237}
@@ -294,7 +299,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300156, guid: 2416c6d69d1524dc7b9adae7053b880d, type: 3}
+  m_Sprite: {fileID: 21300108, guid: 2416c6d69d1524dc7b9adae7053b880d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!61 &217833240
 BoxCollider2D:
