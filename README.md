@@ -37,6 +37,8 @@ In order for a character's animation to be triggered, you need to first create a
 
 Right click on 'Idle' and select 'Create New Transition.' You can select from a series of dropdowns on the Inspector to pick your variable. If your variable is not available, create it under the 'Parameters' menu in the Animator.
 
+Currently Movement code lives within the MoveScript.cs script.
+
 To access a variable from within your code/script, you use the `animator` object:
 ````
   /* Play movement animation */

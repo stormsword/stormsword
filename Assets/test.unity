@@ -715,10 +715,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6693aa55fe4674b538d13535a9a8c153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 1, y: 1}
+  speed: {x: 0, y: 0}
   direction: {x: 1, y: 0}
   isLinkedToCamera: 1
-  isLooping: 0
 --- !u!1 &691633678
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +780,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 951548645}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6693aa55fe4674b538d13535a9a8c153, type: 3}
   m_Name: 
@@ -789,7 +788,6 @@ MonoBehaviour:
   speed: {x: 1.5, y: 1.5}
   direction: {x: -1, y: 0}
   isLinkedToCamera: 0
-  isLooping: 0
 --- !u!1 &996133151
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,7 +850,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1024411148}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6693aa55fe4674b538d13535a9a8c153, type: 3}
   m_Name: 
@@ -860,7 +858,6 @@ MonoBehaviour:
   speed: {x: 2.5, y: 2.5}
   direction: {x: -1, y: 0}
   isLinkedToCamera: 0
-  isLooping: 0
 --- !u!1 &1201440511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,7 +1199,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1733435163}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6693aa55fe4674b538d13535a9a8c153, type: 3}
   m_Name: 
@@ -1210,7 +1207,6 @@ MonoBehaviour:
   speed: {x: 1, y: 1}
   direction: {x: -1, y: 0}
   isLinkedToCamera: 0
-  isLooping: 1
 --- !u!1 &1949386337
 GameObject:
   m_ObjectHideFlags: 0
