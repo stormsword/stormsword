@@ -29,24 +29,8 @@ public class MoveScript : MonoBehaviour {
 			speed.y * direction.y);
 
 		/* Play movement animation */
-		// 0 - Up, 1 - Right, 2 - Down, 3 - Left
-		// Player moving right
-		if(movement.x > 0) {
-			animator.SetInteger("direction", 1);
-			animator.SetFloat("speed", speed.x);
-		}
-		else if(movement.x < 0) {
-			animator.SetInteger("direction", 3);
-			animator.SetFloat("speed", speed.x);
-		}
-		else if(movement.y > 0) {
-			animator.SetInteger("direction", 0);
-			animator.SetFloat("speed", speed.y);
-		}
-		else if(movement.y < 0) {
-			animator.SetInteger("direction", 2);
-			animator.SetFloat("speed", speed.y);
-		}
+		animator.SetFloat("movement_x", movement.x);
+		animator.SetFloat("movement_y", movement.y);
 	}
 
 	void FixedUpdate() {
