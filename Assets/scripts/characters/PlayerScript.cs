@@ -4,16 +4,15 @@ using System.Collections;
 public class PlayerScript : MonoBehaviour {
 
 	// Components
-
+	private CharacterScript characterScript;
 	private MoveScript moveScript;
 
 	// Speed of the player
 	public Vector2 speed = new Vector2(50, 50);
 
 	void Awake() {
-
 		moveScript = GetComponent<MoveScript>();
-
+		characterScript = GetComponent<CharacterScript>();
 	}
 
 	void Start () {
@@ -34,13 +33,7 @@ public class PlayerScript : MonoBehaviour {
 		shoot |= Input.GetButtonDown("Fire2");
 
 		if(shoot) {
-			// User clicked 'fire'
-			WeaponScript weapon = GetComponent<WeaponScript>();
-
-			// If player has weapon equipped
-			if(weapon != null) {
-				weapon.Attack (false);	// False because player is not an enemy
-			}
+			characterScript.Shoot();
 		}
 
 		// Make sure player cannot leave the camera view

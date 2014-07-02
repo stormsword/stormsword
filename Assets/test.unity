@@ -116,9 +116,18 @@ Prefab:
         type: 3}
     - target: {fileID: 11400000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11400000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: shotPrefab
+      value: 
+      objectReference: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
+    - target: {fileID: 11400000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: type
+      value: Ranged
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
   m_RootGameObject: {fileID: 217833237}
   m_IsPrefabParent: 0
@@ -260,9 +269,9 @@ GameObject:
   - 61: {fileID: 217833240}
   - 50: {fileID: 217833241}
   - 114: {fileID: 217833242}
-  - 114: {fileID: 217833243}
   - 95: {fileID: 217833244}
   - 114: {fileID: 217833245}
+  - 114: {fileID: 217833243}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -280,7 +289,7 @@ Transform:
   m_LocalPosition: {x: -.0399984121, y: 4.47945595, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
-  - {fileID: 241082849}
+  - {fileID: 957444464}
   m_Father: {fileID: 691633679}
 --- !u!212 &217833239
 SpriteRenderer:
@@ -350,19 +359,14 @@ MonoBehaviour:
 --- !u!114 &217833243
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: d9375477e64044e6e8026cb4321814e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 48385064}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 217833237}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a885aef7194d4baa86be667a538e428, type: 3}
+  m_Script: {fileID: 11500000, guid: 287aa11bdecbb4b0c959d683506b7400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotPrefab: {fileID: 400000, guid: 8f413cead933d4e6c97cf1f528c2c10e, type: 2}
-  shootingRate: .25
-  damage: 1
-  radius: 5
 --- !u!95 &217833244
 Animator:
   serializedVersion: 2
@@ -418,57 +422,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 373025171}
---- !u!1 &241082848
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-  m_PrefabInternal: {fileID: 355481907}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 241082849}
-  - 212: {fileID: 241082850}
-  m_Layer: 0
-  m_Name: Hammer
-  m_TagString: Weapon
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &241082849
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-  m_PrefabInternal: {fileID: 355481907}
-  m_GameObject: {fileID: 241082848}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0248529278, y: -.324553967, z: 5}
-  m_LocalScale: {x: .5, y: .5, z: 1}
-  m_Children: []
-  m_Father: {fileID: 217833238}
---- !u!212 &241082850
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 21200000, guid: 5947b17ba11da4079b7402a902a7a11f,
-    type: 2}
-  m_PrefabInternal: {fileID: 355481907}
-  m_GameObject: {fileID: 241082848}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300030, guid: 47c6965ada88f4f338d8eccc1402f89c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &267765251
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,54 +543,6 @@ Prefab:
   m_RootGameObject: {fileID: 1201440511}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1001 &355481907
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 217833238}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -.0248529278
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -.324553967
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-      propertyPath: m_Name
-      value: Hammer
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-      propertyPath: m_TagString
-      value: Weapon
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
-  m_RootGameObject: {fileID: 241082848}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &370291666
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,6 +558,7 @@ GameObject:
   - 114: {fileID: 370291672}
   - 114: {fileID: 370291674}
   - 95: {fileID: 370291673}
+  - 114: {fileID: 370291675}
   m_Layer: 0
   m_Name: Octopi
   m_TagString: Untagged
@@ -778,6 +684,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f0ab2f76d0148a3867303312a6a9b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &370291675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370291666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 287aa11bdecbb4b0c959d683506b7400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &373025170
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +809,49 @@ MonoBehaviour:
   speed: {x: 1.5, y: 1.5}
   direction: {x: -1, y: 0}
   isLinkedToCamera: 0
+--- !u!1 &957444463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 957444464}
+  - 114: {fileID: 957444465}
+  m_Layer: 0
+  m_Name: WeaponObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &957444464
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957444463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0248529278, y: -.324553967, z: 5}
+  m_LocalScale: {x: .5, y: .5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 217833238}
+--- !u!114 &957444465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 957444463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a885aef7194d4baa86be667a538e428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
+  shootingRate: .25
+  damage: 1
+  radius: 5
+  type: Melee
 --- !u!1 &996133151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,6 +1132,7 @@ MonoBehaviour:
   shootingRate: 1.25
   damage: 1
   radius: 5
+  type: Melee
 --- !u!1 &1450998971
 GameObject:
   m_ObjectHideFlags: 0

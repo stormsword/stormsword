@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\scripts\camera\RendererExtensions.cs" />
      <Compile Include="Assets\scripts\camera\ScrollingScript.cs" />
+     <Compile Include="Assets\scripts\characters\CharacterScript.cs" />
      <Compile Include="Assets\scripts\characters\EnemyScript.cs" />
      <Compile Include="Assets\scripts\characters\HealthScript.cs" />
      <Compile Include="Assets\scripts\characters\MoveScript.cs" />

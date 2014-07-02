@@ -5,19 +5,14 @@ using System.Collections;
 
 public class EnemyScript : MonoBehaviour {
 
-	private WeaponScript[] weapons;
+	private CharacterScript characterScript;
 
 	void Awake() {
-		// Grab the weapon once when the enemy spawns
-		weapons = GetComponentsInChildren<WeaponScript>();
+		characterScript = GetComponent<CharacterScript>();
 	}
 
 	void Update() {
-		foreach(WeaponScript weapon in weapons) {
-			// Auto-fire
-			if(weapon != null && weapon.CanAttack) {
-				weapon.Attack(true);
-			}
-		}
+		// Continuously attack until dead
+		characterScript.Shoot();
 	}
 }

@@ -12,26 +12,27 @@ public class WeaponScript : MonoBehaviour {
 	public float shootingRate = 0.25f; // Cooldown between attacks
 	public float damage = 1;	// Damage a weapon does per attack
 	public float radius = 5; 	// Radius the weapon affects upon impact
+	public string type = "Melee";	// Melee or Ranged
 
 	// Remaining cooldown for shot
-	private float shotCooldown;
+	private float attackCooldown;
 
 	// Use this for initialization
 	void Start () {
-		shotCooldown = 0f;	// Object has not yet shot
+		attackCooldown = 0f;	// Object has not yet shot
 	}
 
 	void Update () {
-		if(shotCooldown > 0) {
-			shotCooldown -= Time.deltaTime;
+		if(attackCooldown > 0) {
+			attackCooldown -= Time.deltaTime;
 		}
 	}
 
 	/* Attack - Shot triggered by another script */
 	public void Attack(bool isEnemy) {
 		if(CanAttack) {
-			// User attacked, trigger cooldown
-			shotCooldown = shootingRate;
+			// Character attacked, trigger cooldown
+			attackCooldown = shootingRate;
 
 			// Create a new shot
 			var shotTransform = Instantiate(shotPrefab) as Transform;
@@ -47,11 +48,16 @@ public class WeaponScript : MonoBehaviour {
 				shot.isEnemyShot = isEnemy;
 			}
 
-			MoveScript move = shotTransform.gameObject.GetComponent<MoveScript>();
+			// If projectile, the object should move
+			if(type == "Ranged") {
+				MoveScript move = shotTransform.gameObject.GetComponent<MoveScript>();
 
-			if(move != null) {
-				move.direction = this.transform.right;	// Set direction to the 'front' of the sprite
+				if(move != null) {
+					move.direction = this.transform.forward;	// Set direction to the 'front' of the sprite
+				}
+
 			}
+
 
 		}
 	}
@@ -59,7 +65,7 @@ public class WeaponScript : MonoBehaviour {
 	// Is the weapon ready to create a new projectile?
 	public bool CanAttack {
 		get {
-			return(shotCooldown <= 0f);
+			return(attackCooldown <= 0f);
 		}
 	}
 }
