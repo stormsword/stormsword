@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: 47c6965ada88f4f338d8eccc1402f89c
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: swords_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: swords_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_2
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 310
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_4
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 310
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_5
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 308
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 188
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_7
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 190
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: swords_8
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 190
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_9
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 188
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 108
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_11
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 104
+        width: 64
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_12
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 104
+        width: 54
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_14
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 104
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: hammer
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 104
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: swords_16
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 102
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_17
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 105
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_18
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 104
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_20
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 16
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_21
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 16
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_22
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 16
+        width: 28
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_23
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 16
+        width: 14
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_24
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 16
+        width: 18
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 16
+        width: 14
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_26
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 16
+        width: 14
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_27
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 16
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_28
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 19
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_29
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 19
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: swords_30
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 19
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
