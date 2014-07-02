@@ -43,17 +43,10 @@ BlendTree:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Blend Tree
-  m_Childs:
-  - m_Motion: {fileID: 0}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_IsAnim: 1
-    m_Mirror: 0
+  m_Name: IdleTree
+  m_Childs: []
   m_BlendParameter: movement_x
-  m_BlendParameterY: movement_x
+  m_BlendParameterY: movement_y
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -113,7 +106,7 @@ Transition:
   - m_ConditionMode: 5
     m_ConditionEvent: isMoving
     m_EventTreshold: 0
-    m_ExitTime: .672131181
+    m_ExitTime: .670000017
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0

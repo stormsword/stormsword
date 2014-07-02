@@ -548,6 +548,7 @@ GameObject:
   - 114: {fileID: 370291671}
   - 114: {fileID: 370291672}
   - 114: {fileID: 370291674}
+  - 95: {fileID: 370291673}
   m_Layer: 0
   m_Name: Octopi
   m_TagString: Untagged
@@ -647,6 +648,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 1
   isEnemy: 1
+--- !u!95 &370291673
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370291666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!114 &370291674
 MonoBehaviour:
   m_ObjectHideFlags: 0

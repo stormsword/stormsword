@@ -18,7 +18,7 @@ public class MoveScript : MonoBehaviour {
 	private Vector2 movement;
 	private bool isMoving = false;
 	
-	void Start () {
+	void Awake () {
 		animator = GetComponent<Animator>();
 	}
 	

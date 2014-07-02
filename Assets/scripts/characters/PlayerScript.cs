@@ -43,8 +43,6 @@ public class PlayerScript : MonoBehaviour {
 			}
 		}
 
-
-
 		// Make sure player cannot leave the camera view
 		var dist = (transform.position - Camera.main.transform.position).z;
 
