@@ -5,6 +5,9 @@ using System.Collections;
 
 public class MoveScript : MonoBehaviour {
 
+	// Components
+	private Animator animator;
+
 	// Speed of object
 	public Vector2 speed = new Vector2(10, 10);
 
@@ -15,7 +18,7 @@ public class MoveScript : MonoBehaviour {
 	private Vector2 movement;
 	
 	void Start () {
-	
+		animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -24,6 +27,27 @@ public class MoveScript : MonoBehaviour {
 		movement = new Vector2(
 			speed.x * direction.x,
 			speed.y * direction.y);
+
+		
+		/* Play movement animation */
+		// 0 - Up, 1 - Right, 2 - Down, 3 - Left
+		// Player moving right
+		if(movement.x > 0) {
+			animator.SetInteger("direction", 1);
+			animator.SetFloat("speed", speed.x);
+		}
+		else if(movement.x < 0) {
+			animator.SetInteger("direction", 3);
+			animator.SetFloat("speed", speed.x);
+		}
+		else if(movement.y > 0) {
+			animator.SetInteger("direction", 0);
+			animator.SetFloat("speed", speed.y);
+		}
+		else if(movement.y < 0) {
+			animator.SetInteger("direction", 2);
+			animator.SetFloat("speed", speed.y);
+		}
 	}
 
 	void FixedUpdate() {

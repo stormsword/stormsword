@@ -213,6 +213,7 @@ GameObject:
   - 114: {fileID: 217833242}
   - 114: {fileID: 217833243}
   - 95: {fileID: 217833244}
+  - 114: {fileID: 217833245}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -326,6 +327,19 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &217833245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 217833237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 569bedba68ece4e459fb801e4dc49279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 4.5, y: 4.5}
+  direction: {x: -1, y: 0}
 --- !u!1 &238466062
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,8 @@ using System.Collections;
 public class PlayerScript : MonoBehaviour {
 
 	// Components
-	private Animator animator;
+
+	private MoveScript moveScript;
 
 	// Speed of the player
 	public Vector2 speed = new Vector2(50, 50);
@@ -13,7 +14,8 @@ public class PlayerScript : MonoBehaviour {
 	private Vector2 movement;
 
 	void Awake() {
-		animator = GetComponent<Animator>();
+
+		moveScript = GetComponent<MoveScript>();
 
 	}
 
@@ -28,9 +30,7 @@ public class PlayerScript : MonoBehaviour {
 		float inputY = Input.GetAxis("Vertical");
 
 		// Calculate movement per-direction
-		movement = new Vector2(
-			speed.x * inputX,
-			speed.y * inputY);
+		moveScript.direction = new Vector2(inputX, inputY);
 
 		// Shooting!
 		bool shoot = Input.GetButtonDown("Fire1");
@@ -46,21 +46,6 @@ public class PlayerScript : MonoBehaviour {
 			}
 		}
 
-		/* Play movement animation */
-		// 0 - Up, 1 - Right, 2 - Down, 3 - Left
-		// Player moving right
-		if(movement.x > 0) {
-			animator.SetInteger("direction", 1);
-		}
-		else if(movement.x < 0) {
-			animator.SetInteger("direction", 3);
-		}
-		else if(movement.y > 0) {
-			animator.SetInteger("direction", 0);
-		}
-		else if(movement.y < 0) {
-			animator.SetInteger("direction", 2);
-		}
 
 
 		// Make sure player cannot leave the camera view
@@ -82,6 +67,5 @@ public class PlayerScript : MonoBehaviour {
 	// Physics calcs
 	void FixedUpdate() {
 		// Move the game object
-		rigidbody2D.velocity = movement;
 	}
 }
