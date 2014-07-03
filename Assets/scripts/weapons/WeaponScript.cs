@@ -48,15 +48,29 @@ public class WeaponScript : MonoBehaviour {
 				shot.isEnemyShot = isEnemy;
 			}
 
-			// If projectile, the object should move
-			if(type == "Ranged") {
-				MoveScript move = shotTransform.gameObject.GetComponent<MoveScript>();
+			switch(type) {
+			case "Melee": 
+					// Handle melee weapon code here
+					Debug.Log("Melee");
+					break;
 
-				if(move != null) {
-					move.direction = this.transform.forward;	// Set direction to the 'front' of the sprite
-				}
+			case "Ranged": 
+					// Handle ranged weapon code here
+					Debug.Log ("Ranged");
+					break;	
 
 			}
+
+			// If projectile, the object should move
+//			if(type == "Ranged") {
+//				Debug.Log ("Got here");
+//				MoveScript move = shotTransform.gameObject.GetComponent<MoveScript>();
+//
+//				if(move != null) {
+//					move.direction = this.transform.forward;	// Set direction to the 'front' of the sprite
+//				}
+//
+//			}
 
 
 		}

@@ -13,6 +13,6 @@ public class EnemyScript : MonoBehaviour {
 
 	void Update() {
 		// Continuously attack until dead
-		characterScript.Shoot();
+		characterScript.Attack();
 	}
 }

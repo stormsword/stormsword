@@ -16,7 +16,7 @@ public class CharacterScript : MonoBehaviour {
 
 	}
 
-	public void Shoot() {
+	public void Attack() {
 		// Fire all equipped weapons
 		foreach(WeaponScript weapon in weapons) {
 			// Auto-fire

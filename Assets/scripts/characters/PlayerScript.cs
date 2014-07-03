@@ -29,11 +29,11 @@ public class PlayerScript : MonoBehaviour {
 		moveScript.direction = new Vector2(inputX, inputY);
 
 		// Shooting!
-		bool shoot = Input.GetButtonDown("Fire1");
-		shoot |= Input.GetButtonDown("Fire2");
+		bool attack = Input.GetButtonDown("Fire1");
+		attack |= Input.GetButtonDown("Fire2");
 
-		if(shoot) {
-			characterScript.Shoot();
+		if(attack) {
+			characterScript.Attack();
 		}
 
 		// Make sure player cannot leave the camera view
