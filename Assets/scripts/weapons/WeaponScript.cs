@@ -40,39 +40,27 @@ public class WeaponScript : MonoBehaviour {
 			// Grab the position of the parent object (transform)
 			shotTransform.position = transform.position;
 
-			// Find a Shot
-			ProjectileScript shot = shotTransform.gameObject.GetComponent<ProjectileScript>();
-
-			// Shot exists
-			if(shot != null) {
-				shot.isEnemyShot = isEnemy;
-			}
-
 			switch(type) {
 			case "Melee": 
-					// Handle melee weapon code here
-					Debug.Log("Melee");
-					break;
+				// Handle melee weapon code here
+				Debug.Log("Melee");
+				// Melee attack is attached to parent (character)
+				shotTransform.transform.parent = transform;
+
+				break;
 
 			case "Ranged": 
-					// Handle ranged weapon code here
-					Debug.Log ("Ranged");
+				// Handle ranged weapon code here
+				Debug.Log ("Ranged");
 					break;	
 
 			}
 
-			// If projectile, the object should move
-//			if(type == "Ranged") {
-//				Debug.Log ("Got here");
-//				MoveScript move = shotTransform.gameObject.GetComponent<MoveScript>();
-//
-//				if(move != null) {
-//					move.direction = this.transform.forward;	// Set direction to the 'front' of the sprite
-//				}
-//
-//			}
-
-
+			ProjectileScript projectile = shotTransform.gameObject.GetComponent<ProjectileScript>();
+			// Shot exists
+			if(projectile != null) {
+				projectile.isEnemyShot = isEnemy;
+			}
 		}
 	}
 

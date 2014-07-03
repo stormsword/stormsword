@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
+  duration: 10
   isEnemyShot: 0
 --- !u!212 &21200000
 SpriteRenderer:
