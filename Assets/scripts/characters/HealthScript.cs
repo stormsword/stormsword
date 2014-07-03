@@ -32,8 +32,6 @@ public class HealthScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D otherCollider) {
-
-
 		// Is this a shot?
 		ProjectileScript shot = otherCollider.gameObject.GetComponent<ProjectileScript>();
 

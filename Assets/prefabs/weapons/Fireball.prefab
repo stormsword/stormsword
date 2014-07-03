@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 5
-  duration: .25
-  isEnemyShot: 0
+  duration: 5
+  ownerType: Player
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

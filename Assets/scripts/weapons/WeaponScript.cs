@@ -5,6 +5,10 @@ using System.Collections;
 
 public class WeaponScript : MonoBehaviour {
 
+	// Components
+	private MoveScript parentMoveScript;
+	private MoveScript shotMoveScript;
+
 	// Projectile prefab for shooting
 	public Transform shotPrefab;
 
@@ -39,6 +43,14 @@ public class WeaponScript : MonoBehaviour {
 
 			// Grab the position of the parent object (transform)
 			shotTransform.position = transform.position;
+
+			// Figure out what direction character is facing
+			parentMoveScript = transform.parent.GetComponent<MoveScript>();
+			if(parentMoveScript) {
+				// Set the shot to face the same direction as the player
+				shotMoveScript = shotTransform.GetComponent<MoveScript>();
+				shotMoveScript.direction = parentMoveScript.direction;
+			}
 
 			switch(type) {
 			case "Melee": 
