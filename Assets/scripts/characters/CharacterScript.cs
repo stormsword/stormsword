@@ -5,6 +5,8 @@ using System.Collections;
 
 public class CharacterScript : MonoBehaviour {
 
+	public string characterType;	// Enemy or Player
+
 	private WeaponScript[] weapons;
 	
 	void Awake() {
@@ -21,7 +23,7 @@ public class CharacterScript : MonoBehaviour {
 		foreach(WeaponScript weapon in weapons) {
 			// Auto-fire
 			if(weapon != null && weapon.CanAttack) {
-				weapon.Attack(true);
+				weapon.Attack();
 			}
 		}
 	}

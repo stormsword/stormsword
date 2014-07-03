@@ -7,6 +7,8 @@ public class EnemyScript : MonoBehaviour {
 
 	private CharacterScript characterScript;
 
+	public string characterType = "Enemy";
+
 	void Awake() {
 		characterScript = GetComponent<CharacterScript>();
 	}

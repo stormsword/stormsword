@@ -29,7 +29,7 @@ public class WeaponScript : MonoBehaviour {
 	}
 
 	/* Attack - Shot triggered by another script */
-	public void Attack(bool isEnemy) {
+	public void Attack() {
 		if(CanAttack) {
 			// Character attacked, trigger cooldown
 			attackCooldown = shootingRate;
@@ -43,7 +43,7 @@ public class WeaponScript : MonoBehaviour {
 			switch(type) {
 			case "Melee": 
 				// Handle melee weapon code here
-				Debug.Log("Melee");
+
 				// Melee attack is attached to parent (character)
 				shotTransform.transform.parent = transform;
 
@@ -51,15 +51,16 @@ public class WeaponScript : MonoBehaviour {
 
 			case "Ranged": 
 				// Handle ranged weapon code here
-				Debug.Log ("Ranged");
 					break;	
 
 			}
 
+			// Fire the actual projectile
 			ProjectileScript projectile = shotTransform.gameObject.GetComponent<ProjectileScript>();
-			// Shot exists
+	
 			if(projectile != null) {
-				projectile.isEnemyShot = isEnemy;
+				// Determine what type of player shot this
+				projectile.ownerType = gameObject.transform.parent.gameObject.tag;
 			}
 		}
 	}

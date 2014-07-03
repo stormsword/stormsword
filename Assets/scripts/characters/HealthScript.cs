@@ -33,17 +33,15 @@ public class HealthScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D otherCollider) {
 
+
 		// Is this a shot?
 		ProjectileScript shot = otherCollider.gameObject.GetComponent<ProjectileScript>();
 
 		if (shot != null) {
 			// Ignore friendly fire
-			if(shot.isEnemyShot != isEnemy) {
-				Damage(shot.damage);
-
-				// Destroy the shot
-				Destroy(shot.gameObject);
-
+			if(shot.ownerType == "Player" && gameObject.tag == "Enemy") {
+				// Player is attacking an enemy
+				Damage (shot.damage);		// Target takes dmg
 			}
 		}
 	}

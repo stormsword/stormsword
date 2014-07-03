@@ -16,7 +16,7 @@ GameObject:
   - 95: {fileID: 9500000}
   m_Layer: 0
   m_Name: Spikyball
-  m_TagString: Weapon
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   duration: 10
-  isEnemyShot: 0
+  isEnemyShot: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
