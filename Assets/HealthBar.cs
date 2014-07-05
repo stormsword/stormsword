@@ -18,6 +18,8 @@ public class HealthBar : MonoBehaviour {
 		if(character) {
 			// Assuming character exists)
 			health = character.GetComponent<HealthScript>();
+
+			maxHp = health.hp;	// HP when mob spawns is assumed to be the total hp it can have
 		}
 	}
 	
@@ -27,5 +29,8 @@ public class HealthBar : MonoBehaviour {
 
 		// Lock the hp bar to the player's head
 		transform.position = Camera.main.WorldToViewportPoint(character.transform.position);
+
+		// Update health bar size when character is damanged
+
 	}
 }
