@@ -1,7 +1,7 @@
 Stormsword
 ===========
 
-Simple iOS 2d game
+Simple top-down 2d RPG inspired by Zelda and Secret of Mana.
 
 # Latest Release
 
