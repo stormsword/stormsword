@@ -7,6 +7,14 @@ Simple top-down 2d RPG inspired by Zelda and Secret of Mana.
 
 [Grab the latest release files here](https://github.com/bdickason/stormsword/releases)!
 
+# Building the game (creating binaries)
+
+I've created a simple buildscript that will build osx/windows/linux automagically:
+`make version=0.1`
+
+This will build each version into `~/Desktop/StormSword/v0.1`
+
+
 # Movement
 
 The player will move with WASD keys and can move freely in all four directions.
