@@ -45,19 +45,19 @@ public class WeaponScript : MonoBehaviour {
 			shotTransform.position = transform.position;
 
 			// Figure out what direction character is facing
-			parentMoveScript = transform.parent.GetComponent<MoveScript>();
-			if(parentMoveScript) {
-				// Set the shot to face the same direction as the player
-				shotMoveScript = shotTransform.GetComponent<MoveScript>();
-				shotMoveScript.direction = parentMoveScript.direction;
-			}
 
-			switch(type) {
+//			if(parentMoveScript) {
+//				// Set the shot to face the same direction as the player
+//				shotMoveScript = shotTransform.GetComponent<MoveScript>();
+//			}
+
+
+ 			switch(type) {
 			case "Melee": 
 				// Handle melee weapon code here
 
 				// Melee attack is attached to parent (character)
-				shotTransform.transform.parent = transform;
+				shotTransform.parent = transform;
 
 				break;
 

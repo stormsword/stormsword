@@ -21,6 +21,9 @@ public class PlayerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		/* Player Input */
+
 		// Retrieve axis information from controller
 		float inputX = Input.GetAxis("Horizontal");
 		float inputY = Input.GetAxis("Vertical");
@@ -33,6 +36,8 @@ public class PlayerScript : MonoBehaviour {
 		attack |= Input.GetButtonDown("Fire2");
 
 		if(attack) {
+			Debug.Log(transform.right);
+			Debug.Log (rigidbody2D.transform);
 			characterScript.Attack();
 		}
 
@@ -50,10 +55,5 @@ public class PlayerScript : MonoBehaviour {
 			Mathf.Clamp (transform.position.y, topBorder, bottomBorder),
 			transform.position.z);
 
-	}
-
-	// Physics calcs
-	void FixedUpdate() {
-		// Move the game object
 	}
 }

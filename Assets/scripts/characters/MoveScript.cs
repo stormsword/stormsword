@@ -9,13 +9,13 @@ public class MoveScript : MonoBehaviour {
 	private Animator animator;
 
 	// Speed of object
-	public Vector2 speed = new Vector2(10, 10);
+	public float speed = 400;
 
 	// Direction of object
 	public Vector2 direction = new Vector2(-1, 0);
 
 	// Actual movement
-	private Vector2 movement;
+	private Vector2 movement = new Vector2(0, 0);
 	private bool isMoving = false;
 	
 	void Awake () {
@@ -24,12 +24,9 @@ public class MoveScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		// Calculate movement direction
-		movement = new Vector2(
-			speed.x * direction.x,
-			speed.y * direction.y);
-
 		/* Check if character is moving */
+		movement = direction * speed;	// Calculate movement amount
+
 		if(movement.x != 0 || movement.y != 0) {
 			isMoving = true;
 		}
@@ -45,6 +42,6 @@ public class MoveScript : MonoBehaviour {
 
 	void FixedUpdate() {
 		// Apply the movement to the rigidbody
-		rigidbody2D.velocity = movement;
+		rigidbody2D.AddForce (movement);
 	}
 }
