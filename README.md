@@ -3,6 +3,10 @@ Stormsword
 
 Simple iOS 2d game
 
+# Latest Release
+
+[Grab the latest release files here](https://github.com/bdickason/stormsword/releases)!
+
 # Movement
 
 The player will move with WASD keys and can move freely in all four directions.
