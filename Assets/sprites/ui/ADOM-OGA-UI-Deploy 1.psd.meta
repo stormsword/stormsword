@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 215c956fb8a3c42fdbd2d3e4cddde219
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Title_Bar
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 314
+        width: 292
+        height: 87
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: TitleBar_Close
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 325
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Bar_Mana
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 356
+        width: 201
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Scroller
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 264
+        width: 249
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Message_Box
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 72
+        width: 287
+        height: 178
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Option_Box_Header
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 189
+        width: 291
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Bar_Hp_Low
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 323
+        width: 201
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Bar_Energy
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 292
+        width: 201
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Bar_Hp_Full
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 259
+        width: 201
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Option_Box
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 18
+        width: 291
+        height: 171
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 

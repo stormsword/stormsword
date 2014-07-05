@@ -34,7 +34,6 @@ public class MoveScript : MonoBehaviour {
 			/* Unity doesn't have a 'always round away from zero' function */
 
 			facing = new Vector2(GetDirectionFromInput(direction.x), GetDirectionFromInput(direction.y));	// Round direction up because direction.x/y can be 0.2 or 0.4, etc.
-			Debug.Log (facing);
 			isMoving = true;
 		}
 		else {
