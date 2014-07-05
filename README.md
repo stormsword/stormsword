@@ -7,7 +7,7 @@ Simple top-down 2d RPG inspired by Zelda and Secret of Mana.
 
 [Grab the latest release files here](https://github.com/bdickason/stormsword/releases)!
 
-# Building the game (creating binaries)
+# Developers Only: Building the game (creating binaries)
 
 I've created a simple buildscript that will build osx/windows/linux automagically:
 `make version=0.1`
