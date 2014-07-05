@@ -339,8 +339,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 200
-  direction: {x: -1, y: 0}
-  facing: {x: -1, y: 0}
+  direction: {x: 0, y: -1}
+  facing: {x: 0, y: -1}
 --- !u!1 &238466062
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +909,22 @@ Prefab:
     - target: {fileID: 5000000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
       propertyPath: m_FixedAngle
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: direction.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: direction.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: facing.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: facing.y
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}

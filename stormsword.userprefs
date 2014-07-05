@@ -4,21 +4,12 @@
     <Files>
       <File FileName="Assets/scripts/characters/CharacterScript.cs" Line="26" Column="1" />
       <File FileName="Assets/scripts/characters/MoveScript.cs" Line="33" Column="1" />
-      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="56" Column="25" />
+      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="51" Column="29" />
       <File FileName="Assets/scripts/characters/PlayerScript.cs" Line="39" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="scripts" expanded="True">
-              <Node name="characters" expanded="True" />
-              <Node name="weapons" expanded="True">
-                <Node name="WeaponScript.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
+        <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="ClassPad">
         <State expanded="True" selected="True" />
@@ -35,6 +26,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="62" offsetX="409" offsetY="915" expression="transform" liveUpdate="False" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="62" offsetX="711" offsetY="711" expression="transform" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>

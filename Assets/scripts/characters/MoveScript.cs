@@ -28,8 +28,9 @@ public class MoveScript : MonoBehaviour {
 		/* Check if character is moving */
 		movement = direction * speed;	// Calculate movement amount
 
+
 		if(movement.x != 0 || movement.y != 0) {
-			facing = direction;
+			facing = new Vector2(Mathf.CeilToInt(direction.x), Mathf.CeilToInt (direction.y));	// Round direction up because direction.x/y can be 0.2 or 0.4, etc.
 			isMoving = true;
 		}
 		else {
