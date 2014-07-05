@@ -280,7 +280,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 1
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -340,6 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 200
   direction: {x: -1, y: 0}
+  facing: {x: -1, y: 0}
 --- !u!1 &238466062
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   direction: {x: -1, y: 0}
+  facing: {x: -1, y: 0}
 --- !u!114 &370291672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -903,6 +905,10 @@ Prefab:
     - target: {fileID: 400000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: m_FixedAngle
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}

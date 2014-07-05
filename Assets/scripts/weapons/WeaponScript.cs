@@ -41,16 +41,15 @@ public class WeaponScript : MonoBehaviour {
 			// Create a new shot
 			var shotTransform = Instantiate(shotPrefab) as Transform;
 
-			// Grab the position of the parent object (transform)
-			shotTransform.position = transform.position;
 
 			// Figure out what direction character is facing
+			parentMoveScript = transform.parent.GetComponent<MoveScript>();
 
-//			if(parentMoveScript) {
-//				// Set the shot to face the same direction as the player
-//				shotMoveScript = shotTransform.GetComponent<MoveScript>();
-//			}
+			Vector3 facing = new Vector3(parentMoveScript.facing.x, parentMoveScript.facing.y, 0);
 
+			// Grab the position of the parent object (transform)
+			shotTransform.position = transform.position + facing;
+//			shotTransform.rigidbody2D.velocity = parentMoveScript.facing;
 
  			switch(type) {
 			case "Melee": 

@@ -13,6 +13,7 @@ public class MoveScript : MonoBehaviour {
 
 	// Direction of object
 	public Vector2 direction = new Vector2(-1, 0);
+	public Vector2 facing = new Vector2(-1, 0);
 
 	// Actual movement
 	private Vector2 movement = new Vector2(0, 0);
@@ -28,6 +29,7 @@ public class MoveScript : MonoBehaviour {
 		movement = direction * speed;	// Calculate movement amount
 
 		if(movement.x != 0 || movement.y != 0) {
+			facing = direction;
 			isMoving = true;
 		}
 		else {
@@ -43,5 +45,7 @@ public class MoveScript : MonoBehaviour {
 	void FixedUpdate() {
 		// Apply the movement to the rigidbody
 		rigidbody2D.AddForce (movement);
+
+		// Rotate rigidbody accordingly
 	}
 }

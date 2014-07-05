@@ -36,8 +36,6 @@ public class PlayerScript : MonoBehaviour {
 		attack |= Input.GetButtonDown("Fire2");
 
 		if(attack) {
-			Debug.Log(transform.right);
-			Debug.Log (rigidbody2D.transform);
 			characterScript.Attack();
 		}
 

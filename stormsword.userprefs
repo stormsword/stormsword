@@ -1,20 +1,21 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/MoveScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/weapons/WeaponScript.cs">
     <Files>
-      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="45" Column="35" />
-      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="49" Column="28" />
-      <File FileName="Assets/scripts/characters/PlayerScript.cs" Line="32" Column="54" />
+      <File FileName="Assets/scripts/characters/CharacterScript.cs" Line="26" Column="1" />
+      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="33" Column="1" />
+      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="56" Column="25" />
+      <File FileName="Assets/scripts/characters/PlayerScript.cs" Line="39" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="scripts" expanded="True">
-              <Node name="characters" expanded="True">
-                <Node name="MoveScript.cs" selected="True" />
+              <Node name="characters" expanded="True" />
+              <Node name="weapons" expanded="True">
+                <Node name="WeaponScript.cs" selected="True" />
               </Node>
-              <Node name="weapons" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -34,13 +35,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="52" offsetX="661" offsetY="620" expression="parentMoveScript.direction" liveUpdate="False" />
-    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="54" offsetX="669" offsetY="711" expression="parentMoveScript.transform.forward" liveUpdate="False" />
-    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="56" offsetX="671" offsetY="741" expression="parentMoveScript.transform.rotation" liveUpdate="False" />
     <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="62" offsetX="409" offsetY="915" expression="transform" liveUpdate="False" />
-    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="49" offsetX="672" offsetY="682" expression="parentMoveScript.transform.up" liveUpdate="False" />
-    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="62" offsetX="1026" offsetY="677" expression="transform.up" liveUpdate="False" />
-    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="62" offsetX="1028" offsetY="707" expression="transform.forward" liveUpdate="False" />
-    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="62" offsetX="1034" offsetY="743" expression="transform.rotation" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>
