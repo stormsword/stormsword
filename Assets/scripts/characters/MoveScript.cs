@@ -33,22 +33,7 @@ public class MoveScript : MonoBehaviour {
 
 			/* Unity doesn't have a 'always round away from zero' function */
 
-			int x = 0;
-			int y = 0;
-			if(direction.x > 0) {
-				x = 1;
-			}
-			else if(direction.x < 0) {
-				x = -1;
-			}
-			if(direction.y > 0) {
-				y = 1;
-			}
-			else if(direction.y < 0) {
-				y = -1;
-			}
-
-			facing = new Vector2(x, y);	// Round direction up because direction.x/y can be 0.2 or 0.4, etc.
+			facing = new Vector2(GetDirectionFromInput(direction.x), GetDirectionFromInput(direction.y));	// Round direction up because direction.x/y can be 0.2 or 0.4, etc.
 			Debug.Log (facing);
 			isMoving = true;
 		}
@@ -56,10 +41,14 @@ public class MoveScript : MonoBehaviour {
 			isMoving = false;
 		}
 
-		/* Play movement animation */
+		/* Play walking animation */
 		animator.SetBool ("isMoving", isMoving);
 		animator.SetFloat("movement_x", movement.x);
 		animator.SetFloat("movement_y", movement.y);
+
+		/* Play idle animation */
+		animator.SetFloat("facing_x", facing.x);
+		animator.SetFloat("facing_y", facing.y);
 	}
 
 	void FixedUpdate() {
@@ -67,5 +56,16 @@ public class MoveScript : MonoBehaviour {
 		rigidbody2D.AddForce (movement);
 
 		// Rotate rigidbody accordingly
+	}
+
+	float GetDirectionFromInput(float x) {
+		if(x > 0) {
+			return(1);
+		}
+		else if(x < 0) {
+			return(-1);
+		}
+
+		return(0);
 	}
 }
