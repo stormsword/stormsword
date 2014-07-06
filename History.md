@@ -1,3 +1,9 @@
+0.0.2 / 2014-07-06
+==================
+
+  * add: hp bubble flies up when an enemy takes damage
+
+
 0.0.1 / 2014-07-05
 ==================
 
