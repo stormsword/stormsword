@@ -34,7 +34,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 114: {fileID: 11400006}
   m_Layer: 0
-  m_Name: WeaponObject
+  m_Name: MainHand
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0248529278, y: -.324553967, z: 5}
+  m_LocalPosition: {x: 0, y: 0, z: 5}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -208,11 +208,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a885aef7194d4baa86be667a538e428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotPrefab: {fileID: 400000, guid: 5947b17ba11da4079b7402a902a7a11f, type: 2}
+  shotPrefab: {fileID: 400000, guid: 8f413cead933d4e6c97cf1f528c2c10e, type: 2}
   shootingRate: .25
   damage: 1
   radius: 5
-  type: Melee
+  type: Ranged
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -226,6 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 50
   isEnemy: 0
+  HPBubble: {fileID: 0}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -250,6 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 50
   isEnemy: 0
+  HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1
