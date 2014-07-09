@@ -1,20 +1,19 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/hpBubbleScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/MoveScript.cs">
     <Files>
-      <File FileName="Assets/scripts/characters/HealthScript.cs" Line="6" Column="1" />
-      <File FileName="Assets/hpBubbleScript.cs" Line="4" Column="100" />
-      <File FileName="Assets/scripts/characters/HealthBar.cs" Line="17" Column="3" />
+      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="scripts" expanded="True">
-              <Node name="characters" expanded="True" />
+              <Node name="characters" expanded="True">
+                <Node name="MoveScript.cs" selected="True" />
+              </Node>
               <Node name="weapons" expanded="True" />
             </Node>
-            <Node name="hpBubbleScript.cs" selected="True" />
           </Node>
         </State>
       </Pad>

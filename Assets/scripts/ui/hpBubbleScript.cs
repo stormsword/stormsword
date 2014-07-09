@@ -37,7 +37,6 @@ public class hpBubbleScript : MonoBehaviour {
 
 		character = transform.parent.GetComponent<CharacterScript>();
 		if(character) {
-			Debug.Log (character.transform.position);
 			// spawn health bubble where character taking dmg starts
 			transform.position = Camera.main.WorldToViewportPoint(character.transform.position);
 		}
