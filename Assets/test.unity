@@ -957,7 +957,7 @@ GameObject:
   - 4: {fileID: 957444464}
   - 114: {fileID: 957444465}
   m_Layer: 0
-  m_Name: WeaponObject
+  m_Name: MainHand
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1501,6 +1501,10 @@ Prefab:
       propertyPath: HPBubble
       value: 
       objectReference: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
+    - target: {fileID: 100002, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: m_Name
+      value: MainHand
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
   m_RootGameObject: {fileID: 217833237}
