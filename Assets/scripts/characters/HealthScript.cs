@@ -56,11 +56,10 @@ public class HealthScript : MonoBehaviour {
 			if(shot.ownerType == "Player" && gameObject.tag == "Enemy") {
 				// Player is attacking an enemy
 
-//				/* Attack should knock character back on impact */
-//				Debug.Log (gameObject.name);
-//				Vector2 knockback = new Vector2(1, 1);
-//				rigidbody2D.AddForce(knockback);
-//
+				/* Attack should knock character back on impact */
+				Vector2 direction = (transform.position - otherCollider.transform.position).normalized;
+				rigidbody2D.AddForce(direction * 100);
+
 
 				Damage (shot.damage);		// Target takes dmg
 			}
