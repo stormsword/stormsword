@@ -1,7 +1,9 @@
-0.0.2 / 2014-07-06
+0.0.2 / ???
 ==================
 
   * add: hp bubble flies up when an enemy takes damage
+  * update: Ranged attacks now fire in direction character is facing
+  * add: Fireballs animate as they fly across the screen
 
 
 0.0.1 / 2014-07-05
