@@ -26,6 +26,23 @@ public class HealthScript : MonoBehaviour {
 	
 	}
 
+	void OnTriggerEnter2D(Collider2D otherCollider) {
+		// Is this a shot?
+		ProjectileScript shot = otherCollider.gameObject.GetComponent<ProjectileScript>();
+		
+		if (shot != null) {
+			// Ignore friendly fire
+			if(shot.ownerType == "Player" && gameObject.tag == "Enemy") {
+				// Player is attacking an enemy
+				
+				/* Attack should knock character back on impact */
+				Knockback (transform, otherCollider.transform, 500);
+				
+				Damage (shot.damage);		// Target takes dmg
+			}
+		}
+	}
+
 	/* Damage - Inflicts damage and check if the object should be destroyed */
 	public void Damage(int damageCount) {
 		hp -= damageCount;
@@ -47,22 +64,11 @@ public class HealthScript : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D otherCollider) {
-		// Is this a shot?
-		ProjectileScript shot = otherCollider.gameObject.GetComponent<ProjectileScript>();
-
-		if (shot != null) {
-			// Ignore friendly fire
-			if(shot.ownerType == "Player" && gameObject.tag == "Enemy") {
-				// Player is attacking an enemy
-
-				/* Attack should knock character back on impact */
-				Vector2 direction = (transform.position - otherCollider.transform.position).normalized;
-				rigidbody2D.AddForce(direction * 100);
-
-
-				Damage (shot.damage);		// Target takes dmg
-			}
-		}
+	/* Knockback - Knocks a unit (defender) away from a shot (shotTransform) by amount */
+	public void Knockback(Transform defenderTransform, Transform shotTransform, float amount) {
+		Vector2 direction = (defenderTransform.position - shotTransform.position).normalized;
+		rigidbody2D.AddForce(direction * amount);
 	}
+
+
 }
