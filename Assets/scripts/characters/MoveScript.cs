@@ -28,12 +28,10 @@ public class MoveScript : MonoBehaviour {
 		/* Check if character is moving */
 		movement = direction * speed;	// Calculate movement amount
 
+		if(rigidbody2D.velocity.normalized.x != 0 || rigidbody2D.velocity.normalized.y != 0) {
+			// Store the direction the player is facing in case they stop moving
+			facing = rigidbody2D.velocity.normalized;
 
-		if(direction.x != 0 || direction.y != 0) {
-
-			/* Unity doesn't have a 'always round away from zero' function */
-
-			facing = new Vector2(GetDirectionFromInput(direction.x), GetDirectionFromInput(direction.y));	// Round direction up because direction.x/y can be 0.2 or 0.4, etc.
 			isMoving = true;
 		}
 		else {
@@ -55,16 +53,5 @@ public class MoveScript : MonoBehaviour {
 		rigidbody2D.AddForce (movement);
 
 		// Rotate rigidbody accordingly
-	}
-
-	float GetDirectionFromInput(float x) {
-		if(x > 0) {
-			return(1);
-		}
-		else if(x < 0) {
-			return(-1);
-		}
-
-		return(0);
 	}
 }
