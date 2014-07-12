@@ -116,7 +116,7 @@ MonoBehaviour:
     - sprite: {fileID: 21300020, guid: 9bfc6f179625746f3926342fd61021bb, type: 3}
       useCollider: 0
       orderInLayer: 0
-      rotation: 90
+      rotation: 0
       usePhysics: 0
       useNonTransparent: 0
       useLighting: 0
@@ -126,7 +126,7 @@ MonoBehaviour:
     - sprite: {fileID: 21300022, guid: 9bfc6f179625746f3926342fd61021bb, type: 3}
       useCollider: 0
       orderInLayer: 0
-      rotation: 180
+      rotation: 0
       usePhysics: 0
       useNonTransparent: 0
       useLighting: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
     - sprite: {fileID: 21300024, guid: 9bfc6f179625746f3926342fd61021bb, type: 3}
       useCollider: 0
       orderInLayer: 0
-      rotation: 270
+      rotation: 0
       usePhysics: 0
       useNonTransparent: 0
       useLighting: 0
