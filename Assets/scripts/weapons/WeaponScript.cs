@@ -8,6 +8,7 @@ public class WeaponScript : MonoBehaviour {
 	// Components
 	private MoveScript parentMoveScript;
 	private MoveScript shotMoveScript;
+	private ItemSlotScript mainHandSlot;
 
 	// Projectile prefab for shooting
 	public Transform shotPrefab;
@@ -17,26 +18,21 @@ public class WeaponScript : MonoBehaviour {
 	public float damage = 1;	// Damage a weapon does per attack
 	public float radius = 5; 	// Radius the weapon affects upon impact
 	public string type = "Melee";	// Melee or Ranged
-
-	// Remaining cooldown for shot
-	private float attackCooldown;
-
+	
 	// Use this for initialization
 	void Start () {
-		attackCooldown = 0f;	// Object has not yet shot
+		mainHandSlot = transform.GetComponent<ItemSlotScript>();	// Grab the parent mainhand to get any slot-related info
+
 	}
 
 	void Update () {
-		if(attackCooldown > 0) {
-			attackCooldown -= Time.deltaTime;
-		}
 	}
 
 	/* Attack - Shot triggered by another script */
 	public void Attack() {
 		if(CanAttack) {
 			// Character attacked, trigger cooldown
-			attackCooldown = shootingRate;
+			mainHandSlot.Cooldown(shootingRate);
 
 			// Create a new shot
 			var shotTransform = Instantiate(shotPrefab) as Transform;
@@ -55,7 +51,6 @@ public class WeaponScript : MonoBehaviour {
 			if(shotMoveScript) {
 				shotMoveScript.direction = facing;
 			}
-//			shotTransform.rigidbody2D.velocity = parentMoveScript.facing;
 
  			switch(type) {
 			case "Melee": 
@@ -85,7 +80,7 @@ public class WeaponScript : MonoBehaviour {
 	// Is the weapon ready to create a new projectile?
 	public bool CanAttack {
 		get {
-			return(attackCooldown <= 0f);
+			return(mainHandSlot.attackCooldown <= 0f);
 		}
 	}
 }

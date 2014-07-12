@@ -1,0 +1,31 @@
+SpriteTile 2.2:
+
+The level layer order has been reversed, in order to be consistent with Unity's layer order. That is, layer 0 is now the bottom layer instead of the top layer, and higher layer numbers are on top of lower layer numbers. For saved level files with more than one layer, you should load them into the TileEditor, rearrange the layers as necessary with the layer up/down buttons, and re-save them. Layers referred to in code should be changed appropriately.
+
+----
+
+SpriteTile 2.0:
+
+The Editor and Resources folders have been moved to a SpriteTile folder for better organization. So when upgrading, remove the Assets/Editor/TileEditor file since it will conflict with the new Assets/SpriteTile/Editor/TileEditor file.
+
+If you have an existing Assets/Resources/TileManager file, you must move that to Assets/SpriteTile/Resources/TileManager. Otherwise the TileEditor won't be able to find it. The TileManager file will also need to be updated to a newer format. Simply opening the TileEditor window will be enough to update it.
+
+Tile.SetCamera must be called before LoadLevel or NewLevel, instead of after, so your code needs to be updated accordingly.
+
+Tile.SetCamera now does what Tile.SetCameraAuto used to do, so SetCameraAuto has been removed, along with Tile.MoveCamera and Tile.SetCameraPosition. So, replace SetCameraAuto with SetCamera, and if you were using MoveCamera and SetCameraPosition, replace those with Transform.Translate and Transform.position, using the camera's transform.
+
+If you used Tile.SetLayerPosition, note that tile layer positions will now always be reset when loading a level or making a new level, even if the level size is the same.
+
+In the LevelData class, the tileSize property is now a Vector2 instead of a float, in order to support non-square tile grids. To continue using a square grid, just have the X and Y be the same value.
+
+Tile.GetTileSize now returns a Vector2 instead of a float (for the same reason as above, namely non-square tile grids).
+
+If you have any group files, you should update them in order to fix a potential issue with deleting tiles. To do this, first load the group file. Then for each group, click on "< Copy to Buffer", paste the group into the level, select the group in the level (draw a box around it), then click on "Replace with Selection". When you're done replacing all groups, save the groups.
+
+----
+
+SpriteTile 1.2:
+
+If you’re upgrading from SpriteTile 1.0 or 1.1 and have been using physics colliders, please note that the “collider” tile default no longer serves double duty as both the collider cell default and the way to activate physics colliders. Instead, it now only sets the collider cell default. There’s an additional “use physics collider” setting for each tile, which is the way to activate physics colliders.
+
+So you will need to go through your tile sets and activate “use physics collider” for any tiles that you want to generate physics colliders.
