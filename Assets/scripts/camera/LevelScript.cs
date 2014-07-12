@@ -9,7 +9,7 @@ public class LevelScript : MonoBehaviour {
 	public TextAsset grassLevel;
 
 	void Awake() {
-		Tile.SetCamera();
+		Tile.SetCamera();	// By default, uses the camera tagged 'MainCamera'
 		Tile.LoadLevel(grassLevel);
 	}
 	
