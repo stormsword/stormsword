@@ -58,7 +58,7 @@ public class HealthScript : MonoBehaviour {
 
 				/* Attack should knock character back on impact */
 				Vector2 direction = (transform.position - otherCollider.transform.position).normalized;
-				rigidbody2D.AddForce(direction * 100);
+				rigidbody2D.AddForce(direction * 500);
 
 
 				Damage (shot.damage);		// Target takes dmg

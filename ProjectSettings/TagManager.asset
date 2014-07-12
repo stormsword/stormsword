@@ -44,3 +44,15 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
+  - name: Foreground - Non-Interactable
+    userID: 1
+    uniqueID: 1655269899
+    locked: 0
+  - name: Foreground - Interactable
+    userID: 2
+    uniqueID: 603904585
+    locked: 0
+  - name: Characters
+    userID: 3
+    uniqueID: 1104531819
+    locked: 0

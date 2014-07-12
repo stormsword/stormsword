@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: WeaponObject
+  m_Name: ItemSlot
   m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
