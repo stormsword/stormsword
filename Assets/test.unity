@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2afc2d13848c54857b150ff6f3e3e5ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grassLevel: {fileID: 4900000, guid: abd2dfee258c64a8c96a926e9cc20680, type: 3}
+  currentLevel: {fileID: 4900000, guid: abd2dfee258c64a8c96a926e9cc20680, type: 3}
 --- !u!1 &272554886
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ Transform:
   m_PrefabInternal: {fileID: 644737954}
   m_GameObject: {fileID: 272554886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0390000008, y: .25, z: 0}
+  m_LocalPosition: {x: -.219999999, y: .949999988, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 251921739}
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f31bb4b9000e402ebd6516e852eed82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 50
+  hp: 15
   isEnemy: 1
   HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
 --- !u!95 &370291673
@@ -698,7 +698,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 32da39f0d4afd4216a95bb462b13b193, type: 2}
       propertyPath: hp
-      value: 50
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: 32da39f0d4afd4216a95bb462b13b193, type: 2}
       propertyPath: m_Mass
@@ -715,6 +715,14 @@ Prefab:
     - target: {fileID: 400000, guid: 32da39f0d4afd4216a95bb462b13b193, type: 2}
       propertyPath: m_LocalScale.y
       value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 32da39f0d4afd4216a95bb462b13b193, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -.219999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 32da39f0d4afd4216a95bb462b13b193, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .949999988
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32da39f0d4afd4216a95bb462b13b193, type: 2}

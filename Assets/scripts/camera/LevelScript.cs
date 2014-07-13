@@ -6,11 +6,11 @@ using SpriteTile;
 
 public class LevelScript : MonoBehaviour {
 
-	public TextAsset grassLevel;
+	public TextAsset currentLevel;
 
 	void Awake() {
 		Tile.SetCamera();	// By default, uses the camera tagged 'MainCamera'
-		Tile.LoadLevel(grassLevel);
+		Tile.LoadLevel(currentLevel);
 	}
 	
 	// Update is called once per frame
