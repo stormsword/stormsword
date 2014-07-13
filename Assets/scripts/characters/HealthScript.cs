@@ -70,5 +70,4 @@ public class HealthScript : MonoBehaviour {
 		rigidbody2D.AddForce(direction * amount);
 	}
 
-
 }
