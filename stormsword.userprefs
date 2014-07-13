@@ -1,24 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/MoveScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/camera/LevelScript.cs">
     <Files>
-      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="30" Column="3" />
-      <File FileName="Assets/scripts/characters/HealthScript.cs" Line="61" Column="43" />
       <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/weapons/ItemSlotScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/camera/LevelScript.cs" Line="12" Column="27" />
+      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="scripts" expanded="True">
-              <Node name="characters" expanded="True">
-                <Node name="MoveScript.cs" selected="True" />
-              </Node>
-              <Node name="ui" expanded="True" />
-              <Node name="weapons" expanded="True" />
-            </Node>
-          </Node>
-        </State>
+        <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="ClassPad">
         <State expanded="True" selected="True" />

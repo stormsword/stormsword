@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c4c49b499f1c74b4198ed7dcc32f28bf
+labels:
+- SpriteTile
+- sprite
+- tile
+- grid
+- 2D
+MonoAssemblyImporter:
+  serializedVersion: 1
+  iconMap: {}
+  executionOrder: {}
+  userData: 
