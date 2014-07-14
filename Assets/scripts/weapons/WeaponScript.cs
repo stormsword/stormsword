@@ -40,10 +40,10 @@ public class WeaponScript : MonoBehaviour {
 			// Figure out what direction character is facing
 			parentMoveScript = transform.parent.GetComponent<MoveScript>();
 
-			Vector3 facing = new Vector3(parentMoveScript.facing.x * 0.25f, parentMoveScript.facing.y * 0.25f, 0);
+			Vector3 facing = new Vector3(parentMoveScript.facing.x, parentMoveScript.facing.y, 0);
 
 			// Grab the position of the parent object (transform)
-			shotTransform.position = transform.position + facing;
+			shotTransform.position = transform.position;
 
 			// Get the shot's move script to adjust its direction
 			shotMoveScript = shotTransform.GetComponent<MoveScript>();
