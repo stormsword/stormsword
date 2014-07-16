@@ -2,14 +2,14 @@
 using System.Collections;
 
 public class HealthBar : MonoBehaviour {
-
+	
 	/* Components */
-	private CharacterScript character;	// Character to display HP for
+	internal CharacterScript character;	// Character to display HP for
+	
 	private HealthScript health;		// Health of above character
 
 	private int maxHp = 0;
 	private int currentHp = 0;
-	private string characterName = "";
 
 	// Use this for initialization
 	void Start () {
