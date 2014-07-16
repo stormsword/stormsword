@@ -27,5 +27,7 @@ public class HealthBarNameScript : MonoBehaviour {
 		if(character) {
 			guitext.text = character.name;
 		}
+
+//		transform.position = transform.parent.position;
 	}
 }
