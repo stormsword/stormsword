@@ -40,6 +40,12 @@ public class HealthScript : MonoBehaviour {
 				
 				Damage (shot.damage);		// Target takes dmg
 			}
+
+			if(shot.ownerType == "Enemy" && gameObject.tag == "Player"){
+				// Enemy is attacking the Player
+
+				Damage (shot.damage);
+			}
 		}
 	}
 

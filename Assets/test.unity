@@ -182,7 +182,6 @@ GameObject:
   - 95: {fileID: 217833244}
   - 114: {fileID: 217833245}
   - 114: {fileID: 217833243}
-  - 114: {fileID: 217833247}
   - 114: {fileID: 217833246}
   m_Layer: 0
   m_Name: Player
@@ -327,21 +326,6 @@ MonoBehaviour:
   hp: 50
   isEnemy: 0
   HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
---- !u!114 &217833247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400008, guid: d9375477e64044e6e8026cb4321814e4,
-    type: 2}
-  m_PrefabInternal: {fileID: 2006268811}
-  m_GameObject: {fileID: 217833237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f31bb4b9000e402ebd6516e852eed82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hp: 50
-  isEnemy: 0
-  HPBubble: {fileID: 0}
 --- !u!1 &238466062
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +750,7 @@ MonoBehaviour:
   shotPrefab: {fileID: 400000, guid: a793e053710f043028b5f61384d48c14, type: 2}
   shootingRate: 2
   damage: 20
-  radius: 5
+  radius: 2
   type: Ranged
 --- !u!1 &482570334
 GameObject:
@@ -1721,7 +1705,12 @@ Prefab:
       propertyPath: m_LinearDrag
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11400008, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11400008, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
   m_RootGameObject: {fileID: 217833237}
   m_IsPrefabParent: 0
@@ -1768,6 +1757,10 @@ Prefab:
     - target: {fileID: 400002, guid: d924b6100cff74bbea5791b70f1637e9, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d924b6100cff74bbea5791b70f1637e9, type: 2}
+      propertyPath: radius
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d924b6100cff74bbea5791b70f1637e9, type: 2}
