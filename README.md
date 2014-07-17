@@ -3,6 +3,13 @@ Stormsword
 
 Simple top-down 2d RPG inspired by Zelda and Secret of Mana.
 
+# Join the Discussion
+
+We've got a forum setup at: http://stormsword.braddickason.com/
+
+You can join the discussion on game design, development, or ask questions there!
+
+
 # Latest Release
 
 [Grab the latest release files here](https://github.com/bdickason/stormsword/releases)!
