@@ -1,3 +1,8 @@
+0.0.3 / ???
+==================
+
+  * add: hp bar now displays current HP as character takes damage
+
 0.0.2 / 2014-07-14
 ==================
 
