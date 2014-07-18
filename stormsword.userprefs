@@ -1,16 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/EnemyWanderScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/HealthScript.cs">
     <Files>
       <File FileName="Assets/scripts/ui/HealthBar.cs" Line="51" Column="37" />
       <File FileName="Assets/scripts/ui/hpBubbleScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/weapons/ItemSlotScript.cs" Line="26" Column="4" />
-      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/characters/EnemyScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/weapons/ItemSlotScript.cs" Line="20" Column="2" />
+      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="16" Column="17" />
+      <File FileName="Assets/scripts/characters/EnemyScript.cs" Line="13" Column="53" />
       <File FileName="Assets/scripts/characters/CharacterScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/characters/HealthScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/characters/HealthScript.cs" Line="13" Column="15" />
       <File FileName="Assets/scripts/weapons/ProjectileScript.cs" Line="15" Column="17" />
-      <File FileName="Assets/scripts/characters/EnemyWanderScript.cs" Line="53" Column="35" />
+      <File FileName="Assets/scripts/characters/EnemyWanderScript.cs" Line="11" Column="2" />
       <File FileName="Assets/scripts/characters/MoveScript.cs" Line="38" Column="21" />
     </Files>
     <Pads>
@@ -19,7 +19,7 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="scripts" expanded="True">
               <Node name="characters" expanded="True">
-                <Node name="EnemyWanderScript.cs" selected="True" />
+                <Node name="HealthScript.cs" selected="True" />
               </Node>
               <Node name="weapons" expanded="True" />
             </Node>
