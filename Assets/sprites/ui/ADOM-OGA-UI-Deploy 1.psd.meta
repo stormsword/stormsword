@@ -1,6 +1,17 @@
 fileFormatVersion: 2
 guid: 215c956fb8a3c42fdbd2d3e4cddde219
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: Title_Bar
+    21300002: TitleBar_Close
+    21300004: Bar_Mana
+    21300006: Scroller
+    21300008: Message_Box
+    21300010: Option_Box_Header
+    21300012: Bar_Hp_Low
+    21300014: Bar_Energy
+    21300016: Bar_Hp_Full
+    21300018: Option_Box
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +46,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +66,7 @@ TextureImporter:
         height: 87
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: TitleBar_Close
       rect:
         serializedVersion: 2
@@ -63,6 +76,7 @@ TextureImporter:
         height: 48
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bar_Mana
       rect:
         serializedVersion: 2
@@ -72,6 +86,7 @@ TextureImporter:
         height: 29
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Scroller
       rect:
         serializedVersion: 2
@@ -81,6 +96,7 @@ TextureImporter:
         height: 37
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Message_Box
       rect:
         serializedVersion: 2
@@ -90,6 +106,7 @@ TextureImporter:
         height: 178
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Option_Box_Header
       rect:
         serializedVersion: 2
@@ -99,6 +116,7 @@ TextureImporter:
         height: 61
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bar_Hp_Low
       rect:
         serializedVersion: 2
@@ -108,6 +126,7 @@ TextureImporter:
         height: 29
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bar_Energy
       rect:
         serializedVersion: 2
@@ -117,6 +136,7 @@ TextureImporter:
         height: 29
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Bar_Hp_Full
       rect:
         serializedVersion: 2
@@ -126,6 +146,7 @@ TextureImporter:
         height: 29
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: Option_Box
       rect:
         serializedVersion: 2
@@ -135,5 +156,6 @@ TextureImporter:
         height: 171
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
