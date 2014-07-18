@@ -246,8 +246,8 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 2006268811}
   m_GameObject: {fileID: 217833237}
-  m_Mass: 20
-  m_LinearDrag: 1
+  m_Mass: 30
+  m_LinearDrag: 5
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_FixedAngle: 0
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 569bedba68ece4e459fb801e4dc49279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 300
   direction: {x: 0, y: 0}
   facing: {x: 1, y: 0}
 --- !u!114 &217833246
@@ -324,6 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 50
+  armor: 1
   isEnemy: 0
   HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
 --- !u!1 &238466062
@@ -605,6 +606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 15
+  armor: 1
   isEnemy: 1
   HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
 --- !u!95 &370291673
@@ -1420,6 +1422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 50
+  armor: 5
   isEnemy: 1
   HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
 --- !u!114 &1493954829
@@ -1717,15 +1720,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
       propertyPath: m_Mass
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
       propertyPath: m_LinearDrag
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400008, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: speed
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400008, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
@@ -1791,6 +1798,10 @@ Prefab:
     - target: {fileID: 11400016, guid: d924b6100cff74bbea5791b70f1637e9, type: 2}
       propertyPath: speed
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: d924b6100cff74bbea5791b70f1637e9, type: 2}
+      propertyPath: armor
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d924b6100cff74bbea5791b70f1637e9, type: 2}

@@ -9,6 +9,7 @@ public class HealthScript : MonoBehaviour {
 
 	// Total Hitpoints
 	public int hp = 1;
+	public int armor = 1;
 
 	// Enemy or Player?
 	public bool isEnemy = true;
@@ -37,13 +38,17 @@ public class HealthScript : MonoBehaviour {
 				
 				/* Attack should knock character back on impact */
 				Knockback (transform, otherCollider.transform, 500);
-				
+				shot.damage = shot.damage - armor;
+				if(shot.damage >= 0)
+					shot.damage = 1;
 				Damage (shot.damage);		// Target takes dmg
 			}
 
 			if(shot.ownerType == "Enemy" && gameObject.tag == "Player"){
 				// Enemy is attacking the Player
-
+				shot.damage = shot.damage - armor;
+				if(shot.damage >= 0)
+					shot.damage = 1;
 				Damage (shot.damage);
 			}
 		}
