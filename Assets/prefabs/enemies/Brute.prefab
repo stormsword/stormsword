@@ -33,6 +33,7 @@ GameObject:
   - 114: {fileID: 11400004}
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400016}
   m_Layer: 0
   m_Name: Brute
   m_TagString: Enemy
@@ -207,7 +208,7 @@ MonoBehaviour:
   shotPrefab: {fileID: 400000, guid: a793e053710f043028b5f61384d48c14, type: 2}
   shootingRate: 2
   damage: 20
-  radius: 5
+  radius: 2
   type: Ranged
 --- !u!114 &11400002
 MonoBehaviour:
@@ -253,7 +254,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 569bedba68ece4e459fb801e4dc49279, type: 3}
   m_Name: 
@@ -297,6 +298,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 0
+--- !u!114 &11400016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6081c2956a642968ca455e1ac18dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2000
+  facing: {x: -1, y: 0}
+  randomXY: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
+  moveCooldown: 0
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1
