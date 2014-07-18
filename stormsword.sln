@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{0DF90548-0937-CF46-8390-89CD45527B7A}") = "stormsword", "Assembly-CSharp.csproj", "{0ECB53EF-C08D-CEBD-BF31-9AB20FEE6D91}"
 EndProject
+Project("{0DF90548-0937-CF46-8390-89CD45527B7A}") = "stormsword", "Assembly-CSharp-Editor.csproj", "{40565041-E858-1806-873D-44A2DB2C0C61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{0ECB53EF-C08D-CEBD-BF31-9AB20FEE6D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ECB53EF-C08D-CEBD-BF31-9AB20FEE6D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ECB53EF-C08D-CEBD-BF31-9AB20FEE6D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40565041-E858-1806-873D-44A2DB2C0C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40565041-E858-1806-873D-44A2DB2C0C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40565041-E858-1806-873D-44A2DB2C0C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40565041-E858-1806-873D-44A2DB2C0C61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																							GlobalSection(MonoDevelopProperties) = preSolution
+																										GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
