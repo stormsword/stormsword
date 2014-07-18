@@ -62,13 +62,6 @@
      <Compile Include="Assets\scripts\weapons\ProjectileScript.cs" />
      <Compile Include="Assets\scripts\weapons\RangedScript.cs" />
      <Compile Include="Assets\scripts\weapons\WeaponScript.cs" />
-     <None Include="Assets\SpriteTile\UPDATE NOTE!.txt" />
-     <None Include="Assets\SpriteTile\SpriteTile changelog.txt" />
-     <None Include="Assets\SpriteTile\Resources\Sprites-DefaultNonTransparent.shader" />
-     <None Include="Assets\SpriteTile\Resources\Sprites-DiffuseNonTransparent.shader" />
- <Reference Include="SpriteTile">
- <HintPath>/Users/dickason/code/stormsword/Assets/Plugins/SpriteTile.dll</HintPath>
- </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
