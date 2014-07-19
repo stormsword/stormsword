@@ -44,15 +44,11 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
-  - name: Foreground - Non-Interactable
+  - name: Foreground
     userID: 1
     uniqueID: 1655269899
     locked: 0
-  - name: Foreground - Interactable
-    userID: 2
-    uniqueID: 603904585
-    locked: 0
-  - name: Foreground - Colliders
+  - name: Colliders
     userID: 4
     uniqueID: 2585231249
     locked: 0
