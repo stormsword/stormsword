@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="Mountain Landscape" tilewidth="32" tileheight="32">
-  <image source="../../sprites/terrain/mountain_landscape_23.png" width="512" height="512"/>
+  <image source="./mountain_landscape_23.png" width="512" height="512"/>
  </tileset>
  <objectgroup name="Characters" width="100" height="100"/>
  <objectgroup name="Foreground - Interactive" width="100" height="100"/>

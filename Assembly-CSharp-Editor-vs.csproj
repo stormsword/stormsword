@@ -49,11 +49,11 @@
      <Compile Include="Assets\X-UniTMX\Editor\TiledMapEditor.cs" />
      <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
      <None Include="Assets\Resources\tilemaps\forest-zone.xml" />
- <Reference Include="UnityEditor.Graphs">
- <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
- </Reference>
  <Reference Include="Ionic.Zlib">
  <HintPath>/Users/dickason/code/stormsword/Assets/X-UniTMX/Ionic.Zlib.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

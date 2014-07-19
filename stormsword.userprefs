@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/X-UniTMX/Code/TileSet.cs">
     <Files>
       <File FileName="Assets/scripts/ui/HealthBar.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/camera/LevelScript.cs" Line="8" Column="32" />
-      <File FileName="Assets/X-UniTMX/Code/TileSet.cs" Line="96" Column="1" />
+      <File FileName="Assets/scripts/camera/LevelScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/X-UniTMX/Code/TileSet.cs" Line="87" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,18 +28,18 @@
         <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>parentMoveScript.transform</Value>
-          <Value>parentMoveScript.transform.right</Value>
-          <Value>transform.up</Value>
-        </State>
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/dickason/code/stormsword/Assets/X-UniTMX/Code/TileSet.cs" line="93" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="62" offsetX="711" offsetY="711" expression="transform" liveUpdate="False" />
+    <Watch file="Assets/X-UniTMX/Code/TileSet.cs" line="93" offsetX="451" offsetY="1308" expression="texturePath" liveUpdate="False" />
+    <Watch file="Assets/X-UniTMX/Code/TileSet.cs" line="93" offsetX="682" offsetY="1310" expression="this.Image" liveUpdate="False" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>
