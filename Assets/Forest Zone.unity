@@ -885,7 +885,7 @@ Rigidbody2D:
   m_LinearDrag: 10
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -5499,6 +5499,10 @@ Prefab:
     - target: {fileID: 5000000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
       propertyPath: m_LinearDrag
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: m_FixedAngle
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
