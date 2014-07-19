@@ -575,8 +575,8 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 2006268811}
   m_GameObject: {fileID: 217833237}
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 5
+  m_LinearDrag: 10
   m_AngularDrag: .0500000007
   m_GravityScale: 0
   m_FixedAngle: 0
@@ -637,7 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 569bedba68ece4e459fb801e4dc49279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 250
   direction: {x: 0, y: 0}
   facing: {x: 1, y: 0}
 --- !u!114 &217833246
@@ -5739,6 +5739,18 @@ Prefab:
     - target: {fileID: 21200000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
       propertyPath: m_SortingLayerID
       value: 1104531819
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: speed
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: m_Mass
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
+      propertyPath: m_LinearDrag
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9375477e64044e6e8026cb4321814e4, type: 2}
