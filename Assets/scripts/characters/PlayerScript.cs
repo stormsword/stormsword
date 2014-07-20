@@ -24,18 +24,19 @@ public class PlayerScript : MonoBehaviour {
 
 		/* Player Input */
 
-		// Retrieve axis information from controller
+		// Retrieve axis information from keyboard
 		float inputX = Input.GetAxis("Horizontal");
 		float inputY = Input.GetAxis("Vertical");
 
-		// Calculate movement per-direction
-		moveScript.direction = new Vector2(inputX, inputY);
+		// Calculate movement per-direction and move the player when a key is pressed
+		moveScript.Move(inputX, inputY);
 
-		// Shooting!
+		// Retrieve button information from mouse
 		bool attack = Input.GetButtonDown("Fire1");
 		attack |= Input.GetButtonDown("Fire2");
 
 		if(attack) {
+			// Tell the character to attack
 			characterScript.Attack();
 		}
 

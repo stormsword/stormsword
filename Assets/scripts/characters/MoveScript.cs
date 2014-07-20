@@ -54,4 +54,12 @@ public class MoveScript : MonoBehaviour {
 
 		// Rotate rigidbody accordingly
 	}
+
+	/* Moves the object in a direction 
+	 	float input_X: Input for X-axis movement (b/t -1 and 1)
+	 	float input_Y: Input for Y-axis movement (b/t -1 and 1)
+	 */
+	internal void Move(float input_X, float input_Y) {
+		direction = new Vector2(input_X, input_Y);
+	}
 }
