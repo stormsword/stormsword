@@ -1,6 +1,103 @@
 fileFormatVersion: 2
 guid: 2416c6d69d1524dc7b9adae7053b880d
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: hero-sprites3_0
+    21300002: hero-sprites3_1
+    21300004: hero-sprites3_2
+    21300006: hero-sprites3_3
+    21300008: hero-sprites3_4
+    21300010: hero-sprites3_5
+    21300012: hero-sprites3_6
+    21300014: hero-sprites3_7
+    21300016: hero-sprites3_8
+    21300018: hero-sprites3_9
+    21300020: hero-sprites3_10
+    21300022: hero-sprites3_11
+    21300024: hero-sprites3_12
+    21300026: hero-sprites3_13
+    21300028: hero-sprites3_14
+    21300030: hero-sprites3_15
+    21300032: hero-sprites3_16
+    21300034: hero-sprites3_17
+    21300036: hero-sprites3_18
+    21300038: hero-sprites3_19
+    21300040: hero-sprites3_20
+    21300042: hero-sprites3_21
+    21300044: hero-sprites3_22
+    21300046: hero-sprites3_23
+    21300048: hero-sprites3_24
+    21300050: hero-sprites3_25
+    21300052: hero-sprites3_26
+    21300054: hero-sprites3_27
+    21300056: hero-sprites3_28
+    21300058: hero-sprites3_29
+    21300060: hero-sprites3_30
+    21300062: hero-sprites3_31
+    21300064: hero-sprites3_32
+    21300066: hero-sprites3_33
+    21300068: hero-sprites3_34
+    21300070: hero-sprites3_35
+    21300072: hero-sprites3_36
+    21300074: hero-sprites3_37
+    21300076: hero-sprites3_38
+    21300078: hero-sprites3_39
+    21300080: hero-sprites3_40
+    21300082: hero-sprites3_41
+    21300084: hero-sprites3_42
+    21300086: hero-sprites3_43
+    21300088: hero-sprites3_44
+    21300090: hero-sprites3_45
+    21300092: hero-sprites3_46
+    21300094: hero-sprites3_47
+    21300096: hero-sprites3_48
+    21300098: hero-sprites3_49
+    21300100: hero-sprites3_50
+    21300102: hero-sprites3_51
+    21300104: hero-sprites3_52
+    21300106: hero-sprites3_53
+    21300108: hero-sprites3_54
+    21300110: hero-sprites3_55
+    21300112: hero-sprites3_56
+    21300114: hero-sprites3_57
+    21300116: hero-sprites3_58
+    21300118: hero-sprites3_59
+    21300120: hero-sprites3_60
+    21300122: hero-sprites3_61
+    21300124: hero-sprites3_62
+    21300126: hero-sprites3_63
+    21300128: hero-sprites3_64
+    21300130: hero-sprites3_65
+    21300132: hero-sprites3_66
+    21300134: hero-sprites3_67
+    21300136: hero-sprites3_68
+    21300138: hero-sprites3_69
+    21300140: hero-sprites3_70
+    21300142: hero-sprites3_71
+    21300144: hero-sprites3_72
+    21300146: hero-sprites3_73
+    21300148: hero-sprites3_74
+    21300150: hero-sprites3_75
+    21300152: hero-sprites3_76
+    21300154: hero-sprites3_77
+    21300156: hero-sprites3_78
+    21300158: hero-sprites3_79
+    21300160: hero-sprites3_80
+    21300162: hero-sprites3_81
+    21300164: hero-sprites3_82
+    21300166: hero-sprites3_83
+    21300168: hero-sprites3_84
+    21300170: hero-sprites3_85
+    21300172: hero-sprites3_86
+    21300174: hero-sprites3_87
+    21300176: hero-sprites3_88
+    21300178: hero-sprites3_89
+    21300180: hero-sprites3_90
+    21300182: hero-sprites3_91
+    21300184: hero-sprites3_92
+    21300186: hero-sprites3_93
+    21300188: hero-sprites3_94
+    21300190: hero-sprites3_95
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,6 +132,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
@@ -54,6 +152,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_1
       rect:
         serializedVersion: 2
@@ -63,6 +162,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_2
       rect:
         serializedVersion: 2
@@ -72,6 +172,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_3
       rect:
         serializedVersion: 2
@@ -81,6 +182,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_4
       rect:
         serializedVersion: 2
@@ -90,6 +192,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_5
       rect:
         serializedVersion: 2
@@ -99,6 +202,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_6
       rect:
         serializedVersion: 2
@@ -108,6 +212,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_7
       rect:
         serializedVersion: 2
@@ -117,6 +222,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_8
       rect:
         serializedVersion: 2
@@ -126,6 +232,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_9
       rect:
         serializedVersion: 2
@@ -135,6 +242,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_10
       rect:
         serializedVersion: 2
@@ -144,6 +252,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_11
       rect:
         serializedVersion: 2
@@ -153,6 +262,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_12
       rect:
         serializedVersion: 2
@@ -162,6 +272,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_13
       rect:
         serializedVersion: 2
@@ -171,6 +282,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_14
       rect:
         serializedVersion: 2
@@ -180,6 +292,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_15
       rect:
         serializedVersion: 2
@@ -189,6 +302,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_16
       rect:
         serializedVersion: 2
@@ -198,6 +312,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_17
       rect:
         serializedVersion: 2
@@ -207,6 +322,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_18
       rect:
         serializedVersion: 2
@@ -216,6 +332,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_19
       rect:
         serializedVersion: 2
@@ -225,6 +342,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_20
       rect:
         serializedVersion: 2
@@ -234,6 +352,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_21
       rect:
         serializedVersion: 2
@@ -243,6 +362,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_22
       rect:
         serializedVersion: 2
@@ -252,6 +372,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_23
       rect:
         serializedVersion: 2
@@ -261,6 +382,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_24
       rect:
         serializedVersion: 2
@@ -270,6 +392,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_25
       rect:
         serializedVersion: 2
@@ -279,6 +402,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_26
       rect:
         serializedVersion: 2
@@ -288,6 +412,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_27
       rect:
         serializedVersion: 2
@@ -297,6 +422,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_28
       rect:
         serializedVersion: 2
@@ -306,6 +432,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_29
       rect:
         serializedVersion: 2
@@ -315,6 +442,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_30
       rect:
         serializedVersion: 2
@@ -324,6 +452,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_31
       rect:
         serializedVersion: 2
@@ -333,6 +462,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_32
       rect:
         serializedVersion: 2
@@ -342,6 +472,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_33
       rect:
         serializedVersion: 2
@@ -351,6 +482,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_34
       rect:
         serializedVersion: 2
@@ -360,6 +492,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_35
       rect:
         serializedVersion: 2
@@ -369,6 +502,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_36
       rect:
         serializedVersion: 2
@@ -378,6 +512,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_37
       rect:
         serializedVersion: 2
@@ -387,6 +522,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_38
       rect:
         serializedVersion: 2
@@ -396,6 +532,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_39
       rect:
         serializedVersion: 2
@@ -405,6 +542,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_40
       rect:
         serializedVersion: 2
@@ -414,6 +552,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_41
       rect:
         serializedVersion: 2
@@ -423,6 +562,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_42
       rect:
         serializedVersion: 2
@@ -432,6 +572,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_43
       rect:
         serializedVersion: 2
@@ -441,6 +582,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_44
       rect:
         serializedVersion: 2
@@ -450,6 +592,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_45
       rect:
         serializedVersion: 2
@@ -459,6 +602,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_46
       rect:
         serializedVersion: 2
@@ -468,6 +612,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_47
       rect:
         serializedVersion: 2
@@ -477,6 +622,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_48
       rect:
         serializedVersion: 2
@@ -486,6 +632,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_49
       rect:
         serializedVersion: 2
@@ -495,6 +642,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_50
       rect:
         serializedVersion: 2
@@ -504,6 +652,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_51
       rect:
         serializedVersion: 2
@@ -513,6 +662,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_52
       rect:
         serializedVersion: 2
@@ -522,6 +672,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_53
       rect:
         serializedVersion: 2
@@ -531,6 +682,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_54
       rect:
         serializedVersion: 2
@@ -540,6 +692,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_55
       rect:
         serializedVersion: 2
@@ -549,6 +702,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_56
       rect:
         serializedVersion: 2
@@ -558,6 +712,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_57
       rect:
         serializedVersion: 2
@@ -567,6 +722,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_58
       rect:
         serializedVersion: 2
@@ -576,6 +732,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_59
       rect:
         serializedVersion: 2
@@ -585,6 +742,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_60
       rect:
         serializedVersion: 2
@@ -594,6 +752,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_61
       rect:
         serializedVersion: 2
@@ -603,6 +762,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_62
       rect:
         serializedVersion: 2
@@ -612,6 +772,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_63
       rect:
         serializedVersion: 2
@@ -621,6 +782,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_64
       rect:
         serializedVersion: 2
@@ -630,6 +792,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_65
       rect:
         serializedVersion: 2
@@ -639,6 +802,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_66
       rect:
         serializedVersion: 2
@@ -648,6 +812,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_67
       rect:
         serializedVersion: 2
@@ -657,6 +822,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_68
       rect:
         serializedVersion: 2
@@ -666,6 +832,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_69
       rect:
         serializedVersion: 2
@@ -675,6 +842,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_70
       rect:
         serializedVersion: 2
@@ -684,6 +852,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_71
       rect:
         serializedVersion: 2
@@ -693,6 +862,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_72
       rect:
         serializedVersion: 2
@@ -702,6 +872,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_73
       rect:
         serializedVersion: 2
@@ -711,6 +882,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_74
       rect:
         serializedVersion: 2
@@ -720,6 +892,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_75
       rect:
         serializedVersion: 2
@@ -729,6 +902,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_76
       rect:
         serializedVersion: 2
@@ -738,6 +912,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_77
       rect:
         serializedVersion: 2
@@ -747,6 +922,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_78
       rect:
         serializedVersion: 2
@@ -756,6 +932,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_79
       rect:
         serializedVersion: 2
@@ -765,6 +942,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_80
       rect:
         serializedVersion: 2
@@ -774,6 +952,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_81
       rect:
         serializedVersion: 2
@@ -783,6 +962,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_82
       rect:
         serializedVersion: 2
@@ -792,6 +972,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_83
       rect:
         serializedVersion: 2
@@ -801,6 +982,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_84
       rect:
         serializedVersion: 2
@@ -810,6 +992,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_85
       rect:
         serializedVersion: 2
@@ -819,6 +1002,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_86
       rect:
         serializedVersion: 2
@@ -828,6 +1012,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_87
       rect:
         serializedVersion: 2
@@ -837,6 +1022,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_88
       rect:
         serializedVersion: 2
@@ -846,6 +1032,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_89
       rect:
         serializedVersion: 2
@@ -855,6 +1042,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_90
       rect:
         serializedVersion: 2
@@ -864,6 +1052,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_91
       rect:
         serializedVersion: 2
@@ -873,6 +1062,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_92
       rect:
         serializedVersion: 2
@@ -882,6 +1072,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_93
       rect:
         serializedVersion: 2
@@ -891,6 +1082,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_94
       rect:
         serializedVersion: 2
@@ -900,6 +1092,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
     - name: hero-sprites3_95
       rect:
         serializedVersion: 2
@@ -909,5 +1102,6 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

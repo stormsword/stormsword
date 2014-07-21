@@ -38,7 +38,7 @@ public class HealthScript : MonoBehaviour {
 		
 		if (shot != null) {
 			// Ignore friendly fire
-			if(shot.ownerType == "Player" && gameObject.tag == "Enemy") {
+			if(shot.ownerType != gameObject.tag) {
 				// Player is attacking an enemy
 				
 				/* Attack should knock character back on impact */
