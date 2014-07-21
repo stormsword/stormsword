@@ -1,43 +1,21 @@
 ﻿<Properties>
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/MoveScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/AIScript.cs">
     <Files>
       <File FileName="Assets/scripts/characters/CharacterScript.cs" Line="30" Column="21" />
       <File FileName="Assets/scripts/characters/EnemyScript.cs" Line="1" Column="19" />
       <File FileName="Assets/scripts/characters/MoveScript.cs" Line="13" Column="1" />
-=======
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/EnemyScript.cs">
-    <Files>
-      <File FileName="Assets/scripts/characters/PlayerScript.cs" Line="39" Column="35" />
-      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="62" Column="11" />
-      <File FileName="Assets/scripts/characters/EnemyScript.cs" Line="13" Column="53" />
->>>>>>> movement-separation
+      <File FileName="Assets/scripts/characters/AIScript.cs" Line="72" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="scripts" expanded="True">
-<<<<<<< HEAD
               <Node name="characters" expanded="True">
-                <Node name="EnemyWanderScript.cs" selected="True" />
-=======
-              <Node name="camera" expanded="True" />
-              <Node name="characters" expanded="True">
-                <Node name="EnemyScript.cs" selected="True" />
->>>>>>> movement-separation
+                <Node name="AIScript.cs" selected="True" />
               </Node>
-              <Node name="ui" expanded="True" />
-              <Node name="weapons" expanded="True" />
             </Node>
-<<<<<<< HEAD
-=======
-            <Node name="X-UniTMX" expanded="True">
-              <Node name="Code" expanded="True" />
-            </Node>
->>>>>>> movement-separation
           </Node>
         </State>
       </Pad>
@@ -45,22 +23,18 @@
         <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>parentMoveScript.transform</Value>
+          <Value>parentMoveScript.transform.right</Value>
+          <Value>transform.up</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/dickason/code/stormsword/Assets/X-UniTMX/Code/TileSet.cs" line="93" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-<<<<<<< HEAD
     <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="83" offsetX="495" offsetY="1191" expression="mainHandSlot" liveUpdate="False" />
-=======
-    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="62" offsetX="711" offsetY="711" expression="transform" liveUpdate="False" />
-    <Watch file="Assets/X-UniTMX/Code/TileSet.cs" line="93" offsetX="451" offsetY="1308" expression="texturePath" liveUpdate="False" />
-    <Watch file="Assets/X-UniTMX/Code/TileSet.cs" line="93" offsetX="682" offsetY="1310" expression="this.Image" liveUpdate="False" />
->>>>>>> movement-separation
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>

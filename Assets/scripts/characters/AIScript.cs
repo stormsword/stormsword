@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-/* EnemyWanderScript moves the enemy at random */
+/* AIScript moves the enemy at random */
 
-public class EnemyWanderScript : MonoBehaviour {
+public class AIScript : MonoBehaviour {
 
 	/* Components */
 	private Animator animator;
