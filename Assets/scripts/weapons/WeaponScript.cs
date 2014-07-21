@@ -6,12 +6,12 @@ using System.Collections;
 public class WeaponScript : MonoBehaviour {
 
 	// Components
-	private MoveScript parentMoveScript;
-	private MoveScript shotMoveScript;
+	//private MoveScript parentMoveScript;
+	//private MoveScript shotMoveScript;
 	private ItemSlotScript mainHandSlot;
 
 	// Projectile prefab for shooting
-	public Transform shotPrefab;
+	//public Transform shotPrefab;
 
 	// Weapon stats
 	public float shootingRate = 0.25f; // Cooldown between attacks
@@ -34,46 +34,54 @@ public class WeaponScript : MonoBehaviour {
 			// Character attacked, trigger cooldown
 			mainHandSlot.Cooldown(shootingRate);
 
-			// Create a new shot
-			var shotTransform = Instantiate(shotPrefab) as Transform;
-
-			// Figure out what direction character is facing
-			parentMoveScript = transform.parent.GetComponent<MoveScript>();
-
-			Vector3 facing = new Vector3(parentMoveScript.facing.x, parentMoveScript.facing.y, 0);
-
-			// Grab the position of the parent object (transform)
-			shotTransform.position = transform.position;
-
-			// Get the shot's move script to adjust its direction
-			shotMoveScript = shotTransform.GetComponent<MoveScript>();
-
-			if(shotMoveScript) {
-				shotMoveScript.direction = facing;
-			}
-
  			switch(type) {
 			case "Melee": 
 				// Handle melee weapon code here
 
 				// Melee attack is attached to parent (character)
-				shotTransform.parent = transform;
+
 
 				break;
 
 			case "Ranged": 
 				// Handle ranged weapon code here
+
+				/*
+				// Create a new shot
+				var shotTransform = Instantiate(shotPrefab) as Transform;
+				
+
+				// Figure out what direction character is facing
+				if(parentMoveScript)
+				{
+				parentMoveScript = transform.parent.GetComponent<MoveScript>();
+				
+				Vector3 facing = new Vector3(parentMoveScript.facing.x, parentMoveScript.facing.y, 0);
+				
+				// Grab the position of the parent object (transform)
+				shotTransform.position = transform.position;
+				
+				// Get the shot's move script to adjust its direction
+				shotMoveScript = shotTransform.parent.GetComponent<MoveScript>();
+				
+				if(shotMoveScript) {
+					shotMoveScript.direction = facing;
+				}
+				
+				// Fire the actual projectile
+				ProjectileScript projectile = shotTransform.gameObject.GetComponent<ProjectileScript>();
+				
+				if(projectile) {
+					// Determine what type of player shot this
+					projectile.ownerType = gameObject.transform.parent.parent.gameObject.tag;
+				}
+				}
+				*/
 					break;	
 
 			}
 
-			// Fire the actual projectile
-			ProjectileScript projectile = shotTransform.gameObject.GetComponent<ProjectileScript>();
-	
-			if(projectile != null) {
-				// Determine what type of player shot this
-				projectile.ownerType = gameObject.transform.parent.gameObject.tag;
-			}
+
 		}
 	}
 
@@ -81,6 +89,7 @@ public class WeaponScript : MonoBehaviour {
 	public bool CanAttack {
 		get {
 			return(mainHandSlot.attackCooldown <= 0f);
+		
 		}
 	}
 }

@@ -60,6 +60,9 @@ public class HealthScript : MonoBehaviour {
 				Damage (shot.damage);
 			}
 		}
+		else{
+		
+		}
 	}
 
 	/* Damage - Inflicts damage and check if the object should be destroyed */

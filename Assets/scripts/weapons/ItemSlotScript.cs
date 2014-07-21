@@ -8,6 +8,8 @@ public class ItemSlotScript : MonoBehaviour {
 	/* Components */
 	private Transform itemPrefab;	// Item that is currently equipped in this slot
 
+
+
 	// Remaining cooldown for attack
 	public float attackCooldown;
 

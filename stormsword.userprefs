@@ -1,27 +1,27 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/EnemyScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/weapons/WeaponScript.cs">
     <Files>
-      <File FileName="Assets/scripts/characters/EnemyWanderScript.cs" Line="32" Column="3" />
       <File FileName="Assets/scripts/ui/HealthBar.cs" Line="1" Column="1" />
       <File FileName="Assets/scripts/ui/hpBubbleScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/weapons/ItemSlotScript.cs" Line="20" Column="2" />
-      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="16" Column="17" />
-      <File FileName="Assets/scripts/characters/EnemyScript.cs" Line="28" Column="12" />
-      <File FileName="Assets/scripts/characters/CharacterScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/weapons/ItemSlotScript.cs" Line="11" Column="1" />
+      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="90" Column="8" />
+      <File FileName="Assets/scripts/characters/EnemyScript.cs" Line="24" Column="53" />
+      <File FileName="Assets/scripts/characters/CharacterScript.cs" Line="33" Column="4" />
       <File FileName="Assets/scripts/characters/HealthScript.cs" Line="38" Column="3" />
-      <File FileName="Assets/scripts/weapons/ProjectileScript.cs" Line="12" Column="30" />
-      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="13" Column="2" />
+      <File FileName="Assets/scripts/weapons/ProjectileScript.cs" Line="10" Column="32" />
+      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="52" Column="22" />
+      <File FileName="Assets/scripts/characters/EnemyWanderScript.cs" Line="7" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="scripts" expanded="True">
-              <Node name="characters" expanded="True">
-                <Node name="EnemyScript.cs" selected="True" />
+              <Node name="characters" expanded="True" />
+              <Node name="weapons" expanded="True">
+                <Node name="WeaponScript.cs" selected="True" />
               </Node>
-              <Node name="weapons" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -34,6 +34,7 @@
           <Value>parentMoveScript.transform</Value>
           <Value>parentMoveScript.transform.right</Value>
           <Value>transform.up</Value>
+          <Value>mainHandSlot</Value>
         </State>
       </Pad>
     </Pads>
@@ -41,5 +42,14 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="False" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="False" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="False" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="False" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="False" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="False" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="False" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>
