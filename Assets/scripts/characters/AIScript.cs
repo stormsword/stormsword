@@ -5,22 +5,23 @@ using System.Collections;
 
 public class EnemyWanderScript : MonoBehaviour {
 
-
+	/* Components */
 	private Animator animator;
-
-	public float speed = 20;
-
-	GameObject enemy;
+	private MoveScript moveScript; // Used to move the character
+	
+	// Get player object to determine player position
 	GameObject player;
 
+	// Used to calculate player vs. enemy positions
 	private Vector2 aiPosition;
 	private Vector2 playerPosition;
 	private float playerDistance;
 
+	// Figure out which direction the enemy is facing
 	public Vector2 facing = new Vector2(-1, 0);
 
+	// Animations
 	private bool isMoving = false;
-
 	private bool isAttacking = false;
 
 
@@ -35,15 +36,14 @@ public class EnemyWanderScript : MonoBehaviour {
 		animator = GetComponent<Animator>();
 		moveCooldown = 0f;
 
-		enemy = GameObject.Find("Brute");
 		player = GameObject.Find ("Player");
-		aiPosition = new Vector2(enemy.transform.position.x , enemy.transform.position.y);
+		aiPosition = new Vector2(transform.position.x , transform.position.y);
 		playerPosition = new Vector2 (player.transform.position.x, player.transform.position.y);
 
 	}
 	
 	void Update() {
-		playerDistance = Vector3.Distance (player.transform.position, enemy.transform.position);
+		playerDistance = Vector3.Distance (player.transform.position, transform.position);
 		if (playerDistance <= 1f) {
 						isAttacking = true;
 				}
@@ -67,13 +67,12 @@ public class EnemyWanderScript : MonoBehaviour {
 		direction = randomXY - aiPosition;
 		direction = direction.normalized;
 
-		aiPosition = direction * speed;
+		
+
+//		aiPosition = direction * speed;
 		
 		/* Play walking animation */
 		animator.SetBool ("isMoving", isMoving);
-
-		//	animator.SetFloat ("movement_x", randomXY.x);
-		//	animator.SetFloat ("movement_y", randomXY.y);
 	
 		//Play idle animation 
 		//	animator.SetFloat ("facing_x", facing.x);
