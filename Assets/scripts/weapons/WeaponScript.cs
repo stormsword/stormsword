@@ -21,7 +21,7 @@ public class WeaponScript : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		mainHandSlot = transform.GetComponent<ItemSlotScript>();	// Grab the parent mainhand to get any slot-related info
+		mainHandSlot = transform.parent.GetComponent<ItemSlotScript>();	// Grab the parent mainhand to get any slot-related info
 
 	}
 

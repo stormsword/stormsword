@@ -9,13 +9,16 @@ public class CharacterScript : MonoBehaviour {
 
 	private WeaponScript[] weapons;
 
-	private ItemSlotScript items;
+	private ItemSlotScript mainhand;
 	
 	void Awake() {
 		// Grab the weapon once when the enemy spawns
-		items = GetComponentInChildren<ItemSlotScript> ();
+		mainhand = GetComponentInChildren<ItemSlotScript>();
 
-		weapons = items.GetComponentsInChildren<WeaponScript>();
+		if(mainhand != null) {
+			// If character has a slot for weapons)
+			weapons = mainhand.GetComponentsInChildren<WeaponScript>();
+		}
 
 	}
 	
@@ -24,11 +27,13 @@ public class CharacterScript : MonoBehaviour {
 	}
 
 	public void Attack() {
-		// Fire all equipped weapons
-		foreach(WeaponScript weapon in weapons) {
-			// Auto-fire
-			if(weapon != null && weapon.CanAttack) {
-				weapon.Attack();
+		if(weapons != null) {
+			// Fire all equipped weapons
+			foreach(WeaponScript weapon in weapons) {
+				// Auto-fire
+				if(weapon != null && weapon.CanAttack) {
+					weapon.Attack();
+				}
 			}
 		}
 	}
