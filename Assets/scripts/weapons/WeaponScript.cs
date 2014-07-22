@@ -48,10 +48,6 @@ public class WeaponScript : MonoBehaviour {
 
 				// Melee attack is attached to parent (character)
 
-				//Needs to access.... player.damage, enemy.hp or vice versa
-				//Ignore the weapon triggers until they are in use,
-				//	make it so you can't just attack each others weapons heh
-
 				break;
 
 			case "Ranged": 

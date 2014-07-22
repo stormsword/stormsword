@@ -51,6 +51,7 @@ public class PlayerScript : MonoBehaviour {
 
 		}
 		else{
+			// Character isn't attacking
 
 			playerAttack = false;
 			animator.SetBool("playerAttack", playerAttack);

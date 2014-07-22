@@ -25,9 +25,13 @@ public class MoveScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		/* Play idle animation */
+
 		animator.SetFloat ("facing_x", facing.x);
 		animator.SetFloat ("facing_y", facing.y);
+
+		/* Check if character is moving */
 
 		if(rigidbody2D.velocity.normalized.x != 0 || rigidbody2D.velocity.normalized.y != 0) {
 			// Store the direction the player is facing in case they stop moving
@@ -35,8 +39,6 @@ public class MoveScript : MonoBehaviour {
 			isMoving = true;
 		}
 
-		/* Check if character is moving */
-		//isMoving = true;
 		movement = direction * speed;	// Calculate movement amount
 
 

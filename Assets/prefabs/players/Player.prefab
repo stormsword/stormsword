@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 50
-  armor: 1
+  armor: 5
   totalShotDamage: 0
   isEnemy: 0
   HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}

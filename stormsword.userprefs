@@ -1,16 +1,17 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/HealthScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/MoveScript.cs">
     <Files>
-      <File FileName="Assets/scripts/characters/AIScript.cs" Line="25" Column="15" />
-      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="41" Column="5" />
-      <File FileName="Assets/scripts/weapons/ItemSlotScript.cs" Line="11" Column="1" />
+      <File FileName="Assets/scripts/characters/AIScript.cs" Line="21" Column="24" />
+      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="10" Column="6" />
+      <File FileName="Assets/scripts/weapons/ItemSlotScript.cs" Line="32" Column="2" />
       <File FileName="Assets/scripts/characters/EnemyScript.cs" Line="28" Column="36" />
-      <File FileName="Assets/scripts/characters/HealthScript.cs" Line="38" Column="3" />
-      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="23" Column="39" />
-      <File FileName="Assets/scripts/characters/PlayerScript.cs" Line="46" Column="4" />
-      <File FileName="Assets/scripts/characters/CharacterScript.cs" Line="14" Column="16" />
-      <File FileName="Assets/scripts/weapons/ProjectileScript.cs" Line="16" Column="15" />
+      <File FileName="Assets/scripts/characters/HealthScript.cs" Line="58" Column="79" />
+      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="34" Column="45" />
+      <File FileName="Assets/scripts/characters/PlayerScript.cs" Line="50" Column="29" />
+      <File FileName="Assets/scripts/characters/CharacterScript.cs" Line="33" Column="27" />
+      <File FileName="Assets/scripts/weapons/ProjectileScript.cs" Line="13" Column="37" />
+      <File FileName="Assets/scripts/ui/HealthBar.cs" Line="8" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,8 +19,9 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="scripts" expanded="True">
               <Node name="characters" expanded="True">
-                <Node name="HealthScript.cs" selected="True" />
+                <Node name="MoveScript.cs" selected="True" />
               </Node>
+              <Node name="ui" expanded="True" />
               <Node name="weapons" expanded="True" />
             </Node>
           </Node>
@@ -40,9 +42,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint hitAction="PrintExpression" traceExpression="{mainHandSlot}" file="/Users/radjaffo/Documents/stormsword/stormsword/Assets/scripts/weapons/WeaponScript.cs" line="90" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="True" />
