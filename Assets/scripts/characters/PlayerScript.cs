@@ -6,6 +6,11 @@ public class PlayerScript : MonoBehaviour {
 	// Components
 	private CharacterScript characterScript;
 	private MoveScript moveScript;
+	private Animator animator;
+
+	// Animations
+	private bool playerAttack = false;
+
 
 	// Speed of the player
 	public Vector2 speed = new Vector2(50, 50);
@@ -13,6 +18,7 @@ public class PlayerScript : MonoBehaviour {
 	void Awake() {
 		moveScript = GetComponent<MoveScript>();
 		characterScript = GetComponent<CharacterScript>();
+		animator = GetComponent<Animator> ();
 	}
 
 	void Start () {
@@ -37,7 +43,17 @@ public class PlayerScript : MonoBehaviour {
 
 		if(attack) {
 			// Tell the character to attack
+
+			/*Play Attack animation */
+			playerAttack = true;
+			animator.SetBool("playerAttack", playerAttack);
 			characterScript.Attack();
+
+		}
+		else{
+
+			playerAttack = false;
+			animator.SetBool("playerAttack", playerAttack);
 		}
 
 		// Make sure player cannot leave the camera view

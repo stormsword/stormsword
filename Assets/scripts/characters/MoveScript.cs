@@ -32,6 +32,7 @@ public class MoveScript : MonoBehaviour {
 		if(rigidbody2D.velocity.normalized.x != 0 || rigidbody2D.velocity.normalized.y != 0) {
 			// Store the direction the player is facing in case they stop moving
 			facing = rigidbody2D.velocity.normalized;
+			//isMoving = true;
 		}
 
 

@@ -86,8 +86,8 @@ public class AIScript : MonoBehaviour {
 			
 						direction = randomXY - aiPosition;
 						direction = direction.normalized;
-						//animator.SetBool ("isMoving", isMoving);
-						moveScript.Move (direction.x, direction.y);	//does this break out of the function?
+						//animator.SetBool ("isMoving", isMoving);	//doesn't look like this is getting passed onto the MoveScript....
+						moveScript.Move (direction.x, direction.y);	//does this break out of update?
 
 
 						
