@@ -18,7 +18,7 @@ public class AIScript : MonoBehaviour {
 	private float playerDistance;
 
 	// Figure out which direction the enemy is facing
-	public Vector2 facing = new Vector2(-1, 0);
+	public Vector2 facing;
 
 	// Animations
 	private bool isMoving = false;
