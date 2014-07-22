@@ -9,6 +9,12 @@ public class WeaponScript : MonoBehaviour {
 	//private MoveScript parentMoveScript;
 	//private MoveScript shotMoveScript;
 	private ItemSlotScript mainHandSlot;
+	
+
+	private float playerDistance;
+	
+	GameObject player;
+	GameObject enemy;
 
 	// Projectile prefab for shooting
 	//public Transform shotPrefab;
@@ -18,10 +24,13 @@ public class WeaponScript : MonoBehaviour {
 	public float damage = 1;	// Damage a weapon does per attack
 	public float radius = 5; 	// Radius the weapon affects upon impact
 	public string type = "Melee";	// Melee or Ranged
+	public string ownerType = "Player";
 	
 	// Use this for initialization
 	void Start () {
 		mainHandSlot = transform.parent.GetComponent<ItemSlotScript>();	// Grab the parent mainhand to get any slot-related info
+		player = GameObject.Find ("Player");
+		enemy = GameObject.Find ("Enemy");
 	}
 
 	void Update () {
@@ -39,6 +48,9 @@ public class WeaponScript : MonoBehaviour {
 
 				// Melee attack is attached to parent (character)
 
+				//Needs to access.... player.damage, enemy.hp or vice versa
+				//Ignore the weapon triggers until they are in use,
+				//	make it so you can't just attack each others weapons heh
 
 				break;
 

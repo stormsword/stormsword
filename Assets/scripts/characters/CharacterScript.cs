@@ -6,17 +6,12 @@ using System.Collections;
 public class CharacterScript : MonoBehaviour {
 
 	public string characterType;	// Enemy or Player
-
-	//private Animator animator;
 	
-	//private bool playerAttack = false;
-
 	private WeaponScript[] weapons;
 
 	private ItemSlotScript mainhand;
 	
 	void Awake() {
-		//animator = GetComponent<Animator>();
 		// Grab the weapon once when the enemy spawns
 		mainhand = GetComponentInChildren<ItemSlotScript>();
 
@@ -36,11 +31,7 @@ public class CharacterScript : MonoBehaviour {
 			foreach(WeaponScript weapon in weapons) {
 				// Auto-fire
 				if(weapon != null && weapon.CanAttack) {
-					//playerAttack = true;
-					//animator.SetBool ("playerAttack", playerAttack);
 					weapon.Attack();
-					//playerAttack = false;
-					//animator.SetBool ("playerAttack", playerAttack);
 				}
 			}
 		}

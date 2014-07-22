@@ -26,6 +26,8 @@ public class ItemSlotScript : MonoBehaviour {
 		if(attackCooldown > 0) {
 			attackCooldown -= Time.deltaTime;
 		}
+		if (attackCooldown < 0)
+			attackCooldown = 0;
 	}
 
 	// An item in this slot triggered the slot's cooldown
