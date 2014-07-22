@@ -7,11 +7,14 @@ public class CharacterScript : MonoBehaviour {
 
 	public string characterType;	// Enemy or Player
 
+	//private Animator animator;
+
 	private WeaponScript[] weapons;
 
 	private ItemSlotScript mainhand;
 	
 	void Awake() {
+		//animator = GetComponent<Animator>();
 		// Grab the weapon once when the enemy spawns
 		mainhand = GetComponentInChildren<ItemSlotScript>();
 

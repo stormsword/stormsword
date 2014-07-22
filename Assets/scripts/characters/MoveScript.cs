@@ -26,17 +26,14 @@ public class MoveScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		/* Check if character is moving */
+		isMoving = true;
 		movement = direction * speed;	// Calculate movement amount
 
 		if(rigidbody2D.velocity.normalized.x != 0 || rigidbody2D.velocity.normalized.y != 0) {
 			// Store the direction the player is facing in case they stop moving
 			facing = rigidbody2D.velocity.normalized;
+		}
 
-			isMoving = true;
-		}
-		else {
-			isMoving = false;
-		}
 
 		/* Play walking animation */
 		animator.SetBool ("isMoving", isMoving);
