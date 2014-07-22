@@ -12,7 +12,7 @@ TagManager:
   Builtin Layer 2: Ignore Raycast
   Builtin Layer 3: 
   Builtin Layer 4: Water
-  Builtin Layer 5: 
+  Builtin Layer 5: UI
   Builtin Layer 6: 
   Builtin Layer 7: 
   User Layer 8: 
@@ -44,13 +44,13 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
-  - name: Foreground - Non-Interactable
+  - name: Foreground
     userID: 1
     uniqueID: 1655269899
     locked: 0
-  - name: Foreground - Interactable
-    userID: 2
-    uniqueID: 603904585
+  - name: Colliders
+    userID: 4
+    uniqueID: 2585231249
     locked: 0
   - name: Characters
     userID: 3

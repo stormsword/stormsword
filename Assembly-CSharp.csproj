@@ -47,6 +47,18 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\HealthBarNameScript.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\ImageLayer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Layer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Map.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\MapObject.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\MapObjectLayer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Property.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\PropertyCollection.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\Tile.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileGrid.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileLayer.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TileSet.cs" />
+     <Compile Include="Assets\X-UniTMX\Code\TiledMapComponent.cs" />
      <Compile Include="Assets\scripts\camera\LevelScript.cs" />
      <Compile Include="Assets\scripts\camera\RendererExtensions.cs" />
      <Compile Include="Assets\scripts\camera\ScrollingScript.cs" />
@@ -62,12 +74,10 @@
      <Compile Include="Assets\scripts\weapons\ProjectileScript.cs" />
      <Compile Include="Assets\scripts\weapons\RangedScript.cs" />
      <Compile Include="Assets\scripts\weapons\WeaponScript.cs" />
-     <None Include="Assets\SpriteTile\UPDATE NOTE!.txt" />
-     <None Include="Assets\SpriteTile\SpriteTile changelog.txt" />
-     <None Include="Assets\SpriteTile\Resources\Sprites-DefaultNonTransparent.shader" />
-     <None Include="Assets\SpriteTile\Resources\Sprites-DiffuseNonTransparent.shader" />
- <Reference Include="SpriteTile">
- <HintPath>/Users/dickason/code/stormsword/Assets/Plugins/SpriteTile.dll</HintPath>
+     <None Include="Assets\X-UniTMX\ObjectTypesForTiled.xml" />
+     <None Include="Assets\Resources\tilemaps\forest-zone.xml" />
+ <Reference Include="Ionic.Zlib">
+ <HintPath>/Users/dickason/code/stormsword/Assets/X-UniTMX/Ionic.Zlib.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
