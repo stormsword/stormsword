@@ -25,28 +25,38 @@ public class MoveScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		/* Play idle animation */
+
+		animator.SetFloat ("facing_x", facing.x);
+		animator.SetFloat ("facing_y", facing.y);
+
 		/* Check if character is moving */
-		movement = direction * speed;	// Calculate movement amount
 
 		if(rigidbody2D.velocity.normalized.x != 0 || rigidbody2D.velocity.normalized.y != 0) {
 			// Store the direction the player is facing in case they stop moving
 			facing = rigidbody2D.velocity.normalized;
-
 			isMoving = true;
 		}
-		else {
-			isMoving = false;
-		}
+
+		movement = direction * speed;	// Calculate movement amount
+
+
+
 
 		/* Play walking animation */
-		animator.SetBool ("isMoving", isMoving);
-		animator.SetFloat("movement_x", movement.x);
-		animator.SetFloat("movement_y", movement.y);
 
-		/* Play idle animation */
-		animator.SetFloat("facing_x", facing.x);
-		animator.SetFloat("facing_y", facing.y);
-	}
+		if (isMoving == true) {
+
+			animator.SetBool ("isMoving", isMoving);
+			animator.SetFloat ("movement_x", movement.x);
+			animator.SetFloat ("movement_y", movement.y);
+		}
+
+
+	
+}
+
 
 	void FixedUpdate() {
 		// Apply the movement to the rigidbody

@@ -15,8 +15,8 @@ public class HealthBar : MonoBehaviour {
 	public int BarHeight = 15;
 
 	// Character Stats
-	private int maxHp = 0;
-	private int currentHp = 0;
+	private float maxHp = 0;
+	private float currentHp = 0;
 
 
 
@@ -45,7 +45,7 @@ public class HealthBar : MonoBehaviour {
 		transform.position = Camera.main.WorldToViewportPoint(character.transform.position);
 
 		// Update health bar size when character is damanged
-		float HPRatio = (float) decimal.Divide(currentHp, maxHp);	// Dividing two ints normally returns an int - this way we get a float
+		float HPRatio = currentHp/maxHp;//(float) float.Divide(currentHp, maxHp);	// Dividing two ints normally returns an int - this way we get a float
 		float CurrentHPBarWidth = HPRatio * BarWidth;
 		Rect newRect = new Rect(10, 10, CurrentHPBarWidth, BarHeight);
 		currentHPBar.pixelInset = newRect;

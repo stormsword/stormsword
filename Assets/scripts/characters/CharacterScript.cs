@@ -6,24 +6,33 @@ using System.Collections;
 public class CharacterScript : MonoBehaviour {
 
 	public string characterType;	// Enemy or Player
-
+	
 	private WeaponScript[] weapons;
+
+	private ItemSlotScript mainhand;
 	
 	void Awake() {
 		// Grab the weapon once when the enemy spawns
-		weapons = GetComponentsInChildren<WeaponScript>();
+		mainhand = GetComponentInChildren<ItemSlotScript>();
+
+		if(mainhand != null) {
+			// If character has a slot for weapons)
+			weapons = mainhand.GetComponentsInChildren<WeaponScript>();
+		}
+
 	}
 	
 	void Update() {
-
 	}
 
 	public void Attack() {
-		// Fire all equipped weapons
-		foreach(WeaponScript weapon in weapons) {
-			// Auto-fire
-			if(weapon != null && weapon.CanAttack) {
-				weapon.Attack();
+		if(weapons != null) {
+			// Fire all equipped weapons
+			foreach(WeaponScript weapon in weapons) {
+				// Auto-fire
+				if(weapon != null && weapon.CanAttack) {
+					weapon.Attack();
+				}
 			}
 		}
 	}

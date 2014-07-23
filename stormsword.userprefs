@@ -1,25 +1,28 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/EnemyScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/characters/MoveScript.cs">
     <Files>
-      <File FileName="Assets/scripts/characters/PlayerScript.cs" Line="39" Column="35" />
-      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="62" Column="11" />
-      <File FileName="Assets/scripts/characters/EnemyScript.cs" Line="13" Column="53" />
+      <File FileName="Assets/scripts/characters/AIScript.cs" Line="21" Column="24" />
+      <File FileName="Assets/scripts/weapons/WeaponScript.cs" Line="10" Column="6" />
+      <File FileName="Assets/scripts/weapons/ItemSlotScript.cs" Line="32" Column="2" />
+      <File FileName="Assets/scripts/characters/EnemyScript.cs" Line="28" Column="36" />
+      <File FileName="Assets/scripts/characters/HealthScript.cs" Line="58" Column="79" />
+      <File FileName="Assets/scripts/characters/MoveScript.cs" Line="34" Column="45" />
+      <File FileName="Assets/scripts/characters/PlayerScript.cs" Line="50" Column="29" />
+      <File FileName="Assets/scripts/characters/CharacterScript.cs" Line="33" Column="27" />
+      <File FileName="Assets/scripts/weapons/ProjectileScript.cs" Line="13" Column="37" />
+      <File FileName="Assets/scripts/ui/HealthBar.cs" Line="8" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="scripts" expanded="True">
-              <Node name="camera" expanded="True" />
               <Node name="characters" expanded="True">
-                <Node name="EnemyScript.cs" selected="True" />
+                <Node name="MoveScript.cs" selected="True" />
               </Node>
               <Node name="ui" expanded="True" />
               <Node name="weapons" expanded="True" />
-            </Node>
-            <Node name="X-UniTMX" expanded="True">
-              <Node name="Code" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -28,18 +31,23 @@
         <State expanded="True" selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
+        <State>
+          <Value>parentMoveScript.transform</Value>
+          <Value>parentMoveScript.transform.right</Value>
+          <Value>transform.up</Value>
+          <Value>mainHandSlot</Value>
+          <Value>mainHandSlot</Value>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/dickason/code/stormsword/Assets/X-UniTMX/Code/TileSet.cs" line="93" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
-    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="62" offsetX="711" offsetY="711" expression="transform" liveUpdate="False" />
-    <Watch file="Assets/X-UniTMX/Code/TileSet.cs" line="93" offsetX="451" offsetY="1308" expression="texturePath" liveUpdate="False" />
-    <Watch file="Assets/X-UniTMX/Code/TileSet.cs" line="93" offsetX="682" offsetY="1310" expression="this.Image" liveUpdate="False" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="True" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="True" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="True" />
+    <Watch file="Assets/scripts/weapons/WeaponScript.cs" line="90" offsetX="373" offsetY="1157" expression="mainHandSlot" liveUpdate="True" />
   </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>
