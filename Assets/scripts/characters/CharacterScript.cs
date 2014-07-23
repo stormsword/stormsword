@@ -36,4 +36,8 @@ public class CharacterScript : MonoBehaviour {
 			}
 		}
 	}
+
+	internal void Ability() {
+		Debug.Log("Ability triggered!");
+	}
 }
