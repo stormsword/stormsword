@@ -1010,7 +1010,7 @@ MonoBehaviour:
   CollidersWidth:
   - 1
   CollidersLayerName:
-  - Colliders
+  - Objects
   CollidersIsInner: 00
   CollidersIsTrigger: 00
   MakeUniqueTiles: 1
