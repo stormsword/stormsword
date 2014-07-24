@@ -20015,7 +20015,7 @@
   <object name="Rock" type="Wall" x="160" y="32" width="32" height="64"/>
  </objectgroup>
  <objectgroup name="Enemies" width="100" height="100">
-  <object name="Brute" type="Enemy" x="128" y="128">
+  <object name="Brute" type="Enemy" x="224" y="128">
    <properties>
     <property name="0-prefab" value="Brute"/>
     <property name="0-prefab path" value="prefabs/enemies/"/>
@@ -20024,6 +20024,12 @@
   <object name="Brute" type="Enemy" x="224" y="32">
    <properties>
     <property name="0-prefab" value="Brute"/>
+    <property name="0-prefab path" value="prefabs/enemies/"/>
+   </properties>
+  </object>
+  <object name="Goblin" type="Enemy" x="128" y="64">
+   <properties>
+    <property name="0-prefab" value="Goblin"/>
     <property name="0-prefab path" value="prefabs/enemies/"/>
    </properties>
   </object>
