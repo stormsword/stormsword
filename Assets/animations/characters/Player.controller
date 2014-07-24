@@ -110,9 +110,44 @@ BlendTree:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Blend Tree
-  m_Childs: []
-  m_BlendParameter: movement_x
-  m_BlendParameterY: movement_x
+  m_Childs:
+  - m_Motion: {fileID: 7400000, guid: 2bf8ac950b79f49cdb9ebb97f0256e33, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 1, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_IsAnim: 1
+    m_Mirror: 0
+  - m_Motion: {fileID: 7400000, guid: a890d424e9e634e0ab8aba2a8c0c78d8, type: 2}
+    m_Threshold: .25
+    m_Position: {x: -1, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_IsAnim: 1
+    m_Mirror: 0
+  - m_Motion: {fileID: 7400000, guid: 4611f47953ed5444099251f833f40883, type: 2}
+    m_Threshold: .5
+    m_Position: {x: 0, y: 1}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_IsAnim: 1
+    m_Mirror: 0
+  - m_Motion: {fileID: 7400000, guid: d197c6f6cbab147c1b698546cd7f5e28, type: 2}
+    m_Threshold: .75
+    m_Position: {x: 0, y: -1}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_IsAnim: 1
+    m_Mirror: 0
+  - m_Motion: {fileID: 7400000, guid: 2bf8ac950b79f49cdb9ebb97f0256e33, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_IsAnim: 1
+    m_Mirror: 0
+  m_BlendParameter: facing_x
+  m_BlendParameterY: facing_y
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -210,22 +245,22 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 1
---- !u!1101 &110100708
+--- !u!1101 &110109982
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_SrcState: {fileID: 110200000}
-  m_DstState: {fileID: 110292146}
-  m_TransitionDuration: .25
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 110256368}
+  m_TransitionDuration: .100000001
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 5
-    m_ConditionEvent: 
+  - m_ConditionMode: 1
+    m_ConditionEvent: playerAttack
     m_EventTreshold: 0
-    m_ExitTime: .75
+    m_ExitTime: .899999976
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -254,22 +289,26 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 1
---- !u!1101 &110197057
+--- !u!1101 &110140849
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_SrcState: {fileID: 0}
-  m_DstState: {fileID: 110200000}
-  m_TransitionDuration: .100000001
+  m_SrcState: {fileID: 110256368}
+  m_DstState: {fileID: 110292146}
+  m_TransitionDuration: .25
   m_TransitionOffset: 0
   m_Conditions:
-  - m_ConditionMode: 1
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: .75
+  - m_ConditionMode: 2
     m_ConditionEvent: playerAttack
     m_EventTreshold: 0
-    m_ExitTime: .899999976
+    m_ExitTime: .75
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -285,7 +324,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 2bf8ac950b79f49cdb9ebb97f0256e33, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 84, y: 180, z: 0}
+  m_Position: {x: 84, y: 420, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -294,13 +333,43 @@ State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Blend Tree
+  m_Name: Attacking
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 20656368}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -180, y: 276, z: 0}
+  m_Position: {x: 72, y: 192, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110268748
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Player_Attacking_Down
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: d197c6f6cbab147c1b698546cd7f5e28, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -110, y: 406, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110275010
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Player_Attacking_Up
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 4611f47953ed5444099251f833f40883, type: 2}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -145, y: 341, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -345,7 +414,7 @@ State:
   m_Motions:
   - {fileID: 20600000}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 300, y: 240, z: 0}
+  m_Position: {x: 360, y: 204, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -363,14 +432,16 @@ StateMachine:
   - {fileID: 110200000}
   - {fileID: 110280594}
   - {fileID: 110256368}
+  - {fileID: 110275010}
+  - {fileID: 110268748}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
       first: {fileID: 0}
       second:
-      - {fileID: 110197057}
       - {fileID: 110123169}
+      - {fileID: 110109982}
     data:
       first: {fileID: 110292146}
       second: []
@@ -380,11 +451,14 @@ StateMachine:
       - {fileID: 110100000}
     data:
       first: {fileID: 110200000}
-      second:
-      - {fileID: 110100708}
+      second: []
     data:
       first: {fileID: 110280594}
       second: []
+    data:
+      first: {fileID: 110256368}
+      second:
+      - {fileID: 110140849}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 96, y: 288, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

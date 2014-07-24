@@ -2359,7 +2359,7 @@ Transform:
   - {fileID: 1044376599}
   - {fileID: 1564672062}
   m_Father: {fileID: 996133152}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!95 &606070047
 Animator:
   serializedVersion: 3
@@ -2538,7 +2538,7 @@ Transform:
   - {fileID: 162008503}
   - {fileID: 1621993076}
   m_Father: {fileID: 996133152}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &610497384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3667,8 +3667,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 610497383}
   - {fileID: 606070046}
+  - {fileID: 610497383}
   m_Father: {fileID: 373025171}
   m_RootOrder: 0
 --- !u!1 &1014353108
