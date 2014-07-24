@@ -20012,17 +20012,27 @@
   </data>
  </layer>
  <objectgroup name="Objects" width="100" height="100">
-  <object name="Rock" x="160" y="32" width="32" height="64"/>
-  <object name="Brute" x="128" y="32">
+  <object name="Rock" type="Wall" x="160" y="32" width="32" height="64"/>
+ </objectgroup>
+ <objectgroup name="Enemies" width="100" height="100">
+  <object name="Brute" type="Enemy" x="128" y="128">
    <properties>
     <property name="0-prefab" value="Brute"/>
     <property name="0-prefab path" value="prefabs/enemies/"/>
    </properties>
   </object>
-  <object name="Brute" x="128" y="96">
+  <object name="Brute" type="Enemy" x="224" y="32">
    <properties>
     <property name="0-prefab" value="Brute"/>
     <property name="0-prefab path" value="prefabs/enemies/"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Players" width="100" height="100">
+  <object name="Player1" type="Player" x="0" y="0">
+   <properties>
+    <property name="0-prefab" value="Player"/>
+    <property name="0-prefab path" value="prefabs/players/"/>
    </properties>
   </object>
  </objectgroup>
