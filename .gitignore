@@ -1,6 +1,11 @@
 # Unity
 Temp/
 Library/
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
 
 # OSX
 .DS_Store

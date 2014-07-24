@@ -20011,8 +20011,35 @@
    <tile gid="0"/>
   </data>
  </layer>
- <objectgroup name="Colliders" width="100" height="100">
-  <object x="160" y="32" width="32" height="64"/>
+ <objectgroup name="Objects" width="100" height="100">
+  <object name="Rock" type="Wall" x="160" y="32" width="32" height="64"/>
  </objectgroup>
- <objectgroup name="Characters" width="100" height="100"/>
+ <objectgroup name="Enemies" width="100" height="100">
+  <object name="Brute" type="Enemy" x="224" y="128">
+   <properties>
+    <property name="0-prefab" value="Brute"/>
+    <property name="0-prefab path" value="prefabs/enemies/"/>
+   </properties>
+  </object>
+  <object name="Brute" type="Enemy" x="224" y="32">
+   <properties>
+    <property name="0-prefab" value="Brute"/>
+    <property name="0-prefab path" value="prefabs/enemies/"/>
+   </properties>
+  </object>
+  <object name="Goblin" type="Enemy" x="128" y="64">
+   <properties>
+    <property name="0-prefab" value="Goblin"/>
+    <property name="0-prefab path" value="prefabs/enemies/"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Players" width="100" height="100">
+  <object name="Player1" type="Player" x="0" y="0">
+   <properties>
+    <property name="0-prefab" value="Player"/>
+    <property name="0-prefab path" value="prefabs/players/"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

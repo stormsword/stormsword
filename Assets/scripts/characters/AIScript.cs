@@ -50,7 +50,7 @@ public class AIScript : MonoBehaviour {
 	}
 
 	void Update() {
-		player = GameObject.Find ("Player");
+		player = GameObject.FindWithTag("Player");
 
 
 		if(player != null)
