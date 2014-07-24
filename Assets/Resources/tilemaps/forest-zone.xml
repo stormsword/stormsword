@@ -20012,7 +20012,19 @@
   </data>
  </layer>
  <objectgroup name="Colliders" width="100" height="100">
-  <object x="160" y="32" width="32" height="64"/>
+  <object name="Rock" x="160" y="32" width="32" height="64"/>
+  <object name="Brute" x="128" y="32">
+   <properties>
+    <property name="0-prefab" value="Brute"/>
+    <property name="0-prefab path" value="prefabs/enemies/"/>
+   </properties>
+  </object>
+  <object name="Brute" x="128" y="96">
+   <properties>
+    <property name="0-prefab" value="Brute"/>
+    <property name="0-prefab path" value="prefabs/enemies/"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Characters" width="100" height="100"/>
 </map>
