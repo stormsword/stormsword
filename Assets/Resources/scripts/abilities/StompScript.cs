@@ -9,6 +9,8 @@ public class StompScript : MonoBehaviour {
 	public float damage = 1;	// Damage the ability does on impact
 	public float radius = 5; 	// Radius the ability affects upon impact
 
+	public Transform stompPrefab;
+
 	// Use this for initialization
 	void Start () {
 		abilitySlot = transform.parent.GetComponent<AbilitySlotScript>();	// Grab the parent ability to get any slot-related info
@@ -21,11 +23,11 @@ public class StompScript : MonoBehaviour {
 	/* Cast - Trigger the current ability (if off cooldown) */
 	internal void Cast() {
 		if(CanCast) {
-			Debug.Log (abilitySlot.abilityCooldown);
 			// Used ability, trigger cooldown
 			abilitySlot.Cooldown(cooldown);
-			Debug.Log (abilitySlot.abilityCooldown);
-//			Debug.Log("Cast stomp!");
+
+			Debug.Log("Cast stomp!");
+			var stompTransform = Instantiate(stompPrefab) as Transform;
 		}
 	}
 
