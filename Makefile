@@ -20,7 +20,7 @@ windows:
 	cd $(build_path)/$(version) && zip -rmX Stormsword.v$(version).windows.zip Stormsword.v$(version).windows*
 
 osx:
-	$(unity_path) $(batchmode) $(nographics) $(quit_when_done) -buildOSX64Player $(build_path)/$(version)/Stormsword.v$(version).osx
+	$(unity_path) $(batchmode) $(nographics) $(quit_when_done) -buildOSX64Player $(build_path)/$(version)/Stormsword.v$(version).osx.app
 	cd $(build_path)/$(version) && zip -rmX Stormsword.v$(version).osx.zip Stormsword.v$(version).osx*
 
 linux:
