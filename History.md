@@ -1,7 +1,13 @@
-0.0.3 / ???
+0.0.3 / 2014-07-26
 ==================
 
   * add: hp bar now displays current HP as character takes damage
+  * add: Brute (enemy)
+  * add: Hobgoblin (enemy)
+  * add: Player now attacks in all directions
+  * add: Maps are now designed in Tiled
+  * add: Player character is loaded in via Tiled
+  * add: All enemies are now loaded in via Tiled
 
 0.0.2 / 2014-07-14
 ==================
