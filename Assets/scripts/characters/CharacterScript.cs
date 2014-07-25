@@ -10,14 +10,20 @@ public class CharacterScript : MonoBehaviour {
 	private WeaponScript[] weapons;
 
 	private ItemSlotScript mainhand;
+	private AbilitySlotScript ability;
 	
 	void Awake() {
 		// Grab the weapon once when the enemy spawns
 		mainhand = GetComponentInChildren<ItemSlotScript>();
+		ability = GetComponentInChildren<AbilitySlotScript>();
 
 		if(mainhand != null) {
 			// If character has a slot for weapons)
 			weapons = mainhand.GetComponentsInChildren<WeaponScript>();
+		}
+
+		if(ability != null) {
+			Debug.Log ("Player has ability equipped");
 		}
 
 	}
@@ -38,6 +44,8 @@ public class CharacterScript : MonoBehaviour {
 	}
 
 	internal void Ability() {
-		Debug.Log("Ability triggered!");
+		if(ability != null) {
+			Debug.Log("Ability triggered!");
+		}
 	}
 }
