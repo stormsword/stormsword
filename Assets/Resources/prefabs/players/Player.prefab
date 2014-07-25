@@ -304,9 +304,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7695c1bdf2e7f47d59cc3f275a7736fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: .25
+  cooldown: 2
   damage: 1
   radius: 5
+  stompPrefab: {fileID: 400000, guid: 99f96335f18ca43848cdd061fb5be3ab, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
