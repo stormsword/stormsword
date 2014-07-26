@@ -3,7 +3,9 @@ using System.Collections;
 
 public class StompScript : MonoBehaviour {
 
+	/* Components */
 	private AbilitySlotScript abilitySlot;	// Get the ability slot that this ability is equipped in
+	private CircleCollider2D stompCollider;
 
 	public float cooldown = 2.0f; // Cooldown between abilities
 	public float damage = 1;	// Damage the ability does on impact
@@ -14,6 +16,8 @@ public class StompScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		abilitySlot = transform.parent.GetComponent<AbilitySlotScript>();	// Grab the parent ability to get any slot-related info
+		stompCollider = GetComponent<CircleCollider2D>();
+		stompCollider.radius = radius;	// Collider's radius should always equal effect radius
 	}
 	
 	// Update is called once per frame
