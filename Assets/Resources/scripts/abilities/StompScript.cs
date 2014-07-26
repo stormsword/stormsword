@@ -28,6 +28,8 @@ public class StompScript : MonoBehaviour {
 
 			Debug.Log("Cast stomp!");
 			var stompTransform = Instantiate(stompPrefab) as Transform;
+			stompTransform.transform.parent = transform;	// Stomp effect should be a child of the ability slot (and thus the Character)
+			stompTransform.transform.position = transform.position;	// Stomp effect should spawn underneath player
 		}
 	}
 
