@@ -68,6 +68,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: .5
+  damage: 1
+  radius: .129999995
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

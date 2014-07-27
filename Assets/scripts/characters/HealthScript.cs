@@ -32,13 +32,7 @@ public class HealthScript : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter2D(Collider2D otherCollider) {
-		EffectScript ability = otherCollider.gameObject.GetComponent<EffectScript>();
-		if(ability != null) {
-			Debug.Log ("Ability used!");
-		}
-	}
-
+	
 	/* Damage - Inflicts damage and check if the object should be destroyed */
 	public void Damage(float damageCount) {
 		hp -= damageCount;
