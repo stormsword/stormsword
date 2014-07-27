@@ -12,9 +12,6 @@ public class WeaponScript : MonoBehaviour {
 	
 
 	private float playerDistance;
-	
-	GameObject player;
-	GameObject enemy;
 
 	// Projectile prefab for shooting
 	public Transform shotPrefab;
@@ -30,8 +27,6 @@ public class WeaponScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		mainHandSlot = transform.parent.GetComponent<ItemSlotScript>();	// Grab the parent mainhand to get any slot-related info
-		player = GameObject.Find ("Player");
-		enemy = GameObject.Find ("Enemy");
 	}
 
 	void Update () {
