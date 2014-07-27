@@ -20,11 +20,12 @@ public class WeaponScript : MonoBehaviour {
 	//public Transform shotPrefab;
 
 	// Weapon stats
-	public float shootingRate = 0.25f; // Cooldown between attacks
-	public float damage = 1;	// Damage a weapon does per attack
-	public float radius = 5; 	// Radius the weapon affects upon impact
-	public string type = "Melee";	// Melee or Ranged
-	public string ownerType = "Player";
+	public float shootingRate = 0.25f; 	// Cooldown between attacks
+	public float damage = 1;			// Damage a weapon does per attack
+	public float radius = 5; 			// Radius the weapon affects upon impact
+	public float knockback = 500f;		// Amount to knock the character back upon impact
+	public string type = "Melee";		// Melee or Ranged
+	public string ownerType = "Player";	// Is a player or an enemy carrying the weapon?
 	
 	// Use this for initialization
 	void Start () {
@@ -98,5 +99,42 @@ public class WeaponScript : MonoBehaviour {
 			return(mainHandSlot.attackCooldown <= 0f);
 		
 		}
+	}
+
+	void OnTriggerEnter2D(Collider2D defenderCollider) {
+
+		HealthScript defenderHealth = defenderCollider.GetComponent<HealthScript>();
+
+		// Check if the object I'm colliding with can be damaged
+		if(defenderHealth != null) {
+
+			GameObject defender = defenderHealth.gameObject;
+
+			if((ownerType == "Player" && defender.tag == "Enemy")
+			   ||
+			   (ownerType == "Enemy" && defender.tag == "Player")){
+
+				// Attacks should knock the defender back away from attacker
+				Knockback (transform, defender, knockback);
+
+				// Calculate armor reduction
+				float totalDamage = damage - defenderHealth.armor;
+
+				// attacks should always do 1 dmg, even if they are very weak
+				if(totalDamage <= 0) {
+					totalDamage = 1;
+				}
+
+				defenderHealth.Damage(totalDamage);		// Apply damage to the defender
+			}
+		}
+	}
+
+	/* Knockback - Knocks a unit (defender) away from an attacker's position (attackerTransform) by amount */
+	public void Knockback(Transform attackerTransform, GameObject defender, float amount) {
+		Vector2 direction = (defender.transform.position - attackerTransform.position).normalized;
+
+		Rigidbody2D defenderPhysics = defender.GetComponent<Rigidbody2D>();
+		defenderPhysics.AddForce(direction * amount);
 	}
 }

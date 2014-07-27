@@ -14,7 +14,7 @@ public class HealthScript : MonoBehaviour {
 	public float armor = 1;
 
 	// Damage after all modifiers are calculated
-	private float totalShotDamage;
+	private float totalDamage;
 
 	// Enemy or Player?
 	public bool isEnemy = true;
@@ -33,24 +33,9 @@ public class HealthScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D otherCollider) {
-		// Is this a shot?
-		WeaponScript attack = otherCollider.gameObject.GetComponent<WeaponScript>();
-		if (attack != null) {
-			// Ignore friendly fire
-
-			// Player is attacking an enemy
-			if((attack.ownerType == "Player" && gameObject.tag == "Enemy")
-			   ||
-			   (attack.ownerType == "Enemy" && gameObject.tag == "Player")){
-				/* Attack should knock character back on impact */
-				Knockback (transform, otherCollider.transform, 500);
-				totalShotDamage = attack.damage - armor;
-				if(totalShotDamage <= 0)
-					// Damage is negative or zero
-					totalShotDamage = 1;
-				Damage (totalShotDamage);		// Target takes dmg
-				totalShotDamage = attack.damage;	// Reset for shooting multiple enemies
-			}
+		EffectScript ability = otherCollider.gameObject.GetComponent<EffectScript>();
+		if(ability != null) {
+			Debug.Log ("Ability used!");
 		}
 	}
 
@@ -74,11 +59,4 @@ public class HealthScript : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
-
-	/* Knockback - Knocks a unit (defender) away from a shot (shotTransform) by amount */
-	public void Knockback(Transform defenderTransform, Transform shotTransform, float amount) {
-		Vector2 direction = (defenderTransform.position - shotTransform.position).normalized;
-		rigidbody2D.AddForce(direction * amount);
-	}
-
 }
