@@ -8,8 +8,6 @@ public class StompScript : MonoBehaviour {
 
 
 	public float cooldown = 2.0f; // Cooldown between abilities
-	public float damage = 1;	// Damage the ability does on impact
-	public float radius = 5; 	// Radius the ability affects upon impact
 
 	public Transform stompEffect;	// Effect animation triggered when ability is used
 
