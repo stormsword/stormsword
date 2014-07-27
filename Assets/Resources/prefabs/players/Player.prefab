@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
-  - 58: {fileID: 5800000}
   m_Layer: 0
   m_Name: Stomp
   m_TagString: Untagged
@@ -258,17 +257,6 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &5800000
-CircleCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Radius: .5
-  m_Center: {x: 0, y: 0}
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -318,8 +306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 2
   damage: 1
-  radius: 5
-  stompPrefab: {fileID: 400000, guid: 99f96335f18ca43848cdd061fb5be3ab, type: 2}
+  radius: .150000006
+  stompEffect: {fileID: 400000, guid: 99f96335f18ca43848cdd061fb5be3ab, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -423,7 +411,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 50
   armor: 5
-  totalShotDamage: 0
   isEnemy: 0
   HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
 --- !u!114 &11400018
