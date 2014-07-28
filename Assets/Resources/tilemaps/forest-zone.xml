@@ -20033,6 +20033,12 @@
     <property name="0-prefab path" value="prefabs/enemies/"/>
    </properties>
   </object>
+  <object name="Pigmy" type="Enemy" x="125" y="122">
+   <properties>
+    <property name="0-prefab" value="Pigmy"/>
+    <property name="0-prefab path" value="prefabs/enemies/"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup name="Players" width="100" height="100">
   <object name="Player1" type="Player" x="0" y="0">
