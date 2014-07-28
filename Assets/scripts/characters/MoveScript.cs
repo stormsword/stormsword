@@ -27,7 +27,8 @@ public class MoveScript : MonoBehaviour {
 	void Update () {
 
 		/* Play idle animation */
-
+		if(animator)
+		{
 		animator.SetFloat ("facing_x", facing.x);
 		animator.SetFloat ("facing_y", facing.y);
 
@@ -52,7 +53,7 @@ public class MoveScript : MonoBehaviour {
 			animator.SetFloat ("movement_x", movement.x);
 			animator.SetFloat ("movement_y", movement.y);
 		}
-
+		}
 
 	
 }
