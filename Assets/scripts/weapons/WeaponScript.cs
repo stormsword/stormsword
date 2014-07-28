@@ -48,7 +48,7 @@ public class WeaponScript : MonoBehaviour {
 
 			case "Ranged": 
 				// Handle ranged weapon code here
-				if(enemy)
+				if(ownerType == "Enemy")
 				{
 				// Create a new shot
 				var shotTransform = Instantiate(shotPrefab) as Transform;

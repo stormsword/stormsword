@@ -15,8 +15,6 @@ public class EffectScript : MonoBehaviour {
 		stompCollider = GetComponent<CircleCollider2D>();
 		stompScript = transform.parent.GetComponent<StompScript>();
 
-		stompCollider.radius = stompScript.radius;	// Stomp effect should always match radius of Stomp
-
 		Destroy (gameObject, duration);	// effect should go away after <duration>
 	}
 	
