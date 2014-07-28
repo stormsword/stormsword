@@ -11,7 +11,7 @@ public class Effect : MonoBehaviour {
 	public float startTime;		// How long (seconds) until the effect starts
 	public float tick;			// How long (seconds) between each pulse of the effect
 
-	internal GameObject target;	// The target the effect is affecting
+	public GameObject target;	// The target the effect is affecting
 	
 	void Start () {
 		// Apply the affect
