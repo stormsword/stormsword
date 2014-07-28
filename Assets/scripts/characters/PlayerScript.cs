@@ -41,21 +41,24 @@ public class PlayerScript : MonoBehaviour {
 		bool attack = Input.GetButtonDown("Fire1");
 		attack |= Input.GetButtonDown("Fire2");
 
+		// Watch for ability input
+		bool ability = Input.GetKeyDown(KeyCode.Q);
+
 		if(attack) {
-			// Tell the character to attack
-
-			/*Play Attack animation */
-			playerAttack = true;
-			animator.SetBool("playerAttack", playerAttack);
+			playerAttack = true;	// Used for attack animation
 			characterScript.Attack();
-
 		}
 		else{
 			// Character isn't attacking
-
 			playerAttack = false;
-			animator.SetBool("playerAttack", playerAttack);
 		}
+
+		if(ability) {
+			// Player is executing ability
+			characterScript.Ability();
+		}
+
+		animator.SetBool("playerAttack", playerAttack);
 
 		// Make sure player cannot leave the camera view
 		var dist = (transform.position - Camera.main.transform.position).z;

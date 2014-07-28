@@ -9,13 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 50: {fileID: 5000000}
-  - 61: {fileID: 6100000}
-  - 114: {fileID: 11400002}
-  - 114: {fileID: 11400000}
   - 95: {fileID: 9500000}
+  - 114: {fileID: 11400000}
+  - 58: {fileID: 5800000}
   m_Layer: 0
-  m_Name: LoogieShot
+  m_Name: Stomp Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,28 +26,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -2.38418579e-07, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!50 &5000000
-Rigidbody2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_FixedAngle: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
---- !u!61 &6100000
-BoxCollider2D:
+--- !u!58 &5800000
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -57,7 +40,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: .230000004, y: .209999993}
+  m_Radius: 1
   m_Center: {x: 0, y: 0}
 --- !u!95 &9500000
 Animator:
@@ -68,7 +51,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6be99444364954bbc9ff4957bf669544, type: 2}
+  m_Controller: {fileID: 9100000, guid: 48c4e92737c034e439664d78be9fa45b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -81,26 +64,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 569bedba68ece4e459fb801e4dc49279, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a76f45e1671f49039d908ba1ce45ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
-  direction: {x: -1, y: 0}
-  facing: {x: -1, y: 0}
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3cdae576b8f04c4faee907c281065e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 20
-  duration: .25
-  ownerType: Enemy
+  duration: .5
+  damage: 1
+  radius: 0
+  snareAmount: 0
+  snareDuration: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -121,7 +92,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300302, guid: b3cd92ccfa0a84e629bf61a6640b27e3, type: 3}
+  m_Sprite: {fileID: 21300002, guid: b9df3bd2ebead4fd3ab1ebd7711bafe5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
