@@ -6,18 +6,15 @@ using System.Collections;
 public class WeaponScript : MonoBehaviour {
 
 	// Components
-	//private MoveScript parentMoveScript;
-	//private MoveScript shotMoveScript;
+	private MoveScript parentMoveScript;
+	private MoveScript shotMoveScript;
 	private ItemSlotScript mainHandSlot;
 	
 
 	private float playerDistance;
-	
-	GameObject player;
-	GameObject enemy;
 
 	// Projectile prefab for shooting
-	//public Transform shotPrefab;
+	public Transform shotPrefab;
 
 	// Weapon stats
 	public float shootingRate = 0.25f; 	// Cooldown between attacks
@@ -30,8 +27,6 @@ public class WeaponScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		mainHandSlot = transform.parent.GetComponent<ItemSlotScript>();	// Grab the parent mainhand to get any slot-related info
-		player = GameObject.Find ("Player");
-		enemy = GameObject.Find ("Enemy");
 	}
 
 	void Update () {
@@ -53,8 +48,8 @@ public class WeaponScript : MonoBehaviour {
 
 			case "Ranged": 
 				// Handle ranged weapon code here
-
-				/*
+				if(enemy)
+				{
 				// Create a new shot
 				var shotTransform = Instantiate(shotPrefab) as Transform;
 				
@@ -84,7 +79,7 @@ public class WeaponScript : MonoBehaviour {
 					projectile.ownerType = gameObject.transform.parent.parent.gameObject.tag;
 				}
 				}
-				*/
+				}
 					break;	
 
 			}
