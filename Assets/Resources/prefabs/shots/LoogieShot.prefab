@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
   - 50: {fileID: 5000000}
-  - 61: {fileID: 6100000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
   - 95: {fileID: 9500000}
+  - 61: {fileID: 6100000}
   m_Layer: 0
   m_Name: LoogieShot
   m_TagString: Untagged
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3cdae576b8f04c4faee907c281065e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  duration: 10
+  damage: 5
+  duration: 5
   ownerType: Enemy
 --- !u!212 &21200000
 SpriteRenderer:

@@ -221,7 +221,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .933333158, y: 0, z: 0}
+  m_LocalPosition: {x: .320166588, y: -.492500007, z: -2.45000005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400010}
@@ -305,8 +305,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 2
-  damage: 1
-  radius: .150000006
   stompEffect: {fileID: 400000, guid: 99f96335f18ca43848cdd061fb5be3ab, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -331,9 +329,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a885aef7194d4baa86be667a538e428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 0}
   shootingRate: .25
   damage: 15
   radius: 5
+  knockback: 500
   type: Melee
   ownerType: Player
 --- !u!114 &11400006
@@ -410,7 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp: 50
-  armor: 5
+  armor: 1
   isEnemy: 0
   HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
 --- !u!114 &11400018
