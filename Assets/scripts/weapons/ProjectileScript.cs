@@ -47,7 +47,7 @@ void OnTriggerEnter2D(Collider2D defenderCollider) {
 				// Apply effect to enemy
 				var effect = Instantiate(spellEffect) as Transform;
 
-				var effectScript = effect.GetComponent<SnareEffect>();
+				var effectScript = effect.gameObject.GetComponent<Effect>();
 				effectScript.target = defender;
 			}
 			
