@@ -68,7 +68,7 @@ Animator:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6be99444364954bbc9ff4957bf669544, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4c0b3120bbbdc4879b4bf2da34981623, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -84,8 +84,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 569bedba68ece4e459fb801e4dc49279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
-  direction: {x: -1, y: 0}
+  speed: 2
+  direction: {x: 0, y: 0}
   facing: {x: -1, y: 0}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  duration: .25
+  duration: 10
   ownerType: Enemy
 --- !u!212 &21200000
 SpriteRenderer:

@@ -6,7 +6,7 @@ using System.Collections;
 public class ItemSlotScript : MonoBehaviour {
 
 	/* Components */
-	private Transform itemPrefab;	// Item that is currently equipped in this slot
+		// Item that is currently equipped in this slot
 
 
 

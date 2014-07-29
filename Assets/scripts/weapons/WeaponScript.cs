@@ -11,7 +11,11 @@ public class WeaponScript : MonoBehaviour {
 	private ItemSlotScript mainHandSlot;
 	
 
-	private float playerDistance;
+	private Vector2 aiPosition;
+	private Vector2 playerDistance;
+	private Vector2 newDirection;
+
+	GameObject player;
 
 	// Projectile prefab for shooting
 	public Transform shotPrefab;
@@ -48,39 +52,54 @@ public class WeaponScript : MonoBehaviour {
 
 			case "Ranged": 
 				// Handle ranged weapon code here
-				if(ownerType == "Enemy")
-				{
-				// Create a new shot
-				var shotTransform = Instantiate(shotPrefab) as Transform;
-				
 
-				// Figure out what direction character is facing
-				if(parentMoveScript)
+					// Create a new shot
+				var shotTransform = Instantiate(shotPrefab) as Transform;
+				player = GameObject.FindWithTag("Player");
+				if(player != null)
 				{
-				parentMoveScript = transform.parent.GetComponent<MoveScript>();
-				
-				Vector3 facing = new Vector3(parentMoveScript.facing.x, parentMoveScript.facing.y, 0);
-				
-				// Grab the position of the parent object (transform)
-				shotTransform.position = transform.position;
-				
-				// Get the shot's move script to adjust its direction
-				shotMoveScript = shotTransform.parent.GetComponent<MoveScript>();
-				
-				if(shotMoveScript) {
-					shotMoveScript.direction = facing;
+				//fires the actual shot
+
+					parentMoveScript = transform.parent.parent.GetComponent<MoveScript>();
+
+					shotTransform.transform.parent = transform;	// Shot transform should be a child of the item slot (and thus the Character)
+
+
+				if(parentMoveScript)
+					{
+
+						// Spawn projectile under character
+						shotTransform.position = transform.position;
+
+						// Figure out what direction character is facing
+						//Vector3 newDirection = new Vector3(parentMoveScript.facing.x, parentMoveScript.facing.y, 0);
+
+						//Shoot directly at player location
+						aiPosition = new Vector2(transform.position.x , transform.position.y);
+						playerDistance = new Vector2(player.transform.position.x, player.transform.position.y);
+						newDirection = (playerDistance - aiPosition);
+
+						// Make sure the bullet isn't going way too fast
+						newDirection = newDirection.normalized;
+
+						// Get the shot's move script to adjust its direction
+						shotMoveScript = shotTransform.GetComponent<MoveScript>();
+						
+							if(shotMoveScript) {
+								shotMoveScript.direction = newDirection;
+							}
+						
+						// Fire the actual projectile
+						ProjectileScript projectile = shotTransform.gameObject.GetComponent<ProjectileScript>();
+						
+							if(projectile) {
+								// Determine what type of player shot this
+								projectile.ownerType = gameObject.transform.parent.parent.gameObject.tag;
+							}
+					}
 				}
-				
-				// Fire the actual projectile
-				ProjectileScript projectile = shotTransform.gameObject.GetComponent<ProjectileScript>();
-				
-				if(projectile) {
-					// Determine what type of player shot this
-					projectile.ownerType = gameObject.transform.parent.parent.gameObject.tag;
-				}
-				}
-				}
-					break;	
+	
+				break;	
 
 			}
 

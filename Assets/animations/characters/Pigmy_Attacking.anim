@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Pigmy_Idle
+  m_Name: Pigmy_Attacking
   serializedVersion: 4
   m_AnimationType: 2
   m_Compressed: 0
@@ -15,36 +15,19 @@ AnimationClip:
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves:
-  - curve:
-    - time: 0
-      value: {fileID: 21300014, guid: b3cd92ccfa0a84e629bf61a6640b27e3, type: 3}
-    - time: 1
-      value: {fileID: 21300014, guid: b3cd92ccfa0a84e629bf61a6640b27e3, type: 3}
-    attribute: m_Sprite
-    path: 
-    classID: 212
-    script: {fileID: 0}
+  m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - path: 0
-      attribute: 0
-      script: {fileID: 0}
-      classID: 212
-      customType: 23
-      isPPtrCurve: 1
-    pptrCurveMapping:
-    - {fileID: 21300014, guid: b3cd92ccfa0a84e629bf61a6640b27e3, type: 3}
-    - {fileID: 21300014, guid: b3cd92ccfa0a84e629bf61a6640b27e3, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 1.01666665
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
