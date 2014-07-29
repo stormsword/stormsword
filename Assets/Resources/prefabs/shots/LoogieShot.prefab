@@ -101,6 +101,7 @@ MonoBehaviour:
   damage: 5
   duration: 5
   ownerType: Enemy
+  spellEffect: {fileID: 400000, guid: e50f8040d161d4e9fa8d0b4eccc38f02, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
