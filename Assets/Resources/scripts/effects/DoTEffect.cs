@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/* Snare Effect - Decrease movement speed of character by x% for a period of time */
+/* DpT Effect - Apply Damage to a character over time */
 
 public class DoTEffect : Effect {
 	public float amount;	// Amount (%)
 
-	private HealthScript targetHealthScript;	// The target's movement script
+	private HealthScript targetHealthScript;	// The target's health script
 	
 	protected override void ApplyEffect() {
-		// Apply the snare to the target
+		// Apply damage to the target (will happen once per tick)
 
-		targetHealthScript = target.GetComponent<HealthScript>();	// Movespeed is set on MoveScript
+		targetHealthScript = target.GetComponent<HealthScript>();	// Damage() is part of HealthScript
 
-		targetHealthScript.Damage(amount);	// Reduce the target's movement script by a percentage
+		targetHealthScript.Damage(amount);	// Apply damage to the target (mitigation is handled by HealthScript)
 	}
 }
