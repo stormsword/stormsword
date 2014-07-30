@@ -12,6 +12,7 @@ public class ProjectileScript : MonoBehaviour {
 	// Who shot this projectile?
 	public string ownerType;
 
+	public Transform spellEffect;	// Optional - Does the shot apply an effect?
 
 	private BoxCollider2D projectileCollider;
 	
@@ -40,7 +41,15 @@ void OnTriggerEnter2D(Collider2D defenderCollider) {
 		
 		if((ownerType == "Player" && defender.tag == "Enemy")
 		   ||
-		   (ownerType == "Enemy" && defender.tag == "Player")){
+		   (ownerType == "Enemy" && defender.tag == "Player")) {
+
+			if(spellEffect != null) {
+				// Apply effect to enemy
+				var effect = Instantiate(spellEffect) as Transform;
+
+				var effectScript = effect.gameObject.GetComponent<Effect>();
+				effectScript.target = defender;
+			}
 			
 			// Calculate armor reduction
 			float totalDamage = damage - defenderHealth.armor;
