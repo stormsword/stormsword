@@ -13,10 +13,13 @@ public class AIScript : MonoBehaviour {
 	// Get player object to determine player position
 	GameObject player;
 
+	/* Class movement definition
+	 * Controls which AI script will be used
+	 * Sets an anchor to return the enemy to if needed
+	 */
 	[System.Serializable]
 	public class enemyArchetype{
 		public string moveDefinition;
-		public bool characterSighted = false;
 		public Vector2 spawnPoint;
 	}
 	public enemyArchetype Archetype;
@@ -37,15 +40,15 @@ public class AIScript : MonoBehaviour {
 
 
 	// Hold two random numbers
-	public Vector2 randomXY;
+	private Vector2 randomXY;
 
 	// Move the monster
 	public Vector2 direction;
-	public Vector2 stalkerDirection;
-	public Vector2 ranDirection;
+	private Vector2 stalkerDirection;
+	private Vector2 ranDirection;
 
 	// Stop moving
-	public Vector2 stall;
+	private Vector2 stall;
 	
 	public float moveCooldown;
 
@@ -58,8 +61,7 @@ public class AIScript : MonoBehaviour {
 
 		moveCooldown = 0f;
 
-		//Class initialization 
-		//Archetype.moveDefinition = "";
+		//Class variable initialization 
 		Archetype.spawnPoint = new Vector2 (transform.position.x, transform.position.y);
 
 		direction = new Vector2(0,0);
@@ -99,7 +101,7 @@ public class AIScript : MonoBehaviour {
 				// Monster ready to move
 
 				if(Archetype.moveDefinition == "stalker"){
-					// Attempting archetyping monsters
+					// Enable stalker movement
 					if(playerDistance >= 3f){
 						// Player too far, leashing monster
 						isMoving = true;
@@ -107,6 +109,7 @@ public class AIScript : MonoBehaviour {
 						stalkerDistanceFromStart = Vector3.Distance(Archetype.spawnPoint, aiPosition);
 	
 							if(stalkerDistanceFromStart >= .2f){
+							// Find a suitable stopping distance to keep animation fluid
 							ranDirection = Archetype.spawnPoint - aiPosition;
 							ranDirection = ranDirection.normalized;
 							moveScript.Move (ranDirection.x, ranDirection.y);
