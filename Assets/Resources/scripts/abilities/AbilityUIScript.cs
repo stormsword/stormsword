@@ -22,11 +22,15 @@ public class AbilityUIScript : MonoBehaviour {
 	}
 	
 	void OnGUI() {
-		// 
-		Color tmpColor = GUI.color;
+
+		// Draw a frame around the ability
+
+
+		// Draw the ability's image and apply opacity to fade if necessary
+		Color tmpColor = GUI.color;		// Placeholder for current color setting
 		GUI.color = new Color(tmpColor.r, tmpColor.g, tmpColor.b, currentAlpha);
-		GUI.Label(new Rect(x, y, width, height), abilityImage);
-		GUI.color = tmpColor;
+		GUI.Button(new Rect(x, y, width, height), abilityImage);	// Draw the actual image
+		GUI.color = tmpColor;			// Restore color setting for other GUI elements
 	}
 
 	/* FadeOut - Called to fade the current UI element to partial opacity
