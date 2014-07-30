@@ -110,7 +110,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482570335}
-  - 114: {fileID: 482570336}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -130,22 +129,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!114 &482570336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 482570334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ab213d29dbb4308a20c78a1a6a97ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  x: 10
-  y: 290
-  width: 30
-  height: 30
-  abilityImage: {fileID: 2800000, guid: 2fcd7131821f341129fedf345fae8676, type: 3}
 --- !u!1 &846025276
 GameObject:
   m_ObjectHideFlags: 0
