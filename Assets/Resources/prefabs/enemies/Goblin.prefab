@@ -138,7 +138,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0700001717, y: -.435000002, z: -2.45000005}
+  m_LocalPosition: {x: -.0699999928, y: -.434999973, z: -2.45000005}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children:
   - {fileID: 400006}
@@ -264,9 +264,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6081c2956a642968ca455e1ac18dac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Archetype:
+    moveDefinition: stalker
+    characterSighted: 0
   facing: {x: -1, y: 0}
   randomXY: {x: 0, y: 0}
   direction: {x: 0, y: 0}
+  stalkerDirection: {x: 0, y: 0}
   stall: {x: 0, y: 0}
   moveCooldown: 1
 --- !u!114 &11400004
@@ -319,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 569bedba68ece4e459fb801e4dc49279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
+  speed: 20
   direction: {x: 0, y: 0}
   facing: {x: -1, y: 0}
 --- !u!114 &11400012
