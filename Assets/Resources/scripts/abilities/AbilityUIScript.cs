@@ -22,6 +22,7 @@ public class AbilityUIScript : MonoBehaviour {
 	}
 	
 	void OnGUI() {
+		// 
 		Color tmpColor = GUI.color;
 		GUI.color = new Color(tmpColor.r, tmpColor.g, tmpColor.b, currentAlpha);
 		GUI.Label(new Rect(x, y, width, height), abilityImage);
@@ -31,14 +32,11 @@ public class AbilityUIScript : MonoBehaviour {
 	/* FadeOut - Called to fade the current UI element to partial opacity
 	 	e.g. when it's not available */
 	internal void FadeOut() {
-
 		currentAlpha = fadeAlpha;
-		Debug.Log ("Fading out: " + currentAlpha);
 	}
 
 	/* FadeIn - Called to fade the current UI element to full opacity */
 	internal void FadeIn() {
-		currentAlpha = 1f;
-		Debug.Log ("Fading in: " + currentAlpha);
+		currentAlpha = 1f;	// 1f = 'fully visible'
 	}
 }
