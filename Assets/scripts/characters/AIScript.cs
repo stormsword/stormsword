@@ -17,7 +17,7 @@ public class AIScript : MonoBehaviour {
 	public class enemyArchetype{
 		public string moveDefinition;
 		public bool characterSighted = false;
-		//public Vector2 spawnPoint;
+		public Vector2 spawnPoint;
 	}
 	public enemyArchetype Archetype;
 	
@@ -25,8 +25,8 @@ public class AIScript : MonoBehaviour {
 	// Used to calculate player vs. enemy positions
 	private Vector2 aiPosition;
 	private float playerDistance;
+	private float stalkerDistanceFromStart;
 	private Vector2 playerPosition;
-	//private Vector2 spawnPoint;
 
 	// Figure out which direction the enemy is facing
 	public Vector2 facing;
@@ -42,6 +42,7 @@ public class AIScript : MonoBehaviour {
 	// Move the monster
 	public Vector2 direction;
 	public Vector2 stalkerDirection;
+	public Vector2 ranDirection;
 
 	// Stop moving
 	public Vector2 stall;
@@ -58,11 +59,8 @@ public class AIScript : MonoBehaviour {
 		moveCooldown = 0f;
 
 		//Class initialization 
-
 		//Archetype.moveDefinition = "";
-		//spawnPoint = new Vector2 (transform.position.x, transform.position.y);
-
-		//Debug.Log ("spawn point is " + Archetype.spawnPoint);
+		Archetype.spawnPoint = new Vector2 (transform.position.x, transform.position.y);
 
 		direction = new Vector2(0,0);
 		stall = new Vector2 (0, 0);
@@ -71,7 +69,6 @@ public class AIScript : MonoBehaviour {
 
 	void Update() {
 		player = GameObject.FindWithTag("Player");
-
 		if(player != null){
 			// Is the player still alive?
 
@@ -79,7 +76,6 @@ public class AIScript : MonoBehaviour {
 				// Get the exact point where the monster is located
 			playerDistance = Vector3.Distance(player.transform.position, aiPosition);
 				// Take the difference of the player location and the monster location
-			//Debug.Log ("ai Update position is" + aiPosition);
 
 			if(playerDistance <= 1.5f){
 				// Monster is close enough to Initiate Melee attack
@@ -102,19 +98,28 @@ public class AIScript : MonoBehaviour {
 			if (moveCooldown <= 0) {
 				// Monster ready to move
 
+				if(Archetype.moveDefinition == "stalker"){
+					// Attempting archetyping monsters
+					if(playerDistance >= 3f){
+						// Player too far, leashing monster
+						isMoving = true;
+						animator.SetBool ( "isMoving", isMoving);
+						stalkerDistanceFromStart = Vector3.Distance(Archetype.spawnPoint, aiPosition);
+	
+							if(stalkerDistanceFromStart >= .2f){
+							ranDirection = Archetype.spawnPoint - aiPosition;
+							ranDirection = ranDirection.normalized;
+							moveScript.Move (ranDirection.x, ranDirection.y);
+							}
+							
+							else{
+							isMoving = false;
+							animator.SetBool ("isMoving", isMoving);
+							moveScript.Move (stall.x, stall.y);
+							}
+					}
 
-				if(playerDistance >= 4f){
-					// Leash code would go here
-					isMoving = false;
-					animator.SetBool ( "isMoving", isMoving);
-					moveScript.Move (stall.x, stall.y);
-				}
-
-				else{
-				
-					if(Archetype.moveDefinition == "stalker"){
-						// Attempting archetyping monsters
-
+					else{
 						isMoving = true;
 						// Modify boolean for animation trigger
 						playerPosition = new Vector2 (player.transform.position.x, player.transform.position.y);
@@ -125,10 +130,20 @@ public class AIScript : MonoBehaviour {
 						moveScript.Move (stalkerDirection.x, stalkerDirection.y);	
 						// Call moveScript move function
 					}
-				
+				}
+
+				else{
+					//Wanderer Script
+
+					if(playerDistance >= 4f){
+					// Player out of range, stop moving
+					isMoving = false;
+					animator.SetBool ( "isMoving", isMoving);
+					moveScript.Move (stall.x, stall.y);
+					}
+
 					else{
-						// Wanderer Movement
-							
+					// Wanderer Movement
 						isMoving = true;
 						// Modify boolean for animation trigger
 						float x = Random.Range (-50, 50);
@@ -139,7 +154,6 @@ public class AIScript : MonoBehaviour {
 						direction = randomXY - aiPosition;
 						// Distance to move is random vector - where the AI is right now
 						direction = direction.normalized;
-						// Normalize it
 						moveScript.Move (direction.x, direction.y);	
 						// Call moveScript move function
 					}
