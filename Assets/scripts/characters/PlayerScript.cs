@@ -11,10 +11,9 @@ public class PlayerScript : MonoBehaviour {
 	// Animations
 	private bool playerAttack = false;
 
-
-	// Speed of the player
-	public Vector2 speed = new Vector2(50, 50);
-
+	// Hotkeys
+	public char abilityKey = 'Q';
+	
 	void Awake() {
 		moveScript = GetComponent<MoveScript>();
 		characterScript = GetComponent<CharacterScript>();
