@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/* ChargeEffectScript - Character charges forward and knocks out all enemies in its path */
 public class ChargeEffectScript : MonoBehaviour {
 
-  public float duration = 0.5f;   // Time (seconds) the stomp effect lasts once used
-  
-  public float damage = 1;      // Damage the ability does on impact
-  public float distance = 0f;    // Distance the player should travel
-  public float radius = 0f;    // Radius the effect should affect
+  public float amount = 0f;
+  public float radius = 0f;    // Radius around the player the charge affects
+  public float duration = 0f;
 
-  public Transform spellEffect;     // Effect (Prefab) the ability will apply
+
+  public Transform spellEffect;     // Effect (Prefab) the ability will apply to 
 
   private string ownerType;
 
@@ -21,20 +21,19 @@ public class ChargeEffectScript : MonoBehaviour {
 
     character = GetComponentInParent<CharacterScript>();
     ownerType = character.gameObject.tag; // Get the character's tag so we can decide who the ability should damage
-
-	characterMoveScript = character.GetComponent<MoveScript>();
 	
-	ApplyHaste(character.gameObject);
+	Charge(character.gameObject);
 
-    abilityCollider = GetComponent<CircleCollider2D>();
-    abilityCollider.radius = radius;  // Stomp effect should always match radius of Stomp
-
+//    abilityCollider = GetComponent<CircleCollider2D>();
+//    abilityCollider.radius = radius;  // Stomp effect should always match radius of Stomp
+//
     Destroy (gameObject, duration); // effect should go away after <duration>
   }
 
 //  void OnTriggerEnter2D(Collider2D defenderCollider) {
+//	// Knockback any enemy that the player touches
 //    
-//    HealthScript defenderHealth = defenderCollider.GetComponent<HealthScript>();
+//    MoveScript defenderMoveScript = defenderCollider.GetComponent<HealthScript>();
 //    
 //    // Check if the object I'm colliding with can be damaged
 //    if(defenderHealth != null) {
@@ -60,23 +59,26 @@ public class ChargeEffectScript : MonoBehaviour {
 //      }
 //    }
 //  }
-//
 
-	void ApplyHaste(GameObject character) {
+
+	void Charge(GameObject character) {
+		if(characterMoveScript == null) {
+			// Only get target movescript once
+			characterMoveScript = character.GetComponent<MoveScript>();	// Push() is part of MoveScript
+			
+			Vector2 direction = characterMoveScript.facing;
+			
+			characterMoveScript.Push(direction, amount);
+		}
+
+	}
+
+	void ApplyStun(GameObject defender) {
 		var effect = Instantiate(spellEffect) as Transform;
 		
 		var effectScript = effect.gameObject.GetComponent<Effect>();
-		effectScript.target = character;
+		effectScript.target = defender;
+
 	}
-  /* Snare - Slows the movement speed of the defending character
-   * defender (GameObject)  - The character affected by the spell
-   * snareAmount (float)    - The amount (in percentage) to reduce the character's movement speed
-   * snareDuration (float)  - The time (in seconds) the snare effect should last for
-//   */
-//  void ApplySnare(GameObject defender, float snareAmount, float snareDuration) {
-//    var effect = Instantiate(spellEffect) as Transform;
-//
-//    var effectScript = effect.GetComponent<SnareEffect>();
-//    effectScript.target = defender;
-//  }
+
 }

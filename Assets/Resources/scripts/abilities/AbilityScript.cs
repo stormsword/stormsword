@@ -28,8 +28,8 @@ public class AbilityScript : MonoBehaviour {
 			abilitySlot.Cooldown(cooldown);
 
 			var abilityTransform = Instantiate(abilityEffect) as Transform;
-			abilityTransform.transform.parent = transform;	// Stomp effect should be a child of the ability slot (and thus the Character)
-			abilityTransform.transform.position = transform.position;	// Stomp effect should spawn underneath player
+			abilityTransform.transform.parent = transform;	// Effect should be a child of the ability slot (and thus the Character)
+			abilityTransform.transform.position = transform.position;	// Effect should spawn underneath player
 		}
 	}
 

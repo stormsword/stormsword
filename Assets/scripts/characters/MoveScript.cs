@@ -66,11 +66,19 @@ public class MoveScript : MonoBehaviour {
 		// Rotate rigidbody accordingly
 	}
 
-	/* Moves the object in a direction 
+	/* Moves the object in a direction by a small amount (used for player input)
 	 	float input_X: Input for X-axis movement (b/t -1 and 1)
 	 	float input_Y: Input for Y-axis movement (b/t -1 and 1)
 	 */
 	internal void Move(float input_X, float input_Y) {
 		direction = new Vector2(input_X, input_Y);
+	}
+
+	/* Push - pushes a character in a direction by an amount
+	 * Vector2 direction - The direction to push
+	 * float amount - The amount the character should be pushed
+	 */
+	internal void Push(Vector2 direction, float amount) {
+		rigidbody2D.AddForce(direction * amount);
 	}
 }

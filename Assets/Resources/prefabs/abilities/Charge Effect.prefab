@@ -67,10 +67,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca9110e9d5b04e41992d0a13c6ffad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: .5
-  damage: 1
-  distance: 0
-  radius: 0
+  amount: 15000
+  radius: 1
+  duration: .400000006
   spellEffect: {fileID: 400000, guid: 0654cc019f16f4485992a3eeebeff6a0, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
