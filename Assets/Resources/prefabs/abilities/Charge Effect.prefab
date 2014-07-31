@@ -40,7 +40,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: 1
+  m_Radius: .0500000007
   m_Center: {x: 0, y: 0}
 --- !u!95 &9500000
 Animator:
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 15000
-  radius: 1
+  radius: .0500000007
   duration: .400000006
   spellEffect: {fileID: 400000, guid: 0654cc019f16f4485992a3eeebeff6a0, type: 2}
 --- !u!212 &21200000

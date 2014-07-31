@@ -24,41 +24,31 @@ public class ChargeEffectScript : MonoBehaviour {
 	
 	Charge(character.gameObject);
 
-//    abilityCollider = GetComponent<CircleCollider2D>();
-//    abilityCollider.radius = radius;  // Stomp effect should always match radius of Stomp
-//
+    abilityCollider = GetComponent<CircleCollider2D>();
+    abilityCollider.radius = radius;  // Stomp effect should always match radius of Stomp
+
     Destroy (gameObject, duration); // effect should go away after <duration>
   }
 
-//  void OnTriggerEnter2D(Collider2D defenderCollider) {
-//	// Knockback any enemy that the player touches
-//    
-//    MoveScript defenderMoveScript = defenderCollider.GetComponent<HealthScript>();
-//    
-//    // Check if the object I'm colliding with can be damaged
-//    if(defenderHealth != null) {
-//      
-//      GameObject defender = defenderHealth.gameObject;
-//      
-//      if((ownerType == "Player" && defender.tag == "Enemy")
-//         ||
-//         (ownerType == "Enemy" && defender.tag == "Player")){
-//      
-//        // Ability should snare (reduce move speed of) the defender
-//        ApplySnare (defender, snareAmount, snareDuration);
-//      
-//        // Calculate armor reduction
-//        float totalDamage = damage - defenderHealth.armor;
-//        
-//        // attacks should always do 1 dmg, even if they are very weak
-//        if(totalDamage <= 0) {
-//          totalDamage = 1;
-//        }
-//        
-//        defenderHealth.Damage(totalDamage);   // Apply damage to the defender
-//      }
-//    }
-//  }
+  void OnTriggerEnter2D(Collider2D defenderCollider) {
+	// Knockback any enemy that the player touches
+    
+    HealthScript defenderHealthScript = defenderCollider.GetComponent<HealthScript>();
+    
+    // Check if the object I'm colliding with can be damaged
+    if(defenderHealthScript != null) {
+      
+      GameObject defender = defenderHealthScript.gameObject;
+      
+      if((ownerType == "Player" && defender.tag == "Enemy")
+         ||
+         (ownerType == "Enemy" && defender.tag == "Player")) {
+      
+        // Ability should knock the defender back (and stun?)
+        ApplyStun (defender);
+      }
+    }
+  }
 
 
 	void Charge(GameObject character) {

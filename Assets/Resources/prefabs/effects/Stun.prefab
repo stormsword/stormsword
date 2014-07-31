@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Haste
+  m_Name: Stun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ MonoBehaviour:
   startTime: 0
   tick: 10
   target: {fileID: 0}
-  amount: 15000
+  amount: 5000
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
