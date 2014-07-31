@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Charge
+  m_Name: Haste
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,11 +36,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2d57c2aa01544c1d90bf77731b764b0, type: 3}
+  m_Script: {fileID: 11500000, guid: cd820404e2dcd4f9b9cd7b8e951012be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldown: 2
-  abilityEffect: {fileID: 400000, guid: 6a4e52718814940a59a2c14906a6aa61, type: 2}
+  duration: 2
+  startTime: 0
+  tick: 10
+  target: {fileID: 0}
+  amount: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

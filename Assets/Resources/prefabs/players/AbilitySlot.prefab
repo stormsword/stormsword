@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 2
-  abilityEffect: {fileID: 400000, guid: 99f96335f18ca43848cdd061fb5be3ab, type: 2}
+  abilityEffect: {fileID: 400000, guid: 6a4e52718814940a59a2c14906a6aa61, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
