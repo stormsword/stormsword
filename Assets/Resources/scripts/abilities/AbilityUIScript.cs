@@ -24,7 +24,7 @@ public class AbilityUIScript : MonoBehaviour {
 	void Start () {
 		GameObject player = GameObject.FindWithTag("Player");
 		playerScript = player.GetComponent<PlayerScript>();
-		abilityKey = playerScript.abilityKey.ToString();
+		abilityKey = playerScript.ability1Key.ToString();
 	}
 	
 	void OnGUI() {

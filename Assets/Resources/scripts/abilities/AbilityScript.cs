@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StompScript : MonoBehaviour {
+public class AbilityScript : MonoBehaviour {
 
 	/* Components */
 	private AbilitySlotScript abilitySlot;	// Get the ability slot that this ability is equipped in
@@ -10,7 +10,7 @@ public class StompScript : MonoBehaviour {
 	public float cooldown = 2.0f; // Cooldown between abilities
 
 
-	public Transform stompEffect;	// Effect animation triggered when ability is used
+	public Transform abilityEffect;	// Effect animation triggered when ability is used
 
 	// Use this for initialization
 	void Start () {
@@ -27,9 +27,9 @@ public class StompScript : MonoBehaviour {
 			// Used ability, trigger cooldown
 			abilitySlot.Cooldown(cooldown);
 
-			var stompTransform = Instantiate(stompEffect) as Transform;
-			stompTransform.transform.parent = transform;	// Stomp effect should be a child of the ability slot (and thus the Character)
-			stompTransform.transform.position = transform.position;	// Stomp effect should spawn underneath player
+			var abilityTransform = Instantiate(abilityEffect) as Transform;
+			abilityTransform.transform.parent = transform;	// Stomp effect should be a child of the ability slot (and thus the Character)
+			abilityTransform.transform.position = transform.position;	// Stomp effect should spawn underneath player
 		}
 	}
 
