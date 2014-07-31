@@ -22,7 +22,7 @@ public class ProjectileScript : MonoBehaviour {
 		character = GetComponentInParent<CharacterScript>();
 		ownerType = character.gameObject.tag;	// Get the character's tag so we can decide who the ability should damage
 
-		projectileCollider = GetComponent<BoxCollider2D>();
+		//projectileCollider = GetComponent<BoxCollider2D>();
 
 		Destroy(gameObject, duration);	// Only lives for 20 seconds to prevent leaks
 	}
