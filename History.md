@@ -1,9 +1,12 @@
 0.0.4 / 2014-07-31
 ==================
  
-* add: Abilities have a small UI icon that fades out when on cooldown
-* update: Goblin now animates properly when walking/attacking
-* add: Pigmy (enemy) 
+ * update: Added two AI types
+   * 'Stalker' - returns to spawnpoint when you move ~3 squares away
+   * 'Wanderer' - roams in place when you move ~3 squares away
+ * add: Abilities have a small UI icon that fades out when on cooldown
+ * update: Goblin now animates properly when walking/attacking
+ * add: Pigmy (enemy) 
  * add: Created Effects that can be applied by weapons or abilities
    * DoT effect - applies damage over time (currently used by Pigmy enemy)
    * Snare effect - reduces move speed by a % (currently used on Stomp)
