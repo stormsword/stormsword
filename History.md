@@ -1,3 +1,18 @@
+0.0.4 / 2014-07-31
+==================
+ 
+* add: Abilities have a small UI icon that fades out when on cooldown
+* update: Goblin now animates properly when walking/attacking
+* add: Pigmy (enemy) 
+ * add: Created Effects that can be applied by weapons or abilities
+   * DoT effect - applies damage over time (currently used by Pigmy enemy)
+   * Snare effect - reduces move speed by a % (currently used on Stomp)
+ * add: Created 'Stomp' ability
+   * activated by pressing Q
+   * damages all enemies in an area
+   * displays a short animation
+ * bugfix: Player can no longer walk through walls
+
 0.0.3 / 2014-07-26
 ==================
 
