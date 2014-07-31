@@ -6,10 +6,14 @@ public class AbilitySlotScript : MonoBehaviour {
 
 	// Remaining cooldown for using ability in slot 1
 	public float abilityCooldown;
+
+	private AbilityUIScript abilityUI;
 	
 	// Use this for initialization
 	void Start () {
 		abilityCooldown = 0f;	// No ability has been used yet so default to zero
+		abilityUI = GetComponent<AbilityUIScript>();
+
 	}
 	
 	// Update is called once per frame
@@ -18,12 +22,15 @@ public class AbilitySlotScript : MonoBehaviour {
 		if(abilityCooldown > 0) {
 			abilityCooldown -= Time.deltaTime;
 		}
-		if (abilityCooldown < 0)
+		if (abilityCooldown < 0) {
 			abilityCooldown = 0;
+			abilityUI.FadeIn();
+		}
 	}
 
 	// An item in this slot triggered the slot's cooldown
 	public void Cooldown(float amount) {
 		abilityCooldown = amount;
+		abilityUI.FadeOut();
 	}
 }
