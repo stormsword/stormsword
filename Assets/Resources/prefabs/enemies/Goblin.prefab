@@ -266,14 +266,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archetype:
     moveDefinition: stalker
-    characterSighted: 0
     spawnPoint: {x: 0, y: 0}
+    aggroDistance: 3
+    attackDistance: 1.5
   facing: {x: -1, y: 0}
-  randomXY: {x: 0, y: 0}
   direction: {x: 0, y: 0}
-  stalkerDirection: {x: 0, y: 0}
-  ranDirection: {x: 0, y: 0}
-  stall: {x: 0, y: 0}
   moveCooldown: 1
 --- !u!114 &11400004
 MonoBehaviour:

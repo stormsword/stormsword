@@ -21,6 +21,8 @@ public class AIScript : MonoBehaviour {
 	public class enemyArchetype{
 		public string moveDefinition;
 		public Vector2 spawnPoint;
+		public float aggroDistance;
+		public float attackDistance;
 	}
 	public enemyArchetype Archetype;
 	
@@ -61,6 +63,8 @@ public class AIScript : MonoBehaviour {
 
 		moveCooldown = 0f;
 
+
+
 		//Class variable initialization 
 		Archetype.spawnPoint = new Vector2 (transform.position.x, transform.position.y);
 
@@ -79,14 +83,14 @@ public class AIScript : MonoBehaviour {
 			playerDistance = Vector3.Distance(player.transform.position, aiPosition);
 				// Take the difference of the player location and the monster location
 
-			if(playerDistance <= 1.5f){
+			if(playerDistance <= Archetype.attackDistance){
 				// Monster is close enough to Initiate Melee attack
 				isAttacking = true;
 				animator.SetBool ("isAttacking", isAttacking);
 				characterScript.Attack();
 			}
 			
-			if(playerDistance > 1.5f){
+			if(playerDistance > Archetype.attackDistance){
 				isAttacking = false;
 				animator.SetBool ("isAttacking", isAttacking);
 			}
@@ -102,7 +106,7 @@ public class AIScript : MonoBehaviour {
 
 				if(Archetype.moveDefinition == "stalker"){
 					// Enable stalker movement
-					if(playerDistance >= 3f){
+					if(playerDistance >= Archetype.aggroDistance){
 						// Player too far, leashing monster
 						isMoving = true;
 						animator.SetBool ( "isMoving", isMoving);
@@ -138,7 +142,7 @@ public class AIScript : MonoBehaviour {
 				else{
 					//Wanderer Script
 
-					if(playerDistance >= 4f){
+					if(playerDistance >= Archetype.aggroDistance){
 					// Player out of range, stop moving
 					isMoving = false;
 					animator.SetBool ( "isMoving", isMoving);
