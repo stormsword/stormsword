@@ -33,7 +33,7 @@ public class AbilityUIScript : MonoBehaviour {
 		// Get ability hotkey
 		GameObject player = GameObject.FindWithTag("Player");
 		playerScript = player.GetComponent<PlayerScript>();
-		abilityKey = playerScript.ability1Key.ToString();
+		abilityKey = playerScript.abilityKeys[abilityIndex].ToString();
 
 		// Get ability icon
 		abilitySlotScript = GetComponent<AbilitySlotScript>();

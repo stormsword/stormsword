@@ -12,8 +12,7 @@ public class PlayerScript : MonoBehaviour {
 	private bool playerAttack = false;
 
 	// Hotkeys
-	public char ability1Key = 'Q';
-	public char ability2Key = 'W';
+	public char[] abilityKeys = ['Q', 'W']
 	
 	void Awake() {
 		moveScript = GetComponent<MoveScript>();
