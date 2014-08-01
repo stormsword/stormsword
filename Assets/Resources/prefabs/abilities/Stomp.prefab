@@ -69,10 +69,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellEffect: {fileID: 400000, guid: e50f8040d161d4e9fa8d0b4eccc38f02, type: 2}
   cooldown: 2
-  duration: 2
+  duration: .5
+  abilityIcon: {fileID: 2800000, guid: 2fcd7131821f341129fedf345fae8676, type: 3}
   snareAmount: 0
   snareDuration: 0
-  spellEffect: {fileID: 400000, guid: e50f8040d161d4e9fa8d0b4eccc38f02, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

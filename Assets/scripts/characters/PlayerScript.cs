@@ -12,16 +12,18 @@ public class PlayerScript : MonoBehaviour {
 	private bool playerAttack = false;
 
 	// Hotkeys
-	public char[] abilityKeys = ['Q', 'W']
+	public char[] abilityKeys;
 	
 	void Awake() {
 		moveScript = GetComponent<MoveScript>();
 		characterScript = GetComponent<CharacterScript>();
-		animator = GetComponent<Animator> ();
+		animator = GetComponent<Animator>();
 	}
 
 	void Start () {
-	
+		abilityKeys = new char[2];
+		abilityKeys[0] = 'Q';
+		abilityKeys[1] = 'W';
 	}
 	
 	// Update is called once per frame
