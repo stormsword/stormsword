@@ -4,8 +4,10 @@ using System.Collections;
 /* AbilitySlotScript - Allows a character to equip an ability */
 public class AbilitySlotScript : MonoBehaviour {
 
-	// Remaining cooldown for using ability in slot 1
+	// Remaining cooldown for using ability in slot
 	public float abilityCooldown;
+
+	public Transform abilityEquipped;
 
 	private AbilityUIScript abilityUI;
 	
@@ -13,7 +15,6 @@ public class AbilitySlotScript : MonoBehaviour {
 	void Start () {
 		abilityCooldown = 0f;	// No ability has been used yet so default to zero
 		abilityUI = GetComponent<AbilityUIScript>();
-
 	}
 	
 	// Update is called once per frame
@@ -28,10 +29,16 @@ public class AbilitySlotScript : MonoBehaviour {
 		}
 	}
 
-	// An item in this slot triggered the slot's cooldown
-	public void Cooldown(float amount) {
-		abilityCooldown = amount;
-		abilityUI.FadeOut();
+	/* Cast - Creates and activates the equipped ability */
+	public void Cast() {
+		if(CanCast) {
+			var ability = Instantiate(abilityEquipped) as Transform;
+			ability.transform.parent = transform;	// Set ability to be a child of the ability slot (and thus the player)
+			ability.transform.position = transform.position;	// Ability should spawn under the player
+
+			var abilityScript = ability.gameObject.GetComponent<AbilityScript>();
+			Cooldown(abilityScript.cooldown);	// Trigger cooldown on this slot
+		}
 	}
 
 	// Is the slot off cooldown and ready to be used?
@@ -40,5 +47,13 @@ public class AbilitySlotScript : MonoBehaviour {
 			return(abilityCooldown <= 0f);	
 		}
 	}
+
+	// An item in this slot triggered the slot's cooldown
+	public void Cooldown(float amount) {
+		abilityCooldown = amount;
+		abilityUI.FadeOut();
+	}
+
+
 
 }

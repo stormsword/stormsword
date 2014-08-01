@@ -10,6 +10,7 @@ public class AbilityScript : MonoBehaviour {
 
 	public Transform spellEffect;     // Effect (Prefab) the ability will apply to players it hits
 	public float cooldown = 2.0f; // Cooldown between abilities
+	public float duration = 0f;			// Time the effect should last (and animate)
 	
 	private string ownerType;		// Get the tag of the owner to determine if it can damage others
 
@@ -19,6 +20,9 @@ public class AbilityScript : MonoBehaviour {
 
 		character = GetComponentInParent<CharacterScript>();
 		ownerType = character.gameObject.tag; // Get the character's tag so we can decide who the ability should damage
+
+		UseAbility (character.gameObject);
+		Destroy(gameObject, duration);	// Effect will go away after (duration) time)
 	}
 	
 	// Update is called once per frame
@@ -28,18 +32,7 @@ public class AbilityScript : MonoBehaviour {
 	/* UseAbility - Override this with your ability's logic */
 	protected virtual void UseAbility(GameObject character) {
 	}	
-
-	/* Cast - Trigger the current ability (if off cooldown) */
-	internal void Cast() {
-		if(abilitySlot.CanCast) {
-			// Used ability, trigger cooldown
-			abilitySlot.Cooldown(cooldown);
-
-			// Trigger the actual ability
-			UseAbility(character.gameObject);
-		}
-	}
-
+	
 	/* ApplySpellEffect - Creates a new effect (DoT, Snare, etc) to a character */
 	void ApplySpellEffect(GameObject defender) {
 		var effect = Instantiate(spellEffect) as Transform;
