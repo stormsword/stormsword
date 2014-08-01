@@ -52,7 +52,7 @@ public class CharacterScript : MonoBehaviour {
 	*/
 	internal void Ability(int slot) {
 		if(abilities[slot] != null) {
-			if(abilities[slot].CanCast) {
+			if(abilitySlot.CanCast) {
 				abilities[slot].Cast();
 			}
 		}

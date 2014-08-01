@@ -33,4 +33,12 @@ public class AbilitySlotScript : MonoBehaviour {
 		abilityCooldown = amount;
 		abilityUI.FadeOut();
 	}
+
+	// Is the slot off cooldown and ready to be used?
+	public bool CanCast {
+		get {
+			return(abilityCooldown <= 0f);	
+		}
+	}
+
 }

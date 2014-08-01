@@ -23,20 +23,13 @@ public class AbilityScript : MonoBehaviour {
 
 	/* Cast - Trigger the current ability (if off cooldown) */
 	internal void Cast() {
-		if(CanCast) {
+		if(abilitySlot.CanCast) {
 			// Used ability, trigger cooldown
 			abilitySlot.Cooldown(cooldown);
 
 			var abilityTransform = Instantiate(abilityEffect) as Transform;
 			abilityTransform.transform.parent = transform;	// Effect should be a child of the ability slot (and thus the Character)
 			abilityTransform.transform.position = transform.position;	// Effect should spawn underneath player
-		}
-	}
-
-	// Is the ability ready to be cast?
-	public bool CanCast {
-		get {
-			return(abilitySlot.abilityCooldown <= 0f);	
 		}
 	}
 }

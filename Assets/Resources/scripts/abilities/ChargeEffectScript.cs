@@ -45,7 +45,7 @@ public class ChargeEffectScript : MonoBehaviour {
          (ownerType == "Enemy" && defender.tag == "Player")) {
       
         // Ability should knock the defender back (and stun?)
-        ApplyStun (defender);
+        ApplySpellEffect (defender);
       }
     }
   }
@@ -63,7 +63,7 @@ public class ChargeEffectScript : MonoBehaviour {
 
 	}
 
-	void ApplyStun(GameObject defender) {
+	void ApplySpellEffect(GameObject defender) {
 		var effect = Instantiate(spellEffect) as Transform;
 		
 		var effectScript = effect.gameObject.GetComponent<Effect>();
