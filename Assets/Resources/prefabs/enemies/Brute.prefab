@@ -261,7 +261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archetype:
     moveDefinition: wanderer
-    spawnPoint: {x: 0, y: 0}
+    spawnPoint: {x: 6, y: -2.5}
     aggroDistance: 6
     attackDistance: 1.5
   facing: {x: -1, y: 0}

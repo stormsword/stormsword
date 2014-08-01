@@ -162,7 +162,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0109999999, y: -.210500002, z: -2.4000001}
+  m_LocalPosition: {x: .0110000074, y: -.210500002, z: -2.4000001}
   m_LocalScale: {x: .200000003, y: .200000003, z: 1}
   m_Children:
   - {fileID: 400010}
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archetype:
     moveDefinition: wanderer
-    spawnPoint: {x: 0, y: 0}
+    spawnPoint: {x: 3.70000005, y: -3.29999995}
     aggroDistance: 3
     attackDistance: 4
   facing: {x: -1, y: 0}

@@ -63,11 +63,6 @@ public class AIScript : MonoBehaviour {
 
 		moveCooldown = 0f;
 
-
-
-		//Class variable initialization 
-		Archetype.spawnPoint = new Vector2 (transform.position.x, transform.position.y);
-
 		direction = new Vector2(0,0);
 		stall = new Vector2 (0, 0);
 
