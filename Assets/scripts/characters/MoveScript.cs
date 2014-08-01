@@ -27,32 +27,28 @@ public class MoveScript : MonoBehaviour {
 	void Update () {
 
 		/* Play idle animation */
-		if(animator)
-		{
+
+		if(animator){
 		animator.SetFloat ("facing_x", facing.x);
 		animator.SetFloat ("facing_y", facing.y);
 
-		/* Check if character is moving */
+			/* Check if character is moving */
 
-		if(rigidbody2D.velocity.normalized.x != 0 || rigidbody2D.velocity.normalized.y != 0) {
-			// Store the direction the player is facing in case they stop moving
-			facing = rigidbody2D.velocity.normalized;
-			isMoving = true;
-		}
+			if(rigidbody2D.velocity.normalized.x != 0 || rigidbody2D.velocity.normalized.y != 0) {
+				// Store the direction the player is facing in case they stop moving
+				facing = rigidbody2D.velocity.normalized;
+				isMoving = true;
+			}
 
 		movement = direction * speed;	// Calculate movement amount
 
+			/* Play walking animation */
 
-
-
-		/* Play walking animation */
-
-		if (isMoving == true) {
-
-			animator.SetBool ("isMoving", isMoving);
-			animator.SetFloat ("movement_x", movement.x);
-			animator.SetFloat ("movement_y", movement.y);
-		}
+			if (isMoving == true) {
+				animator.SetBool ("isMoving", isMoving);
+				animator.SetFloat ("movement_x", movement.x);
+				animator.SetFloat ("movement_y", movement.y);
+			}
 		}
 
 	
