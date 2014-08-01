@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StompEffectScript : MonoBehaviour {
+public class StompScript : MonoBehaviour {
 
   public float duration = 0.5f;   // Time (seconds) the stomp effect lasts once used
   public float damage = 1;      // Damage the ability does on impact
