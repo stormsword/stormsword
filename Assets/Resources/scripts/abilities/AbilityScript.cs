@@ -6,13 +6,14 @@ public class AbilityScript : MonoBehaviour {
 
 	/* Components */
 	private AbilitySlotScript abilitySlot;	// Get the ability slot that this ability is equipped in
-	private CharacterScript character;    // Character who has the ability equipped
+	private CharacterScript character;    	// Character who has the ability equipped
 
-	public Transform spellEffect;     // Effect (Prefab) the ability will apply to players it hits
-	public float cooldown = 2.0f; // Cooldown between abilities
-	public float duration = 0f;			// Time the effect should last (and animate)
+	public Transform spellEffect;     		// Effect (Prefab) the ability will apply to players it hits
+	public float cooldown = 2.0f; 			// Cooldown between abilities
+	public float duration = 0f;				// Time the effect should last (and animate)
+	public Texture2D abilityIcon;			// The image/icon to display for this ability
 	
-	private string ownerType;		// Get the tag of the owner to determine if it can damage others
+	private string ownerType;				// Get the tag of the owner to determine if it can damage others
 
 	// Use this for initialization
 	void Start () {

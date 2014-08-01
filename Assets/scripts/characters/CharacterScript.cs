@@ -17,6 +17,13 @@ public class CharacterScript : MonoBehaviour {
 		mainhand = GetComponentInChildren<ItemSlotScript>();
 		abilitySlots = GetComponentsInChildren<AbilitySlotScript>();
 
+		// Tell each abilityslot which # it is for UI formatting
+		for(int i = 0; i < abilitySlots.Length; i++) {
+			AbilityUIScript uiScript = abilitySlots[i].GetComponent<AbilityUIScript>();
+			uiScript.abilityIndex = i;
+		}
+
+
 		if(mainhand != null) {
 			// If character has a slot for weapons)
 			weapons = mainhand.GetComponentsInChildren<WeaponScript>();
