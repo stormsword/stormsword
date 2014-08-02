@@ -200,6 +200,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2132643254}
   - 20: {fileID: 2132643258}
+  - 114: {fileID: 2132643259}
   - 124: {fileID: 2132643257}
   - 92: {fileID: 2132643256}
   - 81: {fileID: 2132643255}
@@ -275,3 +276,15 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+--- !u!114 &2132643259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2132643253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a79a343ed39948a29a0c2db2b1fc14a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dampTime: .150000006
