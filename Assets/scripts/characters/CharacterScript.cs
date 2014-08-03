@@ -10,25 +10,24 @@ public class CharacterScript : MonoBehaviour {
 	private WeaponScript[] weapons;
 
 	private ItemSlotScript mainhand;
-	private AbilitySlotScript abilitySlot;
+	private AbilitySlotScript[] abilitySlots;	// Many abilities can be equipped, one per slot
 
-	private StompScript stomp;
-	
 	void Awake() {
 		// Grab the weapon once when the enemy spawns
 		mainhand = GetComponentInChildren<ItemSlotScript>();
-		abilitySlot = GetComponentInChildren<AbilitySlotScript>();
+		abilitySlots = GetComponentsInChildren<AbilitySlotScript>();
+
+		// Tell each abilityslot which # it is for UI formatting
+		for(int i = 0; i < abilitySlots.Length; i++) {
+			AbilityUIScript uiScript = abilitySlots[i].GetComponent<AbilityUIScript>();
+			uiScript.abilityIndex = i;
+		}
+
 
 		if(mainhand != null) {
 			// If character has a slot for weapons)
 			weapons = mainhand.GetComponentsInChildren<WeaponScript>();
 		}
-
-		if(abilitySlot != null) {
-			// Get equipped ability
-			stomp = abilitySlot.GetComponentInChildren<StompScript>();
-		}
-
 	}
 	
 	void Update() {
@@ -46,11 +45,12 @@ public class CharacterScript : MonoBehaviour {
 		}
 	}
 
-	internal void Ability() {
-		if(stomp != null) {
-			if(stomp.CanCast) {
-				stomp.Cast();
-			}
+	/* Ability - Uses ability in # slot
+	 * int slot - the slot # of the current ability
+	*/
+	internal void Ability(int slot) {
+		if(abilitySlots[slot] != null) {
+			abilitySlots[slot].Cast();
 		}
 	}
 }

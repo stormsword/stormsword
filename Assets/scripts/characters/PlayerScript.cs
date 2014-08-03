@@ -12,16 +12,18 @@ public class PlayerScript : MonoBehaviour {
 	private bool playerAttack = false;
 
 	// Hotkeys
-	public char abilityKey = 'Q';
+	public char[] abilityKeys;
 	
 	void Awake() {
 		moveScript = GetComponent<MoveScript>();
 		characterScript = GetComponent<CharacterScript>();
-		animator = GetComponent<Animator> ();
+		animator = GetComponent<Animator>();
 	}
 
 	void Start () {
-	
+		abilityKeys = new char[2];
+		abilityKeys[0] = 'Q';
+		abilityKeys[1] = 'W';
 	}
 	
 	// Update is called once per frame
@@ -41,7 +43,8 @@ public class PlayerScript : MonoBehaviour {
 		attack |= Input.GetButtonDown("Fire2");
 
 		// Watch for ability input
-		bool ability = Input.GetKeyDown(KeyCode.Q);
+		bool ability1 = Input.GetKeyDown(KeyCode.Q);
+		bool ability2 = Input.GetKeyDown(KeyCode.W);	// Todo - figure out how to assign this dynamically
 
 		if(attack) {
 			playerAttack = true;	// Used for attack animation
@@ -52,9 +55,14 @@ public class PlayerScript : MonoBehaviour {
 			playerAttack = false;
 		}
 
-		if(ability) {
-			// Player is executing ability
-			characterScript.Ability();
+		if(ability1) {
+			// Player is executing ability #0
+			characterScript.Ability(0);
+		}
+
+		if(ability2) {
+			// Player is executing ability #1
+			characterScript.Ability(1);
 		}
 
 		animator.SetBool("playerAttack", playerAttack);
