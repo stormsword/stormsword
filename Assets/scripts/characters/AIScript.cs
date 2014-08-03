@@ -20,7 +20,7 @@ public class AIScript : MonoBehaviour {
 	[System.Serializable]
 	public class enemyArchetype{
 		public string moveDefinition;
-		public Vector2 spawnPoint;
+		internal Vector2 spawnPoint;
 		public float aggroDistance;
 		public float attackDistance;
 	}
@@ -54,7 +54,9 @@ public class AIScript : MonoBehaviour {
 	
 	public float moveCooldown;
 
-	void Awake(){
+	void Start() {
+		Archetype.spawnPoint = transform.position;	// Store mob's initial position so it can return to it
+
 		animator = GetComponent<Animator>();
 
 		moveScript = GetComponent<MoveScript>();
