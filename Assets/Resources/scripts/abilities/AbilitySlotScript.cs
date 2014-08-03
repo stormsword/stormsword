@@ -32,9 +32,8 @@ public class AbilitySlotScript : MonoBehaviour {
 	/* Cast - Creates and activates the equipped ability */
 	public void Cast() {
 		if(CanCast) {
-			var ability = Instantiate(abilityEquipped) as Transform;
+			var ability = Instantiate(abilityEquipped, transform.position, transform.rotation) as Transform; // Ability should spawn under the player
 			ability.transform.parent = transform;	// Set ability to be a child of the ability slot (and thus the player)
-			ability.transform.position = transform.position;	// Ability should spawn under the player
 
 			var abilityScript = ability.gameObject.GetComponent<AbilityScript>();
 			Cooldown(abilityScript.cooldown);	// Trigger cooldown on this slot
