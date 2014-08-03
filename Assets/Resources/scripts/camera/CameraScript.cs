@@ -10,6 +10,7 @@ public class CameraScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		target = GameObject.FindGameObjectWithTag("Player").transform;
+		this.transform.position = target.position;	// Snap to player's position when the game starts
 	}
 	
 	// Update is called once per frame
@@ -20,16 +21,7 @@ public class CameraScript : MonoBehaviour {
 			
 			float cameraMovementX = 0.5f;
 			float cameraMovementY = 0.5f;
-			
-			if ((target.position.x - 3f) < 0) {
-				cameraMovementX = point.x;
-				Debug.Log (cameraMovementX);
-			}
-			
-			if ((target.position.y - 2.8f) < 0) {
-				cameraMovementY = point.y;
-			}
-			
+
 			Vector3 delta = target.position - camera.ViewportToWorldPoint(new Vector3(cameraMovementX, cameraMovementY, point.z));
 			Vector3 destination = transform.position + delta;
 			this.transform.position = Vector3.SmoothDamp (this.transform.position, destination, ref velocity, dampTime);
