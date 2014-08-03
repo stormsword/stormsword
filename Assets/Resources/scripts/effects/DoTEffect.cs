@@ -11,8 +11,15 @@ public class DoTEffect : Effect {
 	protected override void ApplyEffect() {
 		// Apply damage to the target (will happen once per tick)
 
-		targetHealthScript = target.GetComponent<HealthScript>();	// Damage() is part of HealthScript
+		if(target) {
+			// Check if target is still alive
+			targetHealthScript = target.GetComponent<HealthScript>();	// Damage() is part of HealthScript
 
-		targetHealthScript.Damage(amount);	// Apply damage to the target (mitigation is handled by HealthScript)
+			targetHealthScript.Damage(amount);	// Apply damage to the target (mitigation is handled by HealthScript)
+		}
+		else {
+			// Target is dead, get rid of the DoT
+			base.EndEffect();
+		}
 	}
 }

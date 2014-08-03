@@ -9,11 +9,16 @@ public class SnareEffect : Effect {
 	private MoveScript targetMoveScript;	// The target's movement script
 	
 	protected override void ApplyEffect() {
-		// Apply the snare to the target
+		if(target) {
+			// Apply the snare to the target
+			targetMoveScript = target.GetComponent<MoveScript>();	// Movespeed is set on MoveScript
 
-		targetMoveScript = target.GetComponent<MoveScript>();	// Movespeed is set on MoveScript
-
-		targetMoveScript.speed *= amount;	// Reduce the target's movement script by a percentage
+			targetMoveScript.speed *= amount;	// Reduce the target's movement script by a percentage
+		}
+		else {
+			// Target is dead, get rid of effect
+			base.EndEffect();
+		}
 	}
 
 	protected override void EndEffect() {
