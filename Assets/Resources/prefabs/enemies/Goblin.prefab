@@ -218,7 +218,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 100004}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: .200000003, y: .5}
   m_Center: {x: .057, y: 0}
 --- !u!95 &9500000
@@ -266,14 +266,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Archetype:
     moveDefinition: stalker
-    characterSighted: 0
     spawnPoint: {x: 0, y: 0}
   facing: {x: -1, y: 0}
-  randomXY: {x: 0, y: 0}
   direction: {x: 0, y: 0}
-  stalkerDirection: {x: 0, y: 0}
-  ranDirection: {x: 0, y: 0}
-  stall: {x: 0, y: 0}
   moveCooldown: 1
 --- !u!114 &11400004
 MonoBehaviour:
