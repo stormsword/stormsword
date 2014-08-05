@@ -1,9 +1,12 @@
 fileFormatVersion: 2
-guid: 75e9d73f52c4841a5a21617439c1d48e
+guid: d0a843ff6aaaf432e9837d6404cc16c4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: shot-effects
-    21300002: shot-effects_0
+    21300000: charge_effect
+    21300002: charge_effect_0
+    21300004: charge_effect_1
+    21300006: charge_effect_2
+    21300008: charge_effect_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -45,15 +48,45 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: shot-effects_0
+    - name: charge_effect_0
       rect:
         serializedVersion: 2
-        x: 72
-        y: 7
-        width: 20
-        height: 20
+        x: 0
+        y: 0
+        width: 32
+        height: 24
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: charge_effect_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: charge_effect_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: charge_effect_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

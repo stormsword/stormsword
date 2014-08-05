@@ -163,7 +163,7 @@ public class WeaponScript : MonoBehaviour {
 	public void Knockback(Transform attackerTransform, GameObject defender, float amount) {
 		Vector2 direction = (defender.transform.position - attackerTransform.position).normalized;
 
-		Rigidbody2D defenderPhysics = defender.GetComponent<Rigidbody2D>();
-		defenderPhysics.AddForce(direction * amount);
+		var defenderMoveScript = defender.GetComponent<MoveScript>();
+		defenderMoveScript.Push(direction, amount);
 	}
 }
