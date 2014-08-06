@@ -5,7 +5,8 @@ using System.Collections;
 
 public class SnareEffect : Effect {
 
-	[Tooltip("Amount (%) by which we reduce the target's movement speed")]
+	[Tooltip("Amount (%) by which we reduce the target's movement speed e.g. 0.4 = 40%")]
+	[Range(0, 1)]
 	public float amount;
 
 	private MoveScript targetMoveScript;	// The target's movement script
