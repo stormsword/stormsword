@@ -4,7 +4,9 @@ using System.Collections;
 /* Snare Effect - Decrease movement speed of character by x% for a period of time */
 
 public class SnareEffect : Effect {
-	public float amount;	// Amount (%)
+
+	[Tooltip("Amount (%) by which we reduce the target's movement speed")]
+	public float amount;
 
 	private MoveScript targetMoveScript;	// The target's movement script
 	

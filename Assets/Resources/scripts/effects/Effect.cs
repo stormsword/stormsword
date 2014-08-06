@@ -7,11 +7,16 @@ using System.Collections;
 
 public class Effect : MonoBehaviour {
 
-	public float duration;		// How long (seconds) should the effect last
-	public float startTime;		// How long (seconds) until the effect starts
-	public float tick;			// How long (seconds) between each pulse of the effect
+	[Tooltip("How long (seconds) should the effect last")]
+	public float duration;
 
-	public GameObject target;	// The target the effect is affecting
+	[Tooltip("How long (seconds) until the effect starts")]
+	public float startTime;
+
+	[Tooltip("How long (seconds) between each pulse of the effect")]
+	public float tick;
+
+	internal GameObject target;	// The target the effect is affecting
 	
 	void Start () {
 		// Apply the affect

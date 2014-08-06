@@ -4,7 +4,9 @@ using System.Collections;
 /* DpT Effect - Apply Damage to a character over time */
 
 public class DoTEffect : Effect {
-	public float amount;	// Amount (%)
+
+	[Tooltip("Amount (HP) of damage per tick")]
+	public float amount;
 
 	private HealthScript targetHealthScript;	// The target's health script
 	
