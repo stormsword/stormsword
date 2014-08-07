@@ -16,10 +16,8 @@ public class HealthScript : MonoBehaviour {
 	// Damage after all modifiers are calculated
 	private float totalDamage;
 
-	// Enemy or Player?
-	public bool isEnemy = true;
-
 	// HP Bubble displayed when a character takes dmg
+	[Tooltip("Drag a prefab here for the health bubble UI to display for this player")]
 	public Transform HPBubble;
 	
 	// Use this for initialization
