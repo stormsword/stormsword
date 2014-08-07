@@ -4,8 +4,6 @@ using System.Collections;
 /* CharacterScript - contains shared behavior for Characters (Enemies, Players, NPC's, etc) */
 
 public class CharacterScript : MonoBehaviour {
-
-	public string characterType;	// Enemy or Player
 	
 	private WeaponScript[] weapons;
 
