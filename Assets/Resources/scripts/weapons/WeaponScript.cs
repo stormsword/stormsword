@@ -5,30 +5,40 @@ using System.Collections;
 
 public class WeaponScript : MonoBehaviour {
 
+	// Projectile prefab for shooting
+	public Transform shotPrefab;
+	
+	// Weapon stats
+	[Tooltip("Cooldown between attacks")]
+	public float shootingRate = 0.25f;
+
+	[Tooltip("Damage a weapon does per attack")]
+	public float damage = 1;
+
+	[Tooltip("Radius the weapon affects upon impact")]
+	public float radius = 5;
+
+	[Tooltip("Amount to knock the character back upon impact")]
+	public float knockback = 500f;
+
+	[Tooltip("Is this a Melee or Ranged weapon?")]
+	public string type = "Melee";
+
+
+	public string ownerType = "Player";	// Is a player or an enemy carrying the weapon?
+
 	// Components
 	private MoveScript parentMoveScript;
 	private MoveScript shotMoveScript;
 	private ItemSlotScript mainHandSlot;
-	
 
 	private Vector2 aiPosition;
 	private Vector2 playerPosition;
 	private Vector2 newDirection;
 	private float playerDistance;
 
-	GameObject player;
+	private GameObject player;
 
-	// Projectile prefab for shooting
-	public Transform shotPrefab;
-
-	// Weapon stats
-	public float shootingRate = 0.25f; 	// Cooldown between attacks
-	public float damage = 1;			// Damage a weapon does per attack
-	public float radius = 5; 			// Radius the weapon affects upon impact
-	public float knockback = 500f;		// Amount to knock the character back upon impact
-	public string type = "Melee";		// Melee or Ranged
-	public string ownerType = "Player";	// Is a player or an enemy carrying the weapon?
-	
 	// Use this for initialization
 	void Start () {
 		mainHandSlot = transform.parent.GetComponent<ItemSlotScript>();	// Grab the parent mainhand to get any slot-related info

@@ -8,8 +8,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 212: {fileID: 21200000}
   - 114: {fileID: 11400002}
+  - 212: {fileID: 21200000}
   m_Layer: 0
   m_Name: WeaponSwing
   m_TagString: Untagged
@@ -40,10 +40,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a885aef7194d4baa86be667a538e428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 0}
   shootingRate: .25
   damage: 1
   radius: 5
+  knockback: 500
   type: Melee
+  ownerType: Player
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
