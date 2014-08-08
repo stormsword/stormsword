@@ -5,7 +5,6 @@ using System.Collections;
 public class AbilityScript : MonoBehaviour {
 
 	/* Components */
-	private AbilitySlotScript abilitySlot;	// Get the ability slot that this ability is equipped in
 	private CharacterScript character;    	// Character who has the ability equipped
 
 	public Transform spellEffect;     		// Effect (Prefab) the ability will apply to players it hits
@@ -17,8 +16,6 @@ public class AbilityScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		abilitySlot = transform.parent.GetComponent<AbilitySlotScript>();	// Grab the parent ability to get any slot-related info
-
 		character = GetComponentInParent<CharacterScript>();
 		ownerType = character.gameObject.tag; // Get the character's tag so we can decide who the ability should damage
 
