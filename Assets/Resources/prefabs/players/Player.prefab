@@ -323,7 +323,6 @@ MonoBehaviour:
   y: 290
   width: 30
   height: 30
-  abilityImage: {fileID: 2800000, guid: 2fcd7131821f341129fedf345fae8676, type: 3}
   fadeAlpha: .600000024
 --- !u!114 &11400004
 MonoBehaviour:
@@ -340,7 +339,6 @@ MonoBehaviour:
   y: 290
   width: 30
   height: 30
-  abilityImage: {fileID: 2800000, guid: 2fcd7131821f341129fedf345fae8676, type: 3}
   fadeAlpha: .600000024
 --- !u!114 &11400006
 MonoBehaviour:
@@ -461,6 +459,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e00a03c1e95f4cb0a833a36a0e378e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  abilityKeys: 7100000077000000
+  pauseKey: 27
 --- !u!131 &13100000
 GUITexture:
   m_ObjectHideFlags: 1

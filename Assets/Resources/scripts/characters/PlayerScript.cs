@@ -12,7 +12,8 @@ public class PlayerScript : MonoBehaviour {
 	private bool playerAttack = false;
 
 	// Hotkeys
-	public char[] abilityKeys;
+	public KeyCode[] abilityKeys = new KeyCode[2];
+	public KeyCode pauseKey;
 	
 	void Awake() {
 		moveScript = GetComponent<MoveScript>();
@@ -21,16 +22,12 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	void Start () {
-		abilityKeys = new char[2];
-		abilityKeys[0] = 'Q';
-		abilityKeys[1] = 'W';
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
 		/* Player Input */
-
 		// Retrieve axis information from keyboard
 		float inputX = Input.GetAxis("Horizontal");
 		float inputY = Input.GetAxis("Vertical");
@@ -43,8 +40,10 @@ public class PlayerScript : MonoBehaviour {
 		attack |= Input.GetButtonDown("Fire2");
 
 		// Watch for ability input
-		bool ability1 = Input.GetKeyDown(KeyCode.Q);
-		bool ability2 = Input.GetKeyDown(KeyCode.W);	// Todo - figure out how to assign this dynamically
+		bool ability1 = Input.GetKeyDown(abilityKeys[0]);
+		bool ability2 = Input.GetKeyDown(abilityKeys[1]);	// Todo - figure out how to assign this dynamically
+
+		bool pause = Input.GetKeyDown(pauseKey);
 
 		if(attack) {
 			playerAttack = true;	// Used for attack animation
@@ -63,6 +62,11 @@ public class PlayerScript : MonoBehaviour {
 		if(ability2) {
 			// Player is executing ability #1
 			characterScript.Ability(1);
+		}
+
+		if(pause) {
+			// Player is trying to pause the game
+			Debug.Log ("Pause!");
 		}
 
 		animator.SetBool("playerAttack", playerAttack);
