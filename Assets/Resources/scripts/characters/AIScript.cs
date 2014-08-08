@@ -67,10 +67,10 @@ public class AIScript : MonoBehaviour {
 		direction = new Vector2(0,0);
 		stall = new Vector2 (0, 0);
 
+		player = GameObject.FindWithTag("Player");	// Check for player once, not every frame
 	}
 
 	void Update() {
-		player = GameObject.FindWithTag("Player");
 		if(player != null){
 			// Is the player still alive?
 
