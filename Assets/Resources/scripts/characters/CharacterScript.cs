@@ -66,15 +66,22 @@ public class CharacterScript : MonoBehaviour {
 			Time.timeScale = 0;
 
 			// Tell UI to display 'Pause menu'
+			PauseMenuScript.instance.Pause();
 		}
 		else {
 			// Unpause the game
 			paused = false;
 
-			// Tell UI to stop displaying 'Pause menu'
-
 			// Resume time
 			Time.timeScale = 1;
+
+			// Tell UI to stop displaying 'Pause menu'
+			PauseMenuScript.instance.UnPause();
 		}
+	}
+
+	/* Quit - Quit the current game */
+	internal void Quit() {
+//		Quit();	// For some reason Quit() crashes unity.
 	}
 }
