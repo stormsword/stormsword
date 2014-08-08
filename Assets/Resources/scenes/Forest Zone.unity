@@ -452,4 +452,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a79a343ed39948a29a0c2db2b1fc14a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraMode: 0
   dampTime: .150000006
