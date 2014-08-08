@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/* PlayerScript - Handle Input from a player */
 public class PlayerScript : MonoBehaviour {
 
 	// Components
@@ -66,7 +67,7 @@ public class PlayerScript : MonoBehaviour {
 
 		if(pause) {
 			// Player is trying to pause the game
-			Debug.Log ("Pause!");
+			characterScript.Pause();
 		}
 
 		animator.SetBool("playerAttack", playerAttack);

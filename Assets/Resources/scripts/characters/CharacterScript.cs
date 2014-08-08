@@ -12,6 +12,8 @@ public class CharacterScript : MonoBehaviour {
 	private ItemSlotScript mainhand;
 	private AbilitySlotScript[] abilitySlots;	// Many abilities can be equipped, one per slot
 
+	private bool paused;
+
 	void Awake() {
 		// Grab the weapon once when the enemy spawns
 		mainhand = GetComponentInChildren<ItemSlotScript>();
@@ -51,6 +53,28 @@ public class CharacterScript : MonoBehaviour {
 	internal void Ability(int slot) {
 		if(abilitySlots[slot] != null) {
 			abilitySlots[slot].Cast();
+		}
+	}
+
+	/* Pause - Pauses and Unpauses the game */
+	internal void Pause() {
+		if(!paused) {
+			// Pause the game
+			paused = true;
+
+			// Stop time
+			Time.timeScale = 0;
+
+			// Tell UI to display 'Pause menu'
+		}
+		else {
+			// Unpause the game
+			paused = false;
+
+			// Tell UI to stop displaying 'Pause menu'
+
+			// Resume time
+			Time.timeScale = 1;
 		}
 	}
 }
