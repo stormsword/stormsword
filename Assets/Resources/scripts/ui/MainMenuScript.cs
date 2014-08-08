@@ -7,6 +7,8 @@ public class MainMenuScript : MonoBehaviour {
 
 	public static MainMenuScript instance;
 
+	public string firstLevel;
+
 	void Awake() {
 		instance = this;	// Allows us to access MainMenuScript from anywhere 
 							// (which is ok because there will only ever be one of them active at a time)
@@ -17,7 +19,8 @@ public class MainMenuScript : MonoBehaviour {
 	}
 
 	public void StartGame() {
-		Debug.Log ("Starting game!");
+		Debug.Log ("Loading level: " + firstLevel);
+		Application.LoadLevel(firstLevel);
 	}
 
 	public void ContinueGame() {

@@ -34,16 +34,13 @@ public class MainMenuUIScript : MonoBehaviour {
 		GUI.contentColor = Color.white;
 		bool startButton = GUI.Button(startPosition, startText);
 
-		if(startButton) {
-			// Player pressed the start button
-			Debug.Log ("Got here");
-			MainMenuScript.instance.StartGame();
-		}
-		
 		// Draw continue button
 		GUI.contentColor = Color.grey;
 		GUI.Label(continuePosition, continueText);	// Currently continue does not work.
 
-
+		if(startButton) {
+			// Player pressed the start button
+			MainMenuScript.instance.StartGame();
+		}
 	}
 }
