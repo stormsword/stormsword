@@ -22,8 +22,9 @@ public class MainMenuScript : MonoBehaviour {
 		instance = this;
 	}
 
-	void OnGui() {
+	void OnGUI() {
 		// Draw black background over scene
+		GUI.backgroundColor = Color.black;
 		GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "");
 
 		// Draw title text/image
