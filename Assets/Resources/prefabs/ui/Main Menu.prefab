@@ -72,6 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e28e553a686e24364851c0ccf855d39d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstLevel: Forest Zone
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
