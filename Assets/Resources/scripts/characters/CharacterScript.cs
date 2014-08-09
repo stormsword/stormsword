@@ -80,6 +80,6 @@ public class CharacterScript : MonoBehaviour {
 
 	/* Quit - Quit the current game */
 	internal void Quit() {
-//		Quit();	// For some reason Quit() crashes unity.
+		Application.Quit();		// Note: Does not work within Unity previewer but works when game is compiled/built.
 	}
 }
