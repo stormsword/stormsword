@@ -24,15 +24,15 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400002}
+  - 114: {fileID: 11400010}
+  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400002}
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
-  - 114: {fileID: 11400010}
-  - 114: {fileID: 11400008}
   - 114: {fileID: 11400006}
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400004}
-  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Brute
   m_TagString: Enemy
@@ -260,11 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Archetype:
-    moveDefinition: wanderer
-    spawnPoint: {x: 0, y: 0}
-  facing: {x: -1, y: 0}
-  direction: {x: 0, y: 0}
-  moveCooldown: 0
+    movementType: 1
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -276,7 +272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 287aa11bdecbb4b0c959d683506b7400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterType: 
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -316,8 +311,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  direction: {x: -1, y: 0}
-  facing: {x: -1, y: 0}
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1

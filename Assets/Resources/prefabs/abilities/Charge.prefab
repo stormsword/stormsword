@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca9110e9d5b04e41992d0a13c6ffad8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellEffect: {fileID: 400000, guid: 0654cc019f16f4485992a3eeebeff6a0, type: 2}
+  spellEffectPrefab: {fileID: 400000, guid: 0654cc019f16f4485992a3eeebeff6a0, type: 2}
   cooldown: 2
   duration: .5
   abilityIcon: {fileID: 2800000, guid: d7f9febc32e0b442fa5e4866723c3ec6, type: 3}

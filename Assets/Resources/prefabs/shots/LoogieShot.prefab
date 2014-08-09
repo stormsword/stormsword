@@ -8,10 +8,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 212: {fileID: 21200000}
-  - 50: {fileID: 5000000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 212: {fileID: 21200000}
+  - 50: {fileID: 5000000}
   - 95: {fileID: 9500000}
   - 61: {fileID: 6100000}
   m_Layer: 0
@@ -85,8 +85,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  direction: {x: 0, y: 0}
-  facing: {x: -1, y: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,7 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 5
   duration: 5
-  ownerType: Enemy
   spellEffect: {fileID: 400000, guid: 2f12d1d5b95cd4ac79fda6161e50e0e9, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:

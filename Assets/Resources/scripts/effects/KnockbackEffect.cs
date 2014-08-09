@@ -4,7 +4,9 @@ using System.Collections;
 /* Stun Effect - Knocks back a character away from the current character */
 
 public class KnockbackEffect : Effect {
-	public float amount;	// Amount (#) multiplier on the movement vector
+
+	[Tooltip("Amount (#) to multiply the movement speed")]
+	public float amount;
 
 	private MoveScript targetMoveScript;	// The target's movement script
 		

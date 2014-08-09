@@ -5,10 +5,10 @@ using System.Collections;
 public class AbilitySlotScript : MonoBehaviour {
 
 	// Remaining cooldown for using ability in slot
-	public float abilityCooldown;
-
+	[Tooltip("Drag a 'Spell Effect' prefab here so the ability can apply it.")]
 	public Transform abilityEquipped;
 
+	internal float abilityCooldown;
 	private AbilityUIScript abilityUI;
 	
 	// Use this for initialization

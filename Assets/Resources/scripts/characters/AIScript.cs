@@ -13,18 +13,26 @@ public class AIScript : MonoBehaviour {
 	// Get player object to determine player position
 	GameObject player;
 
+
 	/* Class movement definition
 	 * Controls which AI script will be used
 	 * Sets an anchor to return the enemy to if needed
 	 */
+
+	public enum Archetypes {
+		Stalker,
+		Wanderer
+	}
+
 	[System.Serializable]
 	public class enemyArchetype{
-		public string moveDefinition;
-		public Vector2 spawnPoint;
+		public Archetypes movementType;
+		internal Vector2 spawnPoint;
 	}
+
+	// Archetype determines how the AI behaves
 	public enemyArchetype Archetype;
-	
-	
+
 	// Used to calculate player vs. enemy positions
 	private Vector2 aiPosition;
 	private float playerDistance;
@@ -32,7 +40,7 @@ public class AIScript : MonoBehaviour {
 	private Vector2 playerPosition;
 
 	// Figure out which direction the enemy is facing
-	public Vector2 facing;
+	internal Vector2 facing;
 
 	// Animation Triggers
 	private bool isMoving = false;
@@ -43,14 +51,14 @@ public class AIScript : MonoBehaviour {
 	private Vector2 randomXY;
 
 	// Move the monster
-	public Vector2 direction;
+	internal Vector2 direction;
 	private Vector2 stalkerDirection;
 	private Vector2 ranDirection;
 
 	// Stop moving
 	private Vector2 stall;
 	
-	public float moveCooldown;
+	internal float moveCooldown;
 
 	void Awake(){
 		animator = GetComponent<Animator>();
@@ -100,7 +108,7 @@ public class AIScript : MonoBehaviour {
 			if (moveCooldown <= 0) {
 				// Monster ready to move
 
-				if(Archetype.moveDefinition == "stalker"){
+				if(Archetype.movementType == Archetypes.Stalker){
 					// Enable stalker movement
 					if(playerDistance >= 3f){
 						// Player too far, leashing monster
@@ -135,7 +143,7 @@ public class AIScript : MonoBehaviour {
 					}
 				}
 
-				else{
+				else {
 					//Wanderer Script
 
 					if(playerDistance >= 4f){

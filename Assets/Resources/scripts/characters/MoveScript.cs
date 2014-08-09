@@ -9,14 +9,15 @@ public class MoveScript : MonoBehaviour {
 	private Animator animator;
 
 	// Speed of object
+	[Range(0, 1000)]
 	public float speed = 400;
 
 	// Direction of object
-	public Vector2 direction = new Vector2(-1, 0);
-	public Vector2 facing = new Vector2(-1, 0);
+	internal Vector2 direction = new Vector2(-1, 0);
+	internal Vector2 facing = new Vector2(-1, 0);
 
 	// Actual movement
-	private Vector2 movement = new Vector2(0, 0);
+	internal Vector2 movement = new Vector2(0, 0);
 	private bool isMoving = false;
 	
 	void Awake () {

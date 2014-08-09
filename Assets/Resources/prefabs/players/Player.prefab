@@ -126,14 +126,14 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400014}
+  - 114: {fileID: 11400020}
+  - 114: {fileID: 11400016}
   - 212: {fileID: 21200004}
   - 61: {fileID: 6100002}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400022}
   - 95: {fileID: 9500000}
-  - 114: {fileID: 11400020}
   - 114: {fileID: 11400018}
-  - 114: {fileID: 11400016}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -306,7 +306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02aa4aa048219489bb571abde33e90c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityCooldown: 0
   abilityEquipped: {fileID: 400000, guid: 6a4e52718814940a59a2c14906a6aa61, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -323,7 +322,6 @@ MonoBehaviour:
   y: 290
   width: 30
   height: 30
-  abilityImage: {fileID: 2800000, guid: 2fcd7131821f341129fedf345fae8676, type: 3}
   fadeAlpha: .600000024
 --- !u!114 &11400004
 MonoBehaviour:
@@ -340,7 +338,6 @@ MonoBehaviour:
   y: 290
   width: 30
   height: 30
-  abilityImage: {fileID: 2800000, guid: 2fcd7131821f341129fedf345fae8676, type: 3}
   fadeAlpha: .600000024
 --- !u!114 &11400006
 MonoBehaviour:
@@ -353,7 +350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02aa4aa048219489bb571abde33e90c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityCooldown: 0
   abilityEquipped: {fileID: 400000, guid: 99f96335f18ca43848cdd061fb5be3ab, type: 2}
 --- !u!114 &11400008
 MonoBehaviour:
@@ -422,7 +418,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 40
   armor: 1
-  isEnemy: 0
   HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
 --- !u!114 &11400018
 MonoBehaviour:
@@ -435,7 +430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 287aa11bdecbb4b0c959d683506b7400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterType: 
 --- !u!114 &11400020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -448,8 +442,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 300
-  direction: {x: 0, y: 0}
-  facing: {x: -.107994452, y: .994151533}
 --- !u!114 &11400022
 MonoBehaviour:
   m_ObjectHideFlags: 1

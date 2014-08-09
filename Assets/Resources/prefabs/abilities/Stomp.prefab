@@ -67,12 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f56ec1e2426f04efc8858b6349bedc3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spellEffect: {fileID: 400000, guid: e50f8040d161d4e9fa8d0b4eccc38f02, type: 2}
+  spellEffectPrefab: {fileID: 400000, guid: e50f8040d161d4e9fa8d0b4eccc38f02, type: 2}
   cooldown: 2
   duration: .5
   abilityIcon: {fileID: 2800000, guid: 2fcd7131821f341129fedf345fae8676, type: 3}
-  snareAmount: 0
-  snareDuration: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -6,14 +6,18 @@ using System.Collections;
 public class ProjectileScript : MonoBehaviour {
 
 	// Damage the object deals
+	[Tooltip("Damage dealt by the projectile")]
 	public int damage = 1;
+
+	[Tooltip("Duration the projectile should remain in the game world after being fired")]
 	public float duration = 0.25f;
 
-	// Who shot this projectile?
-	public string ownerType;
-
+	[Tooltip("Drag a spell effect here if you want the projectile to apply it upon impact.")]
 	public Transform spellEffect;	// Optional - Does the shot apply an effect?
 
+	// Who shot this projectile?
+	internal string ownerType;
+	
 	private BoxCollider2D projectileCollider;
 	
 	private CharacterScript character;
