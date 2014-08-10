@@ -14,9 +14,10 @@ using System.Collections.Generic;	// Needed for IDictionary to be used in types
  * 
  * What we track:
  * -Version of your OS
- * -Version of the game you're running
- * -Which character you're playing
- * -What scene you're on
+ * -Your screen resolution
+ * -What scene has recently loaded
+ * 
+ * For more info on the mixpanel API: https://github.com/waltdestler/Mixpanel-Unity-CSharp
  */
 
 public class TrackingScript : MonoBehaviour {
