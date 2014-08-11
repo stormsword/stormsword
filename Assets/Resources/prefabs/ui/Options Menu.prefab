@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Pause Menu
+  m_Name: Options Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -36,30 +36,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dbabbf99752848d0a0ea834249459ed, type: 3}
+  m_Script: {fileID: 11500000, guid: cdd703adc7bf249c2be5c8fe9f08f0f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unpauseButtonPosition:
+  disableTrackingPosition:
     serializedVersion: 2
     x: 245
     y: 110
-    width: 100
+    width: 120
     height: 30
-  unpauseText: Unpause (Esc)
-  optionsButtonPosition:
+  disableTrackingText: Disable Tracking
+  previousMenuPosition:
     serializedVersion: 2
     x: 245
     y: 150
-    width: 100
+    width: 120
     height: 30
-  optionsText: Options
-  quitButtonPosition:
-    serializedVersion: 2
-    x: 245
-    y: 190
-    width: 100
-    height: 30
-  quitText: Quit (ctrl+Q)
+  previousMenuText: Main Menu
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

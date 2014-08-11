@@ -66,5 +66,6 @@ public class TrackingScript : MonoBehaviour {
 	// StopTracking - Used if the player chooses to disable Mixpanel
 	public void StopTracking() {
 		this.enabled = false;
+		Debug.Log ("Tracking disabled?");
 	}
 }
