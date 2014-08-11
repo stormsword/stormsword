@@ -262,7 +262,7 @@ Transition:
   - m_ConditionMode: 5
     m_ConditionEvent: isMoving
     m_EventTreshold: 0
-    m_ExitTime: .75
+    m_ExitTime: .5
   - m_ConditionMode: 2
     m_ConditionEvent: isMoving
     m_EventTreshold: 0
