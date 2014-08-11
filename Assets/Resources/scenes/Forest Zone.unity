@@ -365,7 +365,7 @@ GameObject:
   - 92: {fileID: 2132643256}
   - 81: {fileID: 2132643255}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: FollowPlayerCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,4 +453,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMode: 0
-  dampTime: .150000006
+  speed: .150000006
