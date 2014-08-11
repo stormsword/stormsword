@@ -60,7 +60,7 @@ public class AIScript : MonoBehaviour {
 	
 	internal float moveCooldown;
 
-	void Awake(){
+	void Start(){
 		animator = GetComponent<Animator>();
 
 		moveScript = GetComponent<MoveScript>();
