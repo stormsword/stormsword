@@ -44,6 +44,10 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
+  - name: Foreground-Back
+    userID: 2
+    uniqueID: 1412699259
+    locked: 0
   - name: Foreground
     userID: 1
     uniqueID: 1655269899

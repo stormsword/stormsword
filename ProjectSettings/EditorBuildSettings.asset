@@ -7,3 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/test.unity
+  - enabled: 1
+    path: Assets/Resources/scenes/Main Menu.unity
+  - enabled: 1
+    path: Assets/Resources/scenes/Forest Zone.unity
