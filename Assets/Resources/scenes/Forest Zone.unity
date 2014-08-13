@@ -217,6 +217,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 846025278}
   - 114: {fileID: 846025277}
+  - 114: {fileID: 846025279}
   m_Layer: 0
   m_Name: Forest Tilemap
   m_TagString: Untagged
@@ -271,6 +272,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &846025279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 846025276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33ed87df575b4d4da1498f891ef9b1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1120168818
 Prefab:
   m_ObjectHideFlags: 0
