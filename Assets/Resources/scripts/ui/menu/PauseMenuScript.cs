@@ -10,16 +10,22 @@ public class PauseMenuScript : MonoBehaviour {
 	public Rect unpauseButtonPosition;
 	public string unpauseText;
 
+	public Rect optionsButtonPosition;
+	public string optionsText;
+
 	public Rect quitButtonPosition;
 	public string quitText;
 
 	private CharacterScript characterScript;
+
+	private OptionsScript optionsScript;
 
 	void Start() {
 		instance = this;
 		this.enabled = false;	// The game can enable this script when the game is paused
 		GameObject player = GameObject.FindWithTag("Player");
 		characterScript = player.GetComponent<CharacterScript>();
+		optionsScript = transform.parent.GetComponentInChildren<OptionsScript>();								
 	}
 
 	// We don't show anything until the script is enabled
@@ -31,11 +37,16 @@ public class PauseMenuScript : MonoBehaviour {
 
 		// Draw buttons
 		var unpauseButton = GUI.Button(unpauseButtonPosition, unpauseText);
+		var optionsButton = GUI.Button (optionsButtonPosition, optionsText);
 		var quitButton = GUI.Button(quitButtonPosition, quitText);
 
 		// Check for button clicks
 		if(unpauseButton) {
 			characterScript.Pause();
+		}
+		if(optionsButton) {
+			this.enabled = false;	// Hide current menu
+			optionsScript.ShowOptions();	// Pass in gameObject so the current menu can be re-activated when the user exists the options menu
 		}
 		if(quitButton) {
 			characterScript.Quit();
@@ -50,5 +61,8 @@ public class PauseMenuScript : MonoBehaviour {
 	/* Unpauses the game and hides the menu */
 	public void UnPause() {
 		this.enabled = false;	// Stop showing stuffs
+		if(optionsScript.enabled) {
+			optionsScript.enabled = false;	// Close options menu if it's open and the player unpauses
+		}
 	}
 }
