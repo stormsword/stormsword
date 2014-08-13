@@ -20029,7 +20029,7 @@
     <property name="0-prefab path" value="prefabs/enemies/"/>
    </properties>
   </object>
-  <object name="Brute" type="Enemy" x="512" y="288" width="32" height="32">
+  <object name="Brute" type="Enemy" x="375" y="376" width="32" height="32">
    <properties>
     <property name="0-prefab" value="Brute"/>
     <property name="0-prefab path" value="prefabs/enemies/"/>
@@ -20053,9 +20053,15 @@
     <property name="0-prefab path" value="prefabs/enemies/"/>
    </properties>
   </object>
-  <object name="Pigmy" type="Enemy" x="576" y="288">
+  <object name="Pigmy" type="Enemy" x="398" y="311">
    <properties>
     <property name="0-prefab" value="Pigmy"/>
+    <property name="0-prefab path" value="prefabs/enemies/"/>
+   </properties>
+  </object>
+  <object name="Dabossman" type="Enemy" x="140" y="212" width="32" height="32">
+   <properties>
+    <property name="0-prefab" value="Dabossman"/>
     <property name="0-prefab path" value="prefabs/enemies/"/>
    </properties>
   </object>
