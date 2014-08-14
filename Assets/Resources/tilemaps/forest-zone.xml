@@ -10737,7 +10737,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="221"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -10837,7 +10837,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="237"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -10942,7 +10942,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="221"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -11042,7 +11042,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="237"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -11137,7 +11137,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="221"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -11237,7 +11237,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="237"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -20041,13 +20041,31 @@
   <object x="768" y="416" width="64" height="32"/>
   <object x="736" y="384" width="64" height="32"/>
   <object x="704" y="352" width="64" height="32"/>
-  <object x="1073" y="297">
+  <object name="Rock" type="Rock" x="913" y="360">
+   <properties>
+    <property name="0-prefab" value="Rock"/>
+    <property name="0-prefab add collider" value="true"/>
+    <property name="0-prefab path" value="prefabs/terrain/"/>
+    <property name="transfer collider" value="true"/>
+   </properties>
    <polyline points="0,0 -16,43 -3,54 14,40 11,25 1,-1"/>
   </object>
-  <object x="913" y="234">
+  <object name="Rock" type="Rock" x="1073" y="297">
+   <properties>
+    <property name="0-prefab" value="Rock"/>
+    <property name="0-prefab add collider" value="true"/>
+    <property name="0-prefab path" value="prefabs/terrain/"/>
+    <property name="transfer collider" value="true"/>
+   </properties>
    <polyline points="0,0 -16,43 -3,54 14,40 11,25 1,-1"/>
   </object>
-  <object x="913" y="360">
+  <object name="Rock" type="Rock" x="913" y="233">
+   <properties>
+    <property name="0-prefab" value="Rock"/>
+    <property name="0-prefab add collider" value="true"/>
+    <property name="0-prefab path" value="prefabs/terrain/"/>
+    <property name="transfer collider" value="true"/>
+   </properties>
    <polyline points="0,0 -16,43 -3,54 14,40 11,25 1,-1"/>
   </object>
  </objectgroup>
