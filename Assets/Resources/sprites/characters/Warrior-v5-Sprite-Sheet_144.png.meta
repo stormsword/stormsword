@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: e28d57c6458754099848ba00aaca23c9
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Warrior-v5-Sprite-Sheet_144_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 306
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 306
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 306
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 306
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 234
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_5
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 234
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 234
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 234
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 160
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_9
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 160
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_10
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 160
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_11
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 160
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_12
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 86
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 86
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 86
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 86
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_16
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_17
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 12
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 12
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_19
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 12
+        width: 34
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_20
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 12
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Warrior-v5-Sprite-Sheet_144_21
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 12
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
