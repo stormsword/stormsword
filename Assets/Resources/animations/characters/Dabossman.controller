@@ -256,7 +256,7 @@ BlendTree:
     m_IsAnim: 1
     m_Mirror: 0
   m_BlendParameter: facing_x
-  m_BlendParameterY: facing_x
+  m_BlendParameterY: facing_y
   m_MinThreshold: 0
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
@@ -482,10 +482,6 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110285821}
-      second:
-      - {fileID: 110130716}
-    data:
       first: {fileID: 0}
       second:
       - {fileID: 110163650}
@@ -500,6 +496,10 @@ StateMachine:
     data:
       first: {fileID: 110212411}
       second: []
+    data:
+      first: {fileID: 110285821}
+      second:
+      - {fileID: 110130716}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -120, y: 72, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
