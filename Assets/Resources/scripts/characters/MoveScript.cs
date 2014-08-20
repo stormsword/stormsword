@@ -13,8 +13,8 @@ public class MoveScript : MonoBehaviour {
 	public float speed = 400;
 
 	// Direction of object
-	internal Vector2 direction = new Vector2(-1, 0);
-	internal Vector2 facing = new Vector2(-1, 0);
+	internal Vector2 direction = new Vector2(0, 0);
+	internal Vector2 facing = new Vector2(0, 0);
 
 	// Actual movement
 	internal Vector2 movement = new Vector2(0, 0);
@@ -69,6 +69,13 @@ public class MoveScript : MonoBehaviour {
 	 */
 	internal void Move(float input_X, float input_Y) {
 		direction = new Vector2(input_X, input_Y);
+	}
+
+	/* Moves the object towards a destination by a small amount (used for enemy input)
+	 * Vector2 _direction: Direction to the destination
+	 */
+	internal void Move(Vector2 _direction) {
+		direction = _direction;
 	}
 
 	/* Push - pushes a character in a direction by an amount

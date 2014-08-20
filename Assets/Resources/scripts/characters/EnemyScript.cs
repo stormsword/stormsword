@@ -1,38 +1,54 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/* EnemyScript - Generic Enemy Behavior */
+/* EnemyScript - Controls enemy behavior */
 
-public class EnemyMovement
-{
-	public string enemyWander = "Wander";
-	public string enemyStalk = "Stalker";
-	public string enemyCharger = "Charge";
+public enum Archetypes {
+	Stalker,
+	Wanderer
+}
+
+[System.Serializable]
+public class EnemyArchetype{
+	public Archetypes movementType;
+	internal Vector2 spawnPoint;
 }
 
 public class EnemyScript : MonoBehaviour {
 
+	public EnemyArchetype enemyArchetype;
+
+	// AI Scripts - Used to determine character behavior
+	private CommandStackScript commands;
+
 	private CharacterScript characterScript;
 
-	private CommandStackScript commands;
-	
-	public EnemyMovement enemyMovement;
 
-	public string characterType = "Enemy";
 
 	// String to define AI movement
 
 	void Start() {
+
 		characterScript = GetComponent<CharacterScript>();
 
 		commands = new CommandStackScript();
 
 		MoveCommandScript command = new MoveCommandScript(this.gameObject);	// Temporary command - move to a random spot
-		command.direction = new Vector2(0, 1);
+		command.target = GameObject.FindGameObjectWithTag("Player");		// Grab and target player
 		commands.Add(command);
 	}
 
 	void Update() {
+
+		/* Update the command stack */
+		switch(enemyArchetype.movementType) {
+			case Archetypes.Stalker:
+				break;
+			case Archetypes.Wanderer:
+				break;
+		}
+
+		/* Process the latest command stack */
 		// Continuously attack until dead
 		characterScript.Attack();
 

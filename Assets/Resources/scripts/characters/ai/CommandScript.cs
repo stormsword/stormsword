@@ -4,8 +4,9 @@ using System.Collections;
 /* CommandScript - Base Class to represent commands in the game. Usually added to a CommandStack */
 public class CommandScript {
 
-	internal Vector2 direction;
-	internal GameObject character;
+	internal Vector2 destination;
+	internal GameObject character;	// The Character this stack is attached to (usually an enemy)
+	internal GameObject target;		// The character targetted (usually a player)
 
 	protected bool isActive = true;	// Script is active when instantiated by default
 
