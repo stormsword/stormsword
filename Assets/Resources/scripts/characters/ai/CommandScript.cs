@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CommandScript : MonoBehaviour {
-		
-	// Use this for initialization
-	void Start() {
+/* CommandScript - Base Class to represent commands in the game. Usually added to a CommandStack */
+public class CommandScript {
+
+	internal Vector2 direction;
+
+	public CommandScript() {
 	}
-	
-	void Update() {
+
+	protected virtual void Execute() {
 	}
 }
