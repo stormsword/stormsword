@@ -11,10 +11,6 @@ public class CommandStackScript {
 	/* Constructor - Creates a new CommandStack */
 	public CommandStackScript() {
 		commands = new Stack<CommandScript>();
-		
-		MoveCommandScript command = new MoveCommandScript();
-		command.direction = new Vector2(0, 1);
-		commands.Push(command);
 	}
 	
 	/* Execute - Run the top command on the stack */
@@ -23,6 +19,28 @@ public class CommandStackScript {
 		if(currentCommand != null) {
 			currentCommand.Execute();
 		}
+	}
+
+	/* Add - Adds a command to the top of the stack, pausing the current item and executing it next frame */
+	public void Add(CommandScript command) {
+		if(commands.Count > 0) {
+			// Pause current command
+			currentCommand.Pause();
+		}
+		commands.Push(command);
+	}
+
+	/* Remove - Pops the top command off the stack */
+	public void Remove() {
+		if(currentCommand != null) {
+			commands.Pop ();
+
+			// Check if there is a currentItem
+			if(currentCommand != null) {
+				currentCommand.Resume();
+			}
+		}
+
 	}
 
 	public CommandScript currentCommand {
