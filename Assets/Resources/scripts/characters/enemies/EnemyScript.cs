@@ -26,12 +26,16 @@ public class EnemyScript : MonoBehaviour {
 		characterScript = GetComponent<CharacterScript>();
 
 		commands = new CommandStackScript();
+
+		MoveCommandScript command = new MoveCommandScript(this.gameObject);	// Temporary command - move to a random spot
+		command.direction = new Vector2(0, 1);
+		commands.Add(command);
 	}
 
 	void Update() {
 		// Continuously attack until dead
 		characterScript.Attack();
 
-		commands.Execute();
+		commands.Execute();	// Execute our currently active command
 	}
 }
