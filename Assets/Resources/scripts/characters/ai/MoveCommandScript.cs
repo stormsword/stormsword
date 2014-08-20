@@ -5,7 +5,7 @@ using System.Collections;
 public class MoveCommandScript : CommandScript {
 
 	// Update is called once per frame
-	protected override void Execute () {
+	public override void Execute () {
 		Debug.Log("Executing!");
 		Debug.Log (direction);
 	}

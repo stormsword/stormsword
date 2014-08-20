@@ -9,6 +9,6 @@ public class CommandScript {
 	public CommandScript() {
 	}
 
-	protected virtual void Execute() {
+	public virtual void Execute() {
 	}
 }
