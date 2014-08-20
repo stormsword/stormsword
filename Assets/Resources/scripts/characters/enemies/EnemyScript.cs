@@ -14,18 +14,24 @@ public class EnemyScript : MonoBehaviour {
 
 	private CharacterScript characterScript;
 
+	private CommandStackScript commands;
+	
 	public EnemyMovement enemyMovement;
 
 	public string characterType = "Enemy";
 
 	// String to define AI movement
 
-	void Awake() {
+	void Start() {
 		characterScript = GetComponent<CharacterScript>();
+
+		commands = new CommandStackScript();
 	}
 
 	void Update() {
 		// Continuously attack until dead
 		characterScript.Attack();
+
+		commands.Execute();
 	}
 }
