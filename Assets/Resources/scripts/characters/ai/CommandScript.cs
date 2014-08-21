@@ -4,12 +4,12 @@ using System.Collections;
 /* CommandScript - Base Class to represent commands in the game. Usually added to a CommandStack */
 public class CommandScript {
 
-	internal Vector2 destination;
-	internal GameObject character;	// The Character this stack is attached to (usually an enemy)
-	internal GameObject target;		// The character targetted (usually a player)
+	internal Vector2 destination;		// The destination the stack is supposed to move to
+	internal GameObject character;		// The Character this stack is attached to (usually an enemy)
+	internal GameObject target;			// The character targetted (usually a player)
 
-	internal bool isActive = true;	// Script is active when instantiated by default
-	internal bool isComplete = false;	// By default, we have not completed this action
+	internal bool isActive = true;		// Script is active when instantiated by default
+	internal bool isComplete = false;	// The action will be "Pop'd" when complete
 
 	public CommandScript(GameObject _character) {
 		this.character = _character;
@@ -30,5 +30,8 @@ public class CommandScript {
 	
 	public virtual void Finish() {
 		this.isComplete = true;
+	}
+
+	public virtual void debug() {
 	}
 }
