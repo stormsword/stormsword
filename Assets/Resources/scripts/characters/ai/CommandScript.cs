@@ -8,7 +8,8 @@ public class CommandScript {
 	internal GameObject character;	// The Character this stack is attached to (usually an enemy)
 	internal GameObject target;		// The character targetted (usually a player)
 
-	protected bool isActive = true;	// Script is active when instantiated by default
+	internal bool isActive = true;	// Script is active when instantiated by default
+	internal bool isComplete = false;	// By default, we have not completed this action
 
 	public CommandScript(GameObject _character) {
 		this.character = _character;
@@ -25,5 +26,9 @@ public class CommandScript {
 	/* Resume - Start the current script up again */
 	public virtual void Resume() {
 		isActive = true;
+	}
+	
+	public virtual void Finish() {
+		this.isComplete = true;
 	}
 }
