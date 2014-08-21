@@ -276,6 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyArchetype:
     movementType: 0
+  aggroRadius: 1.5
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -301,7 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 569bedba68ece4e459fb801e4dc49279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 15
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1

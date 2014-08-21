@@ -11,7 +11,6 @@ public enum Archetypes {
 [System.Serializable]
 public class EnemyArchetype{
 	public Archetypes movementType;
-	internal Vector2 spawnPoint;
 }
 
 public class EnemyScript : MonoBehaviour {
@@ -21,6 +20,12 @@ public class EnemyScript : MonoBehaviour {
 
 	[Tooltip("How close does a player have to be to aggro this enemy")]
 	public float aggroRadius = 1.5f;
+
+	[Tooltip("How close does a player have to be to enter this enemy's Line of Sight")]
+	public float sightRadius = 3.0f;
+
+	// Character's spawn point
+	internal Vector2 spawnPoint;
 
 	// AI Scripts - Used to execute character behavior
 	private CommandStackScript commands;
@@ -35,6 +40,9 @@ public class EnemyScript : MonoBehaviour {
 
 		// Grab player info
 		player = GameObject.FindGameObjectWithTag("Player");
+
+		// Save spawn point in case we need to leash later
+		spawnPoint = transform.position;
 
 		// Create stack of commands for AI behavior
 		commands = new CommandStackScript();
@@ -53,8 +61,13 @@ public class EnemyScript : MonoBehaviour {
 			// Otherwise revert to default behavior
 			switch(enemyArchetype.movementType) {
 				case Archetypes.Stalker:
-					// Stalker charges by default
-					Charge ();
+					if(isVisible(player)) {
+						// Stalker charges by default as long as player is on screen
+						Charge ();
+					}
+					else {
+						Goto(spawnPoint);
+					}
 					break;
 				case Archetypes.Wanderer:
 					// Wanderer just wanders by default
@@ -84,7 +97,22 @@ public class EnemyScript : MonoBehaviour {
 		commands.Add(command);
 	}
 
+	/* MoveTo - Travel to a location */
+	private void Goto(Vector2 location) {
+		GotoCommandScript command = new GotoCommandScript(this.gameObject);
+		command.destination = location;
+		commands.Add (command);
+	}
+
 	private float GetDistance(GameObject target) {
 		return(Vector2.Distance(this.gameObject.transform.position, target.transform.position));
+	}
+
+	private bool isVisible(GameObject target) {
+		if(GetDistance(target) <= sightRadius) {
+			// Player is inside the target's sight radius, he can see you!
+			return(true);
+		}
+		return(false);
 	}
 }
