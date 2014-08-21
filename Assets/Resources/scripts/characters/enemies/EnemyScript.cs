@@ -51,36 +51,39 @@ public class EnemyScript : MonoBehaviour {
 	void Update() {
 
 		/* Update the command stack */
-		playerDistance = GetDistance (player);
+		if(player != null) {
+			// Make sure player is still alive
+			playerDistance = GetDistance (player);
 
-		if(playerDistance <= aggroRadius) {
-			// If character is within aggro radius, push 'charge' onto stack, regardless of archetype
-			Charge();
-		}
-		else {
-			// Otherwise revert to default behavior
-			switch(enemyArchetype.movementType) {
-				case Archetypes.Stalker:
-					if(isVisible(player)) {
-						// Stalker charges by default as long as player is on screen
-						Charge ();
-					}
-					else {
-						Goto(spawnPoint);
-					}
-					break;
-				case Archetypes.Wanderer:
-					// Wanderer just wanders by default
-					Wander ();
-					break;
+			if(playerDistance <= aggroRadius) {
+				// If character is within aggro radius, push 'charge' onto stack, regardless of archetype
+				Charge();
 			}
+			else {
+				// Otherwise revert to default behavior
+				switch(enemyArchetype.movementType) {
+					case Archetypes.Stalker:
+						if(isVisible(player)) {
+							// Stalker charges by default as long as player is on screen
+							Charge ();
+						}
+						else {
+							Goto(spawnPoint);
+						}
+						break;
+					case Archetypes.Wanderer:
+						// Wanderer just wanders by default
+						Wander ();
+						break;
+				}
+			}
+
+			/* Process the latest command stack */
+			commands.Execute();	// Execute our currently active command
+
+			// Continuously attack until dead
+			characterScript.Attack();
 		}
-
-		/* Process the latest command stack */
-		commands.Execute();	// Execute our currently active command
-
-		// Continuously attack until dead
-		characterScript.Attack();
 
 	}
 

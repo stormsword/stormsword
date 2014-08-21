@@ -18,15 +18,26 @@ public class GotoCommandScript : CommandScript {
 	public override void Execute () {
 		if(this.isActive) {
 			direction = GetDirection(destination);
-			moveScript.Move(direction);
+			if(character.transform.position.Equals(direction)) {
+				// We have reached our destination!
+				Finish();
+			}
+			else {
+				// Not there yet, keep on truckin'
+				moveScript.Move(direction);
+			}
 		}
 	}
-	
+
+	/* GetDirection - Determines the direction the character should move to reach their destination
+	 * Vector2 destination - the point you're trying to get to!
+	 */
 	private Vector2 GetDirection(Vector2 destination) {
 		Vector2 targetPosition = new Vector2(character.transform.position.x, character.transform.position.y);	// Workaround because transform.position is a vector3
 		return(destination - targetPosition);
 	}
 
+	/* debug - Generic debug function to output info for troubleshooting */
 	public override void debug() {
 		Debug.Log ("Current Location: ");
 		Debug.Log (character.transform.position);
