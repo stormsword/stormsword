@@ -9,8 +9,8 @@ using System.Collections.Generic;
 public class CommandStackScript {
 	
 	// The data structure to hold our commands
-	private Stack<CommandScript> commands;
-	
+	internal Stack<CommandScript> commands;
+
 	/* Constructor - Creates a new CommandStack */
 	public CommandStackScript() {
 		commands = new Stack<CommandScript>();

@@ -2,7 +2,6 @@
 using System.Collections;
 
 /* EnemyScript - Controls enemy behavior */
-
 public enum Archetypes {
 	Stalker,
 	Wanderer
@@ -24,16 +23,20 @@ public class EnemyScript : MonoBehaviour {
 	[Tooltip("How close does a player have to be to enter this enemy's Line of Sight")]
 	public float sightRadius = 3.0f;
 
+	[Tooltip("Turn on debug mode to see a visual stack for each enemy")]
+	public bool debugMode = false;	// Debugging the Command Stack
+
 	// Character's spawn point
 	internal Vector2 spawnPoint;
 
 	// AI Scripts - Used to execute character behavior
-	private CommandStackScript commands;
+	internal CommandStackScript commands;
 	private CharacterScript characterScript;
 
 	// Player data - Fed to AI script to determine character behavior
 	private GameObject player;
 	private float playerDistance;
+
 
 	void Start() {
 		characterScript = GetComponent<CharacterScript>();
