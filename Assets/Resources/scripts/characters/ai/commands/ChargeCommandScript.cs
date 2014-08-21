@@ -4,7 +4,9 @@ using System.Collections;
 /* ChargeCommand - Charges towards the target */
 public class ChargeCommandScript : CommandScript {
 
-	MoveScript moveScript;
+	private Vector2 direction;
+
+	private MoveScript moveScript;
 
 	/* ChargeCommandScript - Constructur called when Command is first created 
 	 _character - the Character that the Command Stack is attached to */
@@ -16,13 +18,16 @@ public class ChargeCommandScript : CommandScript {
 	public override void Execute () {
 		if(this.isActive) {
 			if(target != null) {
-				destination = GetDestination(target);
-				moveScript.Move(destination);
+				direction = GetDirection(target);
+				moveScript.Move(direction);
 			}
 		}
 	}
 
-	private Vector2 GetDestination(GameObject target) {
+	/* GetDirection - Determines the direction the character should move to reach the target character
+	 * GameObject target - the character you're trying to charge wildly towards!
+	 */
+	private Vector2 GetDirection(GameObject target) {
 		return(target.transform.position - character.transform.position);
 	}
 }
