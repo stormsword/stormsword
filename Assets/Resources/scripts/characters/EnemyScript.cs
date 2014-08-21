@@ -38,11 +38,6 @@ public class EnemyScript : MonoBehaviour {
 
 		// Create stack of commands for AI behavior
 		commands = new CommandStackScript();
-
-		// Add a default command to the stack
-		ChargeCommandScript command = new ChargeCommandScript(this.gameObject);	// Temporary command - move to a random spot
-		command.target = player;		// Grab and target player
-		commands.Add(command);			// Command will be executed next frame
 	}
 
 	void Update() {
@@ -50,18 +45,19 @@ public class EnemyScript : MonoBehaviour {
 		/* Update the command stack */
 		playerDistance = GetDistance (player);
 
-		if(playerDistance >= aggroRadius) {
+		if(playerDistance <= aggroRadius) {
 			// If character is within aggro radius, push 'charge' onto stack, regardless of archetype
-
+			Charge();
 		}
 		else {
 			// Otherwise revert to default behavior
-			switch(enemyArchetype.movementType) {
-				case Archetypes.Stalker:
-					break;
-				case Archetypes.Wanderer:
-					break;
-			}
+			Wander ();
+//			switch(enemyArchetype.movementType) {
+//				case Archetypes.Stalker:
+//					break;
+//				case Archetypes.Wanderer:
+//					break;
+//			}
 		}
 
 		/* Process the latest command stack */
@@ -70,6 +66,19 @@ public class EnemyScript : MonoBehaviour {
 		// Continuously attack until dead
 		characterScript.Attack();
 
+	}
+
+	/* Charge - Pushes a 'Charge' command onto the stack */
+	private void Charge() {
+		ChargeCommandScript command = new ChargeCommandScript(this.gameObject);	// Temporary command - move to a random spot
+		command.target = player;		// Grab and target player
+		commands.Add(command);			// Command will be executed next frame
+	}
+
+	/* Wander - Pushes a 'Wander' command onto the stack */
+	private void Wander() {
+		WanderCommandScript command = new WanderCommandScript(this.gameObject);
+		commands.Add(command);
 	}
 
 	private float GetDistance(GameObject target) {
