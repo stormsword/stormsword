@@ -51,13 +51,16 @@ public class EnemyScript : MonoBehaviour {
 		}
 		else {
 			// Otherwise revert to default behavior
-			Wander ();
-//			switch(enemyArchetype.movementType) {
-//				case Archetypes.Stalker:
-//					break;
-//				case Archetypes.Wanderer:
-//					break;
-//			}
+			switch(enemyArchetype.movementType) {
+				case Archetypes.Stalker:
+					// Stalker charges by default
+					Charge ();
+					break;
+				case Archetypes.Wanderer:
+					// Wanderer just wanders by default
+					Wander ();
+					break;
+			}
 		}
 
 		/* Process the latest command stack */
