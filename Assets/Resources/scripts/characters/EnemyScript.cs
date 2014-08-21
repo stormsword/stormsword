@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEditor;
 using System.Collections;
 
 /* EnemyScript - Controls enemy behavior */
@@ -23,7 +24,7 @@ public class EnemyScript : MonoBehaviour {
 	[Tooltip("How close does a player have to be to enter this enemy's Line of Sight")]
 	public float sightRadius = 3.0f;
 
-	[Tooltip("Turn on debug mode to see a visual stack for each enemy")]
+	[Tooltip("Turn on debug mode to see a visual stack for each enemy. Must restart game to enable/disable!")]
 	public bool debugMode = false;	// Debugging the Command Stack
 
 	// Character's spawn point
@@ -120,5 +121,13 @@ public class EnemyScript : MonoBehaviour {
 			return(true);
 		}
 		return(false);
+	}
+
+	/* OnDrawGizmos - Used to draw debugging info on the scene */
+	public void OnDrawGizmos() {
+		if(debugMode) {
+			Gizmos.color = Color.grey;	
+			Handles.Label (transform.position, commands.currentCommand.ToString());
+		}
 	}
 }

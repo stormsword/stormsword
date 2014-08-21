@@ -273,6 +273,7 @@ MonoBehaviour:
     movementType: 1
   aggroRadius: 1.5
   sightRadius: 3
+  debugMode: 1
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
