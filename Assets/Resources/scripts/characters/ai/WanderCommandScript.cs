@@ -15,14 +15,12 @@ public class WanderCommandScript : CommandScript {
 	/* Execute is usually called once per frame */
 	public override void Execute () {
 		if(this.isActive) {
-			if(target != null) {
-				destination = GetRandomDestination();
-				moveScript.Move(destination);
-			}
+			destination = GetRandomDestination();
+			moveScript.Move(destination);
 		}
 	}
 
 	private Vector2 GetRandomDestination() {
-		return(Random.insideUnitCircle * 5);
+		return(Random.insideUnitCircle*3);
 	}	
 }
