@@ -6,7 +6,7 @@ public class ChargeCommandScript : CommandScript {
 
 	MoveScript moveScript;
 
-	/* MoveCommandScript - Constructur called when Command is first created 
+	/* ChargeCommandScript - Constructur called when Command is first created 
 	 _character - the Character that the Command Stack is attached to */
 	public ChargeCommandScript(GameObject _character) : base(_character) {
 		moveScript = character.GetComponent<MoveScript>();
