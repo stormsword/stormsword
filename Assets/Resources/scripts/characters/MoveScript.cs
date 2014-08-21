@@ -30,8 +30,8 @@ public class MoveScript : MonoBehaviour {
 		/* Play idle animation */
 
 		if(animator){
-		animator.SetFloat ("facing_x", facing.x);
-		animator.SetFloat ("facing_y", facing.y);
+			animator.SetFloat ("facing_x", facing.x);
+			animator.SetFloat ("facing_y", facing.y);
 
 			/* Check if character is moving */
 
@@ -41,7 +41,7 @@ public class MoveScript : MonoBehaviour {
 				isMoving = true;
 			}
 
-		movement = direction * speed;	// Calculate movement amount
+			movement = direction * speed;	// Calculate movement amount
 
 			/* Play walking animation */
 

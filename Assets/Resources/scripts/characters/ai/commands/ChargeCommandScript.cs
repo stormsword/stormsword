@@ -24,5 +24,5 @@ public class ChargeCommandScript : CommandScript {
 
 	private Vector2 GetDestination(GameObject target) {
 		return(target.transform.position - character.transform.position);
-	}	
+	}
 }
