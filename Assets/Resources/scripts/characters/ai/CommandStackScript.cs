@@ -37,13 +37,11 @@ public class CommandStackScript {
 				// Pause current command
 				currentCommand.Pause();
 				commands.Push(command);
-				Debug.Log (command.GetType());
 			}
 		}
 		else {
 			// The stack is empty so push it!
 			commands.Push(command);
-			Debug.Log (command.GetType());
 		}
 	}
 
