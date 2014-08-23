@@ -64,6 +64,19 @@ public class CommandStackScript {
 		if(currentCommand != null) {
 			commands.Pop ();
 		}
-
 	}
+
+	/* ToString - Exports a string representing the current stack */
+	public override string ToString() {
+		Stack<CommandScript> tmpStack = new Stack<CommandScript>(commands);	// Create a temporary copy of the command stack
+
+		string debugger = "Stack Contents: [" + tmpStack.Count + "]\n";
+		while(tmpStack.Count > 0) {
+			CommandScript popped = tmpStack.Pop();
+			debugger += popped.ToString();
+			debugger += "\n";
+		}
+		return(debugger);
+	}
+
 }

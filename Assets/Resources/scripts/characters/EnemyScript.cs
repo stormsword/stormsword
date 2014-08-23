@@ -2,6 +2,7 @@
 using UnityEditor;
 using System.Collections;
 
+
 /* EnemyScript - Controls enemy behavior */
 public enum Archetypes {
 	Stalker,
@@ -91,6 +92,8 @@ public class EnemyScript : MonoBehaviour {
 
 	}
 
+	/* AI Commands */
+
 	/* Charge - Pushes a 'Charge' command onto the stack */
 	private void Charge() {
 		ChargeCommandScript command = new ChargeCommandScript(this.gameObject);	// Temporary command - move to a random spot
@@ -111,6 +114,8 @@ public class EnemyScript : MonoBehaviour {
 		commands.Add (command);
 	}
 
+	/* Utility Functions */
+
 	private float GetDistance(GameObject target) {
 		return(Vector2.Distance(this.gameObject.transform.position, target.transform.position));
 	}
@@ -126,8 +131,8 @@ public class EnemyScript : MonoBehaviour {
 	/* OnDrawGizmos - Used to draw debugging info on the scene */
 	public void OnDrawGizmos() {
 		if(debugMode) {
-			Gizmos.color = Color.grey;	
-			Handles.Label (transform.position, commands.currentCommand.ToString());
+			Gizmos.color = Color.red;
+			Handles.Label(transform.position, commands.ToString());
 		}
 	}
 }
