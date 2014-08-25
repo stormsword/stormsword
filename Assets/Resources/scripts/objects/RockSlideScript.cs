@@ -3,16 +3,26 @@ using System.Collections;
 
 public class RockSlideScript : MonoBehaviour {
 
-	GameObject player;
+
+	public Transform RockSlide;
 
 	// Use this for initialization
 	void Start () {
-//		player = GameObject.FindGameObjectWithTag('Player');		
 	}
 
-	void OnTriggerEnter2D(Collider2D defenderCollider) {
-		// Spawn Rockslide object
-		// Make usre player can't attakc it
-		// When boss is dead, destroy it	
+	void OnTriggerEnter2D(Collider2D defender) {
+		// Make sure it's a player that triggers the collision
+		if(defender.tag == "Player") {
+
+			Debug.Log("Player entered rockslide area!");
+			// Spawn Rockslide object
+			GameObject rockslide = Instantiate(RockSlide) as GameObject;
+
+			// When boss is dead, destroy it
+		}
+	}
+
+	void SpawnRockslide() {
+
 	}
 }

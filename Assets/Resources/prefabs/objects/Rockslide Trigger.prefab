@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0286f2bed698748cdaa4772d023bf6d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RockSlide: {fileID: 400016, guid: 3209b90fab1734c11a8d78ea9fc55f0b, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
