@@ -1,3 +1,26 @@
+0.0.5 / 2014-08-26
+==================
+  * update: New sprite for player!!!
+  * add: Created 'Stomp' ability
+    * activated by pressing W
+    * Pushes player forward a short distance at a high speed
+    * Knocks enemies in the path out of the way
+  * add: Camera now follows player smoothly
+  * update: Expanded basic zone with walls, exit
+  * update: Make inspector more usable for designers
+  * add: Pause Menu
+    * Open by pressing `Esc`
+    * User can quit the game :)
+  * add: Main Menu
+    * Uses temporary sprites/animation
+    * Allows user to start a game and loads Forest Zone by default
+  * add: Mixpanel tracking so we can see how many people are playing
+    * Players can disable tracking from the Pause menu
+  * update: Player's weapon now animates more smoothly and adjusts for the direction he is facing
+  * add: Da Boss Man (enemy)
+    * Currently stuck in the middle of the map, will soon be moved to his own room
+  * bugfix: DoT and Snare no longer crash the game when the player died
+
 0.0.4 / 2014-07-31
 ==================
  
