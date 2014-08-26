@@ -20076,6 +20076,9 @@
     <property name="transfer collider" value="true"/>
    </properties>
   </object>
+  <object x="864" y="0" width="32" height="96"/>
+  <object x="896" y="0" width="160" height="32"/>
+  <object x="1056" y="0" width="32" height="96"/>
  </objectgroup>
  <objectgroup name="Enemies" width="100" height="100">
   <object name="Brute" type="Enemy" x="224" y="128">
@@ -20114,7 +20117,7 @@
     <property name="0-prefab path" value="prefabs/characters/enemies/"/>
    </properties>
   </object>
-  <object name="Dabossman" type="Enemy" x="140" y="212" width="32" height="32">
+  <object name="Dabossman" type="Enemy" x="960" y="64" width="32" height="32">
    <properties>
     <property name="0-prefab" value="Dabossman"/>
     <property name="0-prefab path" value="prefabs/enemies/"/>
