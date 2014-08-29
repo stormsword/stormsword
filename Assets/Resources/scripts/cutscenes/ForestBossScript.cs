@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/* ForestBossScript - Pauses the action and plays a cutscene:
+/* ForestBossScript - Scripted event kicked off by a trigger
+ * 
+ * Pauses the action and plays a cutscene:
  * Pan to boss waiting on a dais
  * Rocks fall behind you trapping you in the room when you enter the room
  * Pause player movement and pan camera to boss
@@ -35,8 +37,21 @@ public class ForestBossScript : MonoBehaviour {
 		rockSlideScript = GetComponent<RockSlideScript>();
 	}
 
+	void OnTriggerEnter2D(Collider2D defender) {
+		// Make sure it's a player that triggers the collision
+		if(defender.tag == "Player") {
+			// Spawn Rockslide object
+			if(onlyOnce) {
+				// Disable this trigger because the rockslide should only trigger once
+				StartCoroutine(StartEvent());
+				trigger.enabled = false;
+			}
+		}
+	}
+
 	// StartEvent - Kicks off the scripted event (usually after a trigger or state change)
-	void StartEvent() {
+	IEnumerator StartEvent() {
+		Debug.Log ("Got here");
 		// Lock player input
 		playerScript.ToggleInput();
 
@@ -54,20 +69,10 @@ public class ForestBossScript : MonoBehaviour {
 		// yield Camera -> goto middle of room
 		// Boss jumps down + charges at player
 		// WaitForSeconds(3)
+		yield return new WaitForSeconds(2);	// For some reason when I add this - the function never runs.
 		// yield Camera -> Pan back to player
 		// Camera - change camera mode (follow player)
 		// Unlock Player input
-	}
-	
-	void OnTriggerEnter2D(Collider2D defender) {
-		// Make sure it's a player that triggers the collision
-		if(defender.tag == "Player") {
-			// Spawn Rockslide object
-			if(onlyOnce) {
-				// Disable this trigger because the rockslide should only trigger once
-				trigger.enabled = false;
-				StartEvent();
-			}
-		}
+		playerScript.ToggleInput();
 	}
 }
