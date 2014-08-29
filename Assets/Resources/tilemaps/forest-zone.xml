@@ -20070,7 +20070,7 @@
   </object>
   <object name="Rockslide Trigger" type="Trigger" x="768" y="288" width="32" height="64">
    <properties>
-    <property name="0-prefab" value="Rockslide Trigger"/>
+    <property name="0-prefab" value="Forest Boss Trigger"/>
     <property name="0-prefab add collider" value="false"/>
     <property name="0-prefab path" value="prefabs/objects/"/>
     <property name="transfer collider" value="true"/>
@@ -20125,7 +20125,7 @@
   </object>
  </objectgroup>
  <objectgroup name="Players" width="100" height="100">
-  <object name="Player1" type="Player" x="32" y="128">
+  <object name="Player1" type="Player" x="736" y="320">
    <properties>
     <property name="0-prefab" value="Player"/>
     <property name="0-prefab path" value="prefabs/characters/players/"/>
