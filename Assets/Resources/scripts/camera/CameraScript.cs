@@ -13,7 +13,7 @@ public class CameraScript : MonoBehaviour {
 
 	[System.Serializable]
 	public enum CameraModes {
-		FollowPlayer,
+		Follow,
 		Scroll,
 		Goto
 	}
@@ -33,7 +33,7 @@ public class CameraScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		// By default we follow the player around the map unless 
-		if(cameraMode == CameraModes.FollowPlayer) {
+		if(cameraMode == CameraModes.Follow) {
 			speed = followSpeed;
 			target = GameObject.FindGameObjectWithTag("Player").transform;
 			this.transform.position = target.position;	// Snap to player's position when the game starts
@@ -46,7 +46,7 @@ public class CameraScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(target && (cameraMode == CameraModes.FollowPlayer)) {
+		if(target && (cameraMode == CameraModes.Follow)) {
 			// Only track if player is still alive
 			Vector3 point = camera.WorldToViewportPoint(target.position);	// Player's current position
 			
@@ -68,7 +68,14 @@ public class CameraScript : MonoBehaviour {
 			this.transform.position = Vector3.SmoothDamp(this.transform.position, destination, ref velocity, speed);
 		}
 	}
-	
+
+	/* Follow - Follow a target around the map */
+	public void Follow(Transform _target) {
+		speed = followSpeed;
+		target = _target;	// Start following new target
+		cameraMode = CameraModes.Follow;
+	}
+
 	/* Goto - Set a destination and head there */
 	public void Goto(Vector2 _destination) {
 		speed = gotoSpeed;

@@ -70,24 +70,32 @@ public class ForestBossScript : MonoBehaviour {
 		// Lock player input
 		playerScript.ToggleInput();
 
-		// Camera - Change camera mode (move to position)
+		// Camera - Move to Boss
 		cameraScript.Goto(boss.transform.position);
+		yield return new WaitForSeconds(3);	// Move camera to boss
 
-		// yield Camera -> Goto X/Y (boss)
-		// WaitForSeconds(5)
-		// yield Camera -> goto x/y (player)
+		yield return new WaitForSeconds(1);	// Pause with camera on boss
+
+		// Camera - Move back to player
+		cameraScript.Goto (player.transform.position);
+		yield return new WaitForSeconds(3);
 		
 		// Drop stones behind player
 		rockSlideScript.SpawnSlide();
+
+		// Camera - change camera mode (follow player)
+		cameraScript.Follow (player.transform);
+
+		// Unlock Player input
+		playerScript.ToggleInput();
+
 		// Player looks around (confused animation)
 		// WaitForSeconds(3)
 		// yield Camera -> goto middle of room
 		// Boss jumps down + charges at player
 		// WaitForSeconds(3)
-		yield return new WaitForSeconds(2);	// For some reason when I add this - the function never runs.
+
 		// yield Camera -> Pan back to player
-		// Camera - change camera mode (follow player)
-		// Unlock Player input
-		playerScript.ToggleInput();
+
 	}
 }
