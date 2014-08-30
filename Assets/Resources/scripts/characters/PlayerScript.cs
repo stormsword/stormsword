@@ -86,11 +86,9 @@ public class PlayerScript : MonoBehaviour {
 	public void ToggleInput() {
 		if(inputEnabled) {
 			inputEnabled = false;
-			Debug.Log ("Disabled Input");
 		}
 		else {
 			inputEnabled = true;
-			Debug.Log ("Enabled Input");
 		}
 	}
 }

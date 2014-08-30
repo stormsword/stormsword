@@ -29,6 +29,8 @@ public class ForestBossScript : MonoBehaviour {
 
 	// Boss info
 	private GameObject boss;
+	private BoxCollider2D bossCollider;
+	private MoveScript bossMoveScript;
 	
 	// Start the rock slide
 	private RockSlideScript rockSlideScript;
@@ -47,6 +49,8 @@ public class ForestBossScript : MonoBehaviour {
 
 		// Grab boss info
 		boss = GameObject.Find ("Enemies_Dabossman");
+		bossCollider = boss.GetComponent<BoxCollider2D>();
+		bossMoveScript = boss.GetComponent<MoveScript>();
 
 		// Get rockslide info
 		rockSlideScript = GetComponent<RockSlideScript>();
@@ -72,30 +76,38 @@ public class ForestBossScript : MonoBehaviour {
 
 		// Camera - Move to Boss
 		cameraScript.Goto(boss.transform.position);
-		yield return new WaitForSeconds(3);	// Move camera to boss
+		yield return new WaitForSeconds(2);	// Move camera to boss
 
 		yield return new WaitForSeconds(1);	// Pause with camera on boss
+
+		// Follow boss as he leaps
+		cameraScript.Follow (boss.transform);
+
+		// Boss should ignore walls
+		bossCollider.enabled = false;
+
+		// Boss jumps down into room
+		Vector2 pushDirection = new Vector2(0, -1);
+		bossMoveScript.Push(pushDirection, 12000);
+
+		yield return new WaitForSeconds(2);
+
+		// Boss no longer ignores walls
+		bossCollider.enabled = true;
 
 		// Camera - Move back to player
 		cameraScript.Goto (player.transform.position);
 		yield return new WaitForSeconds(3);
-		
+
 		// Drop stones behind player
 		rockSlideScript.SpawnSlide();
 
-		// Camera - change camera mode (follow player)
-		cameraScript.Follow (player.transform);
+		// Player looks around (confused animation)
 
-		// Unlock Player input
+		// Unlock Player input - Player can start moving in middle of event
 		playerScript.ToggleInput();
 
-		// Player looks around (confused animation)
-		// WaitForSeconds(3)
-		// yield Camera -> goto middle of room
-		// Boss jumps down + charges at player
-		// WaitForSeconds(3)
-
-		// yield Camera -> Pan back to player
-
+		// Camera - change camera mode (follow player)
+		cameraScript.Follow (player.transform);
 	}
 }
