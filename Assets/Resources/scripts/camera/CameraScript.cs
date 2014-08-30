@@ -1,11 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum CameraModes {
-	FollowPlayer,
-	Scroll,
-	Goto
-}
 
 /* CameraScript - Controls camera movement within a scene
 
@@ -16,17 +11,36 @@ public enum CameraModes {
  */
 public class CameraScript : MonoBehaviour {
 
+	[System.Serializable]
+	public enum CameraModes {
+		FollowPlayer,
+		Scroll,
+		Goto
+	}
+
 	public CameraModes cameraMode;
-	public float speed = 0.15f;
+
+	public float followSpeed = 0.13f;
+	public float scrollSpeed = 0.2f;
+	public float gotoSpeed = 1.0f;
+
+	private float speed;
+
 	private Vector3 velocity = Vector3.zero;
 	private Transform target;
 	private Vector2 destination = Vector2.zero;
 
 	// Use this for initialization
 	void Start () {
+		// By default we follow the player around the map unless 
 		if(cameraMode == CameraModes.FollowPlayer) {
+			speed = followSpeed;
 			target = GameObject.FindGameObjectWithTag("Player").transform;
 			this.transform.position = target.position;	// Snap to player's position when the game starts
+		} else if (cameraMode == CameraModes.Goto) {
+			speed = gotoSpeed;
+		} else {
+			speed = scrollSpeed;
 		}
 	}
 	
@@ -54,11 +68,11 @@ public class CameraScript : MonoBehaviour {
 			this.transform.position = Vector3.SmoothDamp(this.transform.position, destination, ref velocity, speed);
 		}
 	}
-
+	
 	/* Goto - Set a destination and head there */
 	public void Goto(Vector2 _destination) {
-		speed = 0.8f;
+		speed = gotoSpeed;
 		destination = _destination;
 		cameraMode = CameraModes.Goto;
-	}
+	}	
 }

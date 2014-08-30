@@ -8,8 +8,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 20: {fileID: 2000000}
   - 114: {fileID: 11400000}
+  - 20: {fileID: 2000000}
   - 124: {fileID: 12400000}
   - 92: {fileID: 9200000}
   - 81: {fileID: 8100000}
@@ -90,7 +90,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMode: 0
-  speed: .150000006
+  followSpeed: .129999995
+  scrollSpeed: .200000003
+  gotoSpeed: 1
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
