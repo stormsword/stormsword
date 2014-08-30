@@ -3,14 +3,16 @@ using System.Collections;
 
 public enum CameraModes {
 	FollowPlayer,
-	Menu
+	Scroll,
+	Goto
 }
 
 /* CameraScript - Controls camera movement within a scene
 
 	Camera Modes:
 	FollowPlayer - Sticks to the player and follows him/her around the map
-	Menu - Pans in a semi-cinematic style around the map while a menu (i.e. main menu) is displayed
+	Scroll - Pans in a semi-cinematic style around the map while a menu (i.e. main menu) is displayed
+	Goto - Pans to a specific point on the map
  */
 public class CameraScript : MonoBehaviour {
 
@@ -18,6 +20,7 @@ public class CameraScript : MonoBehaviour {
 	public float speed = 0.15f;
 	private Vector3 velocity = Vector3.zero;
 	private Transform target;
+	private Vector2 destination = Vector2.zero;
 
 	// Use this for initialization
 	void Start () {
@@ -40,11 +43,22 @@ public class CameraScript : MonoBehaviour {
 			Vector3 destination = transform.position + delta;
 			this.transform.position = Vector3.SmoothDamp (this.transform.position, destination, ref velocity, speed);
 		}
-		else if(cameraMode == CameraModes.Menu) {
+		else if(cameraMode == CameraModes.Scroll) {
 			// Slowly pan to the right in a semi-cinematic fashion
 			Vector3 delta = new Vector3(1, 0);
 			Vector3 destination = transform.position + delta;
 			this.transform.position = Vector3.SmoothDamp(this.transform.position, destination, ref velocity, speed);
 		}
+		else if(cameraMode == CameraModes.Goto) {
+			// Pan to a specific point on the map (usually used to reveal things to the player)
+			this.transform.position = Vector3.SmoothDamp(this.transform.position, destination, ref velocity, speed);
+		}
+	}
+
+	/* Goto - Set a destination and head there */
+	public void Goto(Vector2 _destination) {
+		speed = 0.8f;
+		destination = _destination;
+		cameraMode = CameraModes.Goto;
 	}
 }

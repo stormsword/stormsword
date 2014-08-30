@@ -20120,7 +20120,7 @@
   <object name="Dabossman" type="Enemy" x="960" y="64" width="32" height="32">
    <properties>
     <property name="0-prefab" value="Dabossman"/>
-    <property name="0-prefab path" value="prefabs/enemies/"/>
+    <property name="0-prefab path" value="prefabs/characters/enemies/"/>
    </properties>
   </object>
  </objectgroup>

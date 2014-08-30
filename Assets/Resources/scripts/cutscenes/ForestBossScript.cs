@@ -15,13 +15,21 @@ public class ForestBossScript : MonoBehaviour {
 	[Tooltip("Should this only happen once? Or many times?")]
 	public bool onlyOnce = true;
 
+	// Trigger that kicks off the whole shabang
+	private BoxCollider2D trigger;
+
+
 	// Player info
 	private GameObject player;
 	private PlayerScript playerScript;
 
-	// Trigger that kicks off the whole shabang
-	private BoxCollider2D trigger;
+	// Camera info
+	private GameObject mainCamera;
+	private CameraScript cameraScript;
 
+	// Boss info
+	private GameObject boss;
+	
 	// Start the rock slide
 	private RockSlideScript rockSlideScript;
 
@@ -33,6 +41,13 @@ public class ForestBossScript : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag("Player");
 		playerScript = player.GetComponent<PlayerScript>();
 
+		// Grab camera info
+		mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+		cameraScript = mainCamera.GetComponent<CameraScript>();
+
+		// Grab boss info
+		boss = GameObject.Find ("Enemies_Dabossman");
+
 		// Get rockslide info
 		rockSlideScript = GetComponent<RockSlideScript>();
 	}
@@ -42,22 +57,22 @@ public class ForestBossScript : MonoBehaviour {
 		if(defender.tag == "Player") {
 			// Spawn Rockslide object
 			if(onlyOnce) {
-				// Disable this trigger because the rockslide should only trigger once
-				StartCoroutine(StartEvent());
-				trigger.enabled = false;
+				StartCoroutine(StartEvent());	// Kick off the event
+
+				trigger.enabled = false; // Disable this trigger because the event should only trigger once
 			}
 		}
 	}
 
 	// StartEvent - Kicks off the scripted event (usually after a trigger or state change)
 	IEnumerator StartEvent() {
-		Debug.Log ("Got here");
+
 		// Lock player input
 		playerScript.ToggleInput();
 
-		// Find Boss
-		// Find Camera
 		// Camera - Change camera mode (move to position)
+		cameraScript.Goto(boss.transform.position);
+
 		// yield Camera -> Goto X/Y (boss)
 		// WaitForSeconds(5)
 		// yield Camera -> goto x/y (player)
