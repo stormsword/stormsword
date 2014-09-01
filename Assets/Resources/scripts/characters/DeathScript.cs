@@ -3,7 +3,9 @@ using System.Collections;
 
 /* DeathScript - Should be enabled when you want to kill the current character */
 public class DeathScript : MonoBehaviour {
-	
+
+	public string objectToDestroy;
+
 	private MoveScript moveScript;
 	private WeaponScript weaponScript;
 	private HealthBar healthBar;
@@ -44,7 +46,7 @@ public class DeathScript : MonoBehaviour {
 		GameObject.Destroy(gameObject);
 
 		// Open rockslide door
-		rockSlide = GameObject.Find ("Rockslide(Clone)");	// I'm not sure why we need to add '(Clone)' but it doesn't work without it.
+		rockSlide = GameObject.Find (objectToDestroy);	// I'm not sure why we need to add '(Clone)' but it doesn't work without it.
 		GameObject.Destroy(rockSlide);
 	}
 }
