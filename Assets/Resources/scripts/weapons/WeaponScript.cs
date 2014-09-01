@@ -136,7 +136,6 @@ public class WeaponScript : MonoBehaviour {
 	public bool CanAttack {
 		get {
 			return(mainHandSlot.attackCooldown <= 0f);
-		
 		}
 	}
 

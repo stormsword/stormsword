@@ -19,17 +19,9 @@ public class HealthScript : MonoBehaviour {
 	// HP Bubble displayed when a character takes dmg
 	[Tooltip("Drag a prefab here for the health bubble UI to display for this player")]
 	public Transform HPBubble;
-	
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
+	// Deathscript allows characters to have custom death sequences
+	private DeathScript deathScript;
 
 	/* Damage - Inflicts damage and check if the object should be destroyed */
 	public void Damage(float damageCount) {
@@ -48,7 +40,14 @@ public class HealthScript : MonoBehaviour {
 
 		if (hp <= 0) {
 			// Object is dead
-			Destroy(gameObject);
+			deathScript = GetComponent<DeathScript>();
+			if(deathScript) {
+				deathScript.enabled = true;	// Deathscript is disabled by default, enabling it triggers deathstuff
+				this.enabled = false;
+			} else {
+				GameObject.Destroy(gameObject);
+			}
+			
 		}
 	}
 }
