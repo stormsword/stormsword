@@ -8,6 +8,8 @@ public class DeathScript : MonoBehaviour {
 	private WeaponScript weaponScript;
 	private HealthBar healthBar;
 
+	private GameObject rockSlide;
+
 	// Use this for initialization
 	void Start () {
 		this.enabled = false;
@@ -40,5 +42,9 @@ public class DeathScript : MonoBehaviour {
 
 		// Destroy enemy
 		GameObject.Destroy(gameObject);
+
+		// Open rockslide door
+		rockSlide = GameObject.Find ("Rockslide(Clone)");	// I'm not sure why we need to add '(Clone)' but it doesn't work without it.
+		GameObject.Destroy(rockSlide);
 	}
 }
