@@ -6,17 +6,15 @@ public class DeathScript : MonoBehaviour {
 	
 	private MoveScript moveScript;
 	private WeaponScript weaponScript;
+	private HealthBar healthBar;
 
 	// Use this for initialization
 	void Start () {
 		this.enabled = false;
 
-		// Stop movement
 		moveScript = GetComponent<MoveScript>();
-
-		// Stop attacking
 		weaponScript = GetComponentInChildren<WeaponScript>();
-
+		healthBar = GetComponentInChildren<HealthBar>();
 	}
 	
 	// Update is called once per frame
@@ -26,8 +24,14 @@ public class DeathScript : MonoBehaviour {
 
 	// Kill the current game object
 	IEnumerator Die() {
+		// Stop movement
 		moveScript.enabled = false;
+
+		// Stop attacking
 		weaponScript.enabled = false;
+
+		// Hide health bar
+		healthBar.enabled = false;
 
 		// Play death animation
 

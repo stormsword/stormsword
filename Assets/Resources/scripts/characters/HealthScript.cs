@@ -25,26 +25,27 @@ public class HealthScript : MonoBehaviour {
 
 	/* Damage - Inflicts damage and check if the object should be destroyed */
 	public void Damage(float damageCount) {
-		hp -= damageCount;
+		if(hp > 0) {
+			// Object is alive
+			hp -= damageCount;
 
-		// Spawn -hp bubble
-		var hpBubble = Instantiate(HPBubble) as Transform;
-		hpBubble.transform.parent = transform;	// Make the current character its' parent
+			// Spawn -hp bubble
+			var hpBubble = Instantiate(HPBubble) as Transform;
+			hpBubble.transform.parent = transform;	// Make the current character its' parent
 
-		// Set type of attack
-		var hpBubbleScript = hpBubble.GetComponent<hpBubbleScript>();
-		hpBubbleScript.dmgType = dmgTypes.Damage;
-		hpBubbleScript.amount = damageCount;
-
-		// Handle death
-
-		if (hp <= 0) {
+			// Set type of attack
+			var hpBubbleScript = hpBubble.GetComponent<hpBubbleScript>();
+			hpBubbleScript.dmgType = dmgTypes.Damage;
+			hpBubbleScript.amount = damageCount;
+		}
+		else {
 			// Object is dead
 			deathScript = GetComponent<DeathScript>();
 			if(deathScript) {
 				deathScript.enabled = true;	// Deathscript is disabled by default, enabling it triggers deathstuff
 				this.enabled = false;
 			} else {
+				// Object doesn't have a deathScript so just destroy it
 				GameObject.Destroy(gameObject);
 			}
 			
