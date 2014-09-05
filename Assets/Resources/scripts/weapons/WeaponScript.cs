@@ -136,7 +136,6 @@ public class WeaponScript : MonoBehaviour {
 	public bool CanAttack {
 		get {
 			return(mainHandSlot.attackCooldown <= 0f);
-		
 		}
 	}
 
@@ -151,7 +150,9 @@ public class WeaponScript : MonoBehaviour {
 
 			if((ownerType == "Player" && defender.tag == "Enemy")
 			   ||
-			   (ownerType == "Enemy" && defender.tag == "Player")){
+			   (ownerType == "Enemy" && defender.tag == "Player")
+			   || 
+			   (ownerType == "Player" && defender.tag == "Terrain")){
 
 				// Attacks should knock the defender back away from attacker
 				Knockback (transform, defender, knockback);
@@ -174,6 +175,9 @@ public class WeaponScript : MonoBehaviour {
 		Vector2 direction = (defender.transform.position - attackerTransform.position).normalized;
 
 		var defenderMoveScript = defender.GetComponent<MoveScript>();
-		defenderMoveScript.Push(direction, amount);
+		if(defenderMoveScript) {
+			// Some objects might not be able to move
+			defenderMoveScript.Push(direction, amount);
+		}
 	}
 }

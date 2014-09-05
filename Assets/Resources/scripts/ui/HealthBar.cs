@@ -40,7 +40,7 @@ public class HealthBar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		currentHp = health.hp;
-
+	
 		// Lock the hp bar to the player's head
 		transform.position = Camera.main.WorldToViewportPoint(character.transform.position);
 

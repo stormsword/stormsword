@@ -6,6 +6,7 @@ TagManager:
   - Weapon
   - Enemy
   - UI
+  - Terrain
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
