@@ -6,7 +6,7 @@ public class SleepCommandScript : CommandScript {
 
 	MoveScript moveScript;
 
-	/* SleepeCommandScript - Constructur called when Command is first created 
+	/* SleepCommandScript - Constructor called when Command is first created 
 	 _character - the Character that the Command Stack is attached to */
 	public SleepCommandScript(GameObject _character) : base(_character) {
 	}

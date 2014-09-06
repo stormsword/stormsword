@@ -8,7 +8,7 @@ public class GotoCommandScript : CommandScript {
 
 	Vector2 direction;
 
-	/* GotoCommandScript - Constructur called when Command is first created 
+	/* GotoCommandScript - Constructor called when Command is first created 
 	 _character - the Character that the Command Stack is attached to */
 	public GotoCommandScript(GameObject _character) : base(_character) {
 		moveScript = character.GetComponent<MoveScript>();

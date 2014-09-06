@@ -16,7 +16,7 @@ public class CommandStackScript {
 		commands = new Stack<CommandScript>();
 	}
 	
-	/* currentcommand - Stores the command currently at the top of the stack. 
+	/* currentCommand - Stores the command currently at the top of the stack. 
 	 * Returns null if stack is empty */
 	public CommandScript currentCommand {
 		get {
