@@ -6,6 +6,7 @@ public class PlayerScript : MonoBehaviour {
 
 	// Hotkeys
 	public KeyCode[] abilityKeys = new KeyCode[2];
+	public KeyCode attackKey;
 	public KeyCode pauseKey;
 
 	// Components
@@ -39,6 +40,7 @@ public class PlayerScript : MonoBehaviour {
 		// Retrieve button information from mouse
 		bool attack = Input.GetButtonDown("Fire1");
 		attack |= Input.GetButtonDown("Fire2");
+		attack |= Input.GetKeyDown (attackKey);
 
 		// Watch for ability input
 		bool ability1 = Input.GetKeyDown(abilityKeys[0]);

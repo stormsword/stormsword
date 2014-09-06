@@ -453,7 +453,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e00a03c1e95f4cb0a833a36a0e378e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityKeys: 7100000077000000
+  abilityKeys: 7100000065000000
+  attackKey: 32
   pauseKey: 27
 --- !u!131 &13100000
 GUITexture:
