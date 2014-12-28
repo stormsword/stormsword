@@ -93,7 +93,6 @@ GameObject:
   - 4: {fileID: 400010}
   - 114: {fileID: 11400016}
   - 114: {fileID: 11400014}
-  - 114: {fileID: 11400012}
   - 212: {fileID: 21200002}
   - 61: {fileID: 6100002}
   - 50: {fileID: 5000000}
@@ -312,20 +311,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f0ab2f76d0148a3867303312a6a9b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterType: Enemy
---- !u!114 &11400012
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6081c2956a642968ca455e1ac18dac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Archetype:
-    movementType: 1
+  enemyArchetype:
+    movementType: 0
+  aggroRadius: 1.5
+  sightRadius: 3
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1

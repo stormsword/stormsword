@@ -24,13 +24,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400002}
+  - 114: {fileID: 11400006}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400008}
-  - 114: {fileID: 11400002}
   - 212: {fileID: 21200000}
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
-  - 114: {fileID: 11400006}
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400004}
   m_Layer: 0
@@ -248,19 +247,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BarWidth: 40
   BarHeight: 15
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c6081c2956a642968ca455e1ac18dac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Archetype:
-    movementType: 1
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -283,7 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f0ab2f76d0148a3867303312a6a9b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterType: Enemy
+  enemyArchetype:
+    movementType: 1
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -297,7 +284,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 50
   armor: 5
-  isEnemy: 1
   HPBubble: {fileID: 400000, guid: cbd950f1835fb47d79223a40265589df, type: 2}
 --- !u!114 &11400010
 MonoBehaviour:
