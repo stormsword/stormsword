@@ -1,0 +1,630 @@
+fileFormatVersion: 2
+guid: 03acdd43ab6f543149d964303a443b01
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: warrior_walking_right_0
+    21300002: warrior_walking_right_1
+    21300004: warrior_walking_right_2
+    21300006: warrior_walking_right_3
+    21300008: warrior_walking_right_4
+    21300010: warrior_walking_right_5
+    21300012: warrior_walking_right_6
+    21300014: warrior_walking_right_7
+    21300016: warrior_walking_left_0
+    21300018: warrior_walking_left_1
+    21300020: warrior_walking_left_2
+    21300022: warrior_walking_left_3
+    21300024: warrior_walking_left_4
+    21300026: warrior_walking_left_5
+    21300028: warrior_walking_left_6
+    21300030: warrior_walking_left_7
+    21300032: warrior_walking_down_0
+    21300034: warrior_walking_down_1
+    21300036: warrior_walking_down_2
+    21300038: warrior_walking_down_3
+    21300040: warrior_walking_up_0
+    21300042: warrior_walking_up_1
+    21300044: warrior_walking_up_2
+    21300046: warrior_walking_up_3
+    21300048: warrior_attacking_right_0
+    21300050: warrior_attacking_right_1
+    21300052: warrior_attacking_right_2
+    21300054: warrior_attacking_right_3
+    21300056: warrior_attacking_right_4
+    21300058: warrior_attacking_right_alternate
+    21300060: warrior_walking_right_hammer_0
+    21300062: warrior_walking_right_hammer_1
+    21300064: warrior_walking_right_hammer_2
+    21300066: warrior_walking_right_hammer_3
+    21300068: warrior_walking_right_hammer_4
+    21300070: warrior_walking_right_hammer_5
+    21300072: warrior_walking_right_hammer_6
+    21300074: warrior_walking_left_hammer_0
+    21300076: warrior_walking_left_hammer_1
+    21300078: warrior_walking_left_hammer_2
+    21300080: warrior_walking_left_hammer_3
+    21300082: warrior_walking_left_hammer_4
+    21300084: warrior_walking_left_hammer_5
+    21300086: warrior_walking_left_hammer_6
+    21300088: warrior_walking_left_hammer_7
+    21300090: warrior_walking_down_hammer_0
+    21300092: warrior_walking_down_hammer_1
+    21300094: warrior_walking_down_hammer_2
+    21300096: warrior_walking_down_hammer_3
+    21300098: warrior_walking_up_hammer_0
+    21300100: warrior_walking_up_hammer_1
+    21300102: warrior_walking_up_hammer_2
+    21300104: warrior_walking_up_hammer_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: warrior_walking_right_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 688
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 688
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 688
+        width: 29
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 688
+        width: 30
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 688
+        width: 30
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_5
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 688
+        width: 31
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 689
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 687
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 498
+        width: 31
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 498
+        width: 31
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 497
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 497
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_4
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 497
+        width: 33
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_5
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 497
+        width: 32
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 497
+        width: 31
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_7
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 497
+        width: 33
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_down_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 302
+        width: 35
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_down_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 303
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_down_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 306
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_down_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 304
+        width: 37
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_up_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 121
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_up_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 121
+        width: 36
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_up_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 121
+        width: 36
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_up_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 121
+        width: 38
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_right_0
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 598
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_right_1
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 598
+        width: 46
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_right_2
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 597
+        width: 38
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_right_3
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 599
+        width: 59
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_right_4
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 598
+        width: 99
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_right_alternate
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 598
+        width: 88
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_hammer_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 585
+        width: 37
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_hammer_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 587
+        width: 39
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_hammer_2
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 587
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_hammer_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 586
+        width: 48
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_hammer_4
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 587
+        width: 47
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_hammer_5
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 586
+        width: 43
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_right_hammer_6
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 588
+        width: 39
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_hammer_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 398
+        width: 39
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_hammer_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 394
+        width: 45
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_hammer_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 397
+        width: 48
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_hammer_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 395
+        width: 50
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_hammer_4
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 397
+        width: 47
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_hammer_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 395
+        width: 43
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_hammer_6
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 396
+        width: 39
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_left_hammer_7
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 395
+        width: 40
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_down_hammer_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 198
+        width: 40
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_down_hammer_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 199
+        width: 40
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_down_hammer_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 202
+        width: 39
+        height: 73
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_down_hammer_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 207
+        width: 43
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_up_hammer_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 28
+        width: 39
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_up_hammer_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 29
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_up_hammer_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 30
+        width: 40
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_walking_up_hammer_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 29
+        width: 39
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
