@@ -55,6 +55,12 @@ TextureImporter:
     21300100: warrior_walking_up_hammer_1
     21300102: warrior_walking_up_hammer_2
     21300104: warrior_walking_up_hammer_3
+    21300106: warrior_attacking_left_0
+    21300108: warrior_attacking_left_1
+    21300110: warrior_attacking_left_2
+    21300112: warrior_attacking_left_3
+    21300114: warrior_attacking_left_4
+    21300116: warrior_attacking_left_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -623,6 +629,66 @@ TextureImporter:
         y: 29
         width: 39
         height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_left_0
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 489
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_left_1
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 489
+        width: 48
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_left_2
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 491
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_left_3
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 492
+        width: 60
+        height: 63
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_left_4
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 489
+        width: 99
+        height: 81
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: warrior_attacking_left_5
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 489
+        width: 94
+        height: 81
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
