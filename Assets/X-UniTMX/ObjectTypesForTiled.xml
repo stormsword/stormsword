@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<objecttypes>
- <objecttype name="Collider" color="#0055ff"/>
- <objecttype name="Trigger" color="#00aa00"/>
- <objecttype name="NoCollider" color="#ff007f"/>
-</objecttypes>
