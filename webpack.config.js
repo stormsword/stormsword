@@ -2,16 +2,20 @@ var webpack = require('webpack');
 var path = require('path');
 
 // Setup our game
-GAME_DIR = path.resolve(__dirname, 'lib/game')
-GAME_FILE = path.resolve(__dirname, 'lib/game/stormsword.js')
+GAME_FILE = path.resolve(__dirname, 'lib/client/game/stormsword.js')
 
-console.log(require.resolve('phaser-ce'))
+// Setup tools
+TOOLS_FILE = path.resolve(__dirname, 'lib/client/tools/tools.js')
+
 var config = {
   devtool: 'source-map',
-  entry: GAME_FILE,
+  entry: {
+    'lib/server/static/js/bundle-game.js': GAME_FILE,
+    'lib/server/static/js/bundle-tools.js': TOOLS_FILE
+  },
   output: {
-    path: path.resolve('./lib/server/static/js'),
-    filename: 'bundle.js'
+    path: path.resolve('./'),
+    filename: '[name]'
   },
   module: {
     loaders: [
