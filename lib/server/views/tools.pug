@@ -2,8 +2,27 @@ doctype html
 html(lang="en")
 
   head
-    
+    link(rel="stylesheet" type="text/css" href="/css/min.css")
+    style(type="text/css").
+      textarea, input[type=text] {
+        width: 2em;
+        margin: 0.5em;
+      }
   body
-    script(src="/js/bundle-tools.js")
-
-    select#sprite
+    .container
+      .row
+        .col.c9#game
+          script(src="/js/bundle-tools.js")
+        .col.c3   
+          h3 Sprites
+          .sprite 
+            | Sprite:
+            select#sprite
+          .anim
+            | Animation
+            input#start(type='text' placeholder='Start' length=5 value=0)
+            | &nbsp;
+            | to 
+            | &nbsp;
+            input#end(type='text' placeholder='End' length=5 value=6)
+            input#frameArray(type='text' length=5 value='test')
