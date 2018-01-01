@@ -29,6 +29,9 @@
     "url": "git://github.com/bdickason/stormsword.git"
   },
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "express": "^4.16.2",
     "ioredis": "2.5.0",
     "pug": "^2.0.0-rc.4",
