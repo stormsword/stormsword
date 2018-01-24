@@ -1,31 +1,8 @@
-Stormsword
-===========
 
-Simple top-down 2d RPG inspired by Zelda and Secret of Mana.
+Character definition:
 
-# Latest Release
+Warrior - http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/#?eyes=red&nose=big&ears=big&legs=pants_white&mail=chain&armor=chest_plate&jacket=none&arms=plate&shoulders=leather&spikes=none&bracers=leather&greaves=metal&gloves=none&hat=helmet_metal&=shoes_black&shoes=boots_metal&weapon=rapier
 
-[Grab the latest release files here](https://github.com/bdickason/stormsword/releases)!
+Wizard - http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/#?body=dark&eyes=orange&nose=straight&legs=pants_teal&clothes=longsleeve_teal&formal-shirt=0&formal-pants=0&formal-vest=0&hat=none&shoulders=none&=shoes_black&armor=chest_leather&jacket=tabard&tie=none&weapon=none
 
-
-# Learn more about Stormsword
-
-
-Want to find out more nerdy info about the damage caused by a spell? Interested in contributing or designing? 
-
-[Check out our wiki](https://github.com/bdickason/stormsword/wiki)
-
-
-Want to talk to the Stormsword team, ask questions, or report a bug?
-
-We've got a forum setup at: http://stormsword.braddickason.com/
-
-
-
-
-
-# License
-
-Stormsword is distributed under a Creative Commons BY-NC-SA 3.0 License. Feel free to modify, tweak, or rebuild the game. To sell it requires permission.
-
-For more info see LICENSE.md
+Rogue - http://gaurav.munjal.us/Universal-LPC-Spritesheet-Character-Generator/#?sex=female&body=tanned&eyes=red&ears=elven&legs=pants_red&clothes=pirate_maroon&jacket=none&hair=swoop_brunette2&weapon=bow&bracelet=on&buckle=bronze&belt=leather&quiver=none&ammo=arrow

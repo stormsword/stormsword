@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+
+  head
+    link(rel="stylesheet" type="text/css" href="/css/min.css")
+    style(type="text/css").
+      textarea, input[type=text] {
+        width: 2em;
+        margin: 0.5em;
+      }
+    script.
+      window.state = 'Spritesheet'
+  body
+    .container
+      .row
+        .col.c9#game
+          script(src="/js/bundle-tools.js")
+        .col.c3   
+          h3 Sprites
+          .sprite 
+            | Sprite:&nbsp;
+            select#sprite
+          hr
+          .anim
+            | Animation:&nbsp;
+            select#anim
+          .animData
+            input#start(type='text' placeholder='Start' length=5)
+            | &nbsp;
+            | to 
+            | &nbsp;
+            input#end(type='text' placeholder='End' length=5)
+            input#frameArray(type='text' length=5)

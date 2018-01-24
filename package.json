@@ -1,0 +1,50 @@
+{
+  "name": "stormsword",
+  "version": "0.0.1",
+  "description": "A 2D open world RPG",
+  "keywords": [
+    "rpg"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "node-dev .",
+    "gamebuild": "./node_modules/.bin/webpack",
+    "gamedev": "./node_modules/.bin/webpack -d -w",
+    "test": "mocha lib/**/*.spec.js lib/**/**/*.spec.js models/**/*.spec.js --exit",
+    "watch": "mocha -w lib/**/*.spec.js"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "author": "bdickason",
+  "contributors": [
+    {
+      "name": "bdickason",
+      "email": "dickason@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bdickason/stormsword.git"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "expose-loader": "^0.7.4",
+    "express": "^4.16.2",
+    "ioredis": "2.5.0",
+    "jsonfile": "^4.0.0",
+    "phaser-ce": "^2.9.4",
+    "pug": "^2.0.0-rc.4",
+    "socket.io": "^2.0.4",
+    "webpack": "^3.10.0"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "json-loader": "^0.5.7",
+    "mocha": "^4.0.1"
+  }
+}
