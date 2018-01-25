@@ -36,6 +36,7 @@
     "express": "^4.16.2",
     "ioredis": "2.5.0",
     "jsonfile": "^4.0.0",
+    "node-gameloop": "^0.1.4",
     "phaser-ce": "^2.9.4",
     "pug": "^2.0.0-rc.4",
     "socket.io": "^2.0.4",
