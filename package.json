@@ -11,7 +11,7 @@
     "dev": "node-dev .",
     "gamebuild": "./node_modules/.bin/webpack",
     "gamedev": "./node_modules/.bin/webpack -d -w",
-    "test": "mocha lib/**/*.spec.js lib/**/**/*.spec.js models/**/*.spec.js --exit",
+    "test": "mocha lib/**/*.spec.js lib/**/**/*.spec.js --exit",
     "watch": "mocha -w lib/**/*.spec.js"
   },
   "engines": {
@@ -46,6 +46,6 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "json-loader": "^0.5.7",
-    "mocha": "^4.0.1"
+    "mocha": "^4.1.0"
   }
 }
