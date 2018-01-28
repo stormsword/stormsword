@@ -2,6 +2,15 @@ doctype html
 html(lang="en")
 
   head
+    link(rel="stylesheet" type="text/css" href="/css/min.css")
     
   body
-    script(src="js/bundle-game.js")
+    .container
+      .row
+        .col.c9#game
+          script(src="js/bundle-game.js")
+        .col.c3.debug
+          h3 Server
+          p#serverDebug
+          h3 Client
+          p#clientDebug
