@@ -2,11 +2,11 @@
   "name": "warrior",
   "anims": {
     "idle:right": {
-      "frames": [143],
+      "frames": [91],
       "speed": 15
     },
     "idle:left": {
-      "frames": [117],
+      "frames": [65],
       "speed": 15
     },
     "idle:up": {
@@ -14,7 +14,7 @@
       "speed": 15
     },
     "idle:down": {
-      "frames": [130],
+      "frames": [78],
       "speed": 15
     },
     "walk:right": {
@@ -33,16 +33,36 @@
       "frames": [130,131,132,133,134,135,136,137,138],
       "speed": 20
     },
-    "shoot:right": {
-      "frames": [247,248,249,250,251,252,253,254,255,256,257,258,259],
+    "poke:right": {
+      "frames": [91,92,93,94,95,96,97,98],
       "speed": 15
     },
-    "shoot:left": {
-      "frames": [221,222,223,224,225,226,227,228,229,230,231],
+    "poke:left": {
+      "frames": [65,66,67,68,69,70,71,72],
       "speed": 15
     },
-    "shoot:down": {
-      "frames": [234,235,236,237,238,239,240,241,242,243,244,245,246],
+    "poke:up": {
+      "frames": [52,53,54,55,56,57,58,59],
+      "speed": 15
+    },
+    "poke:down": {
+      "frames": [78,79,80,81,82,83,84,85],
+      "speed": 15
+    },
+    "slash:right": {
+      "frames": [195,196,197,198,199,200],
+      "speed": 15
+    },
+    "slash:left": {
+      "frames": [169,170,171,172,173,174],
+      "speed": 15
+    },
+    "slash:up": {
+      "frames": [156,157,158,159,160,161],
+      "speed": 15
+    },
+    "slash:down": {
+      "frames": [182,183,184,185,186,187],
       "speed": 15
     },
     "death": {
