@@ -8,7 +8,6 @@ GAME_FILE = path.resolve(__dirname, 'lib/client/game/stormsword.js')
 TOOLS_FILE = path.resolve(__dirname, 'lib/client/tools/tools.js')
 
 var config = {
-  devtool: 'source-map',
   entry: {
     'lib/server/static/js/bundle-game.js': GAME_FILE,
     'lib/server/static/js/bundle-tools.js': TOOLS_FILE
@@ -21,13 +20,8 @@ var config = {
     loaders: [
       {
         test: /\.js?/,
-        exclude: /node_modules/,
+        include: path.resolve(__dirname, '/lib/client/'),
         loader: 'babel-loader'
-      },
-      {
-        test: /\.json/,
-        exclude: /node_modules/,
-        loader: 'json-loader'
       }
     ]
   }
