@@ -1,3 +1,12 @@
+npm install -g node-dev
+npm run dev
+	will run the server
+npm run gamedev
+	will run the client
+
+open browser to http://localhost:3000
+
+Movement using arrow keys
 
 Character definition:
 
