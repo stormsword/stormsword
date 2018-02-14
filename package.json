@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "dev": "node-dev .",
+    "dev": "./node_modules/.bin/node-dev .",
     "gamebuild": "./node_modules/.bin/webpack",
     "gamedev": "./node_modules/.bin/webpack -d -w",
     "test": "mocha lib/**/*.spec.js lib/**/**/*.spec.js --exit",
@@ -36,6 +36,7 @@
     "express": "^4.16.2",
     "ioredis": "2.5.0",
     "jsonfile": "^4.0.0",
+    "node-dev": "^3.1.3",
     "node-gameloop": "^0.1.4",
     "phaser-ce": "^2.9.4",
     "pug": "^2.0.0-rc.4",
