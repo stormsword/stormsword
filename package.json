@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "dev": "node-dev .",
+    "dev": "./node_modules/.bin/node-dev .",
     "gamebuild": "./node_modules/.bin/webpack",
     "gamedev": "./node_modules/.bin/webpack -d -w",
     "test": "mocha lib/**/*.spec.js lib/**/**/*.spec.js --exit",
@@ -46,6 +46,7 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "json-loader": "^0.5.7",
-    "mocha": "^4.1.0"
+    "mocha": "^4.1.0",
+    "node-dev": "^3.1.3"
   }
 }
