@@ -15,15 +15,6 @@ var config = {
   output: {
     path: path.resolve('./'),
     filename: '[name]'
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.js?/,
-        include: path.resolve(__dirname, '/lib/client/'),
-        loader: 'babel-loader'
-      }
-    ]
   }
 };
 
