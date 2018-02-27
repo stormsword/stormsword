@@ -1,55 +1,55 @@
 {
   "name": "ranger",
   "anims": {
-    "idle:right": {
+    "ranger:idle:right": {
       "frames": [143],
       "speed": 15
     },
-    "idle:left": {
+    "ranger:idle:left": {
       "frames": [117],
       "speed": 15
     },
-    "idle:up": {
+    "ranger:idle:up": {
       "frames": [104],
       "speed": 15
     },
-    "idle:down": {
+    "ranger:idle:down": {
       "frames": [130],
       "speed": 15
     },
-    "walk:right": {
+    "ranger:walk:right": {
       "frames": [143,144,145,146,147,148,149],
       "speed": 15
     },
-    "walk:left": {
+    "ranger:walk:left": {
       "frames": [117,118,119,120,121,122,123],
       "speed": 15
     },
-    "walk:up": {
+    "ranger:walk:up": {
       "frames": [104,105,106,107,108,109,110,111,112],
       "speed": 20
     },
-    "walk:down": {
+    "ranger:walk:down": {
       "frames": [130,131,132,133,134,135,136,137,138],
       "speed": 20
     },
-    "shoot:right": {
+    "ranger:shoot:right": {
       "frames": [247,248,249,250,251,252,253,254,255,256,257,258,259],
       "speed": 15
     },
-    "shoot:left": {
+    "ranger:shoot:left": {
       "frames": [221,222,223,224,225,226,227,228,229,230,231],
       "speed": 15
     },
-    "shoot:up": {
+    "ranger:shoot:up": {
       "frames": [208,209,210,211,212,213,214,215,216,217,218,219,220],
       "speed": 15
     },
-    "shoot:down": {
+    "ranger:shoot:down": {
       "frames": [234,235,236,237,238,239,240,241,242,243,244,245,246],
       "speed": 15
     },
-    "death": {
+    "ranger:death": {
       "frames": [260, 261, 261, 262, 262, 262, 262, 262, 263, 263, 264, 264, 264, 264, 264, 265],
       "speed": 15
     }
